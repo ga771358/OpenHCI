@@ -107,7 +107,7 @@
 				
 				$("html body").animate({
 					scrollTop: document.querySelector(hash).offsetTop
-				}, 800, function(){
+				}, 100, function(){
 					window.location.hash = hash;
 				});
 			}
