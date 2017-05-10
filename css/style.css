@@ -84,6 +84,12 @@ body{
 	}
 }
 
+#program{
+	height:705px;
+}
+#registration{
+	height:705px;
+}
 #crew{
 	height:705px;
 }
@@ -175,6 +181,77 @@ body{
 }
 #crew .carousel-indicators li:hover{
 	opacity: 0.6;
+}
+
+
+/* Navigation */
+nav.side-nav {
+	position: fixed;
+	right: 30px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	text-align: right;
+	z-index: 100; 
+}
+nav.side-nav a, a:hover, a:active, a:visited, a:focus {
+	display: block;
+	line-height: 25px;
+	position: relative;
+	padding-right: 20px;
+	color: #000000;
+	text-decoration: none; 
+}
+nav.side-nav a:hover .nav-label {
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+	opacity: 1;
+	color: #000000;
+	visibility: visible;
+}
+nav.side-nav .nav-dot {
+	display: block;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+    right: 0;
+	top: 50%;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 100%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	-webkit-transition: all 0.3s linear;
+	transition: all 0.3s linear; 
+}
+nav.side-nav .nav-label {
+	display: block;
+	opacity: 0.5;
+	visibility: hidden;
+	-webkit-transform: translateX(-10px);
+	-ms-transform: translateX(-10px);
+	transform: translateX(-10px);
+	-webkit-transition: all 0.2s cubic-bezier(.17, .67, .83, .67);
+	transition: all 0.2s cubic-bezier(.17, .67, .83, .67); 
+}
+
+/* 當符合 nav中的li with .active中的nav-label */
+nav.side-nav li.active a .nav-label {
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+	opacity: 1;
+	visibility: visible; 
+}
+nav.side-nav ul {
+	margin: 0;
+	padding: 0; 
+}
+nav.side-nav li {
+	width: auto;
+	list-style: none; 
 }
 
 
