@@ -1,0 +1,151 @@
+@charset "UTF-8";
+html {
+  height: 100%;
+  background-color: black; }
+
+body {
+  font: 14px/20px 'open sans',sans-serif, 'Noto Sans TC',"微軟正黑體" !important;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: white; }
+
+/*reset*/
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0; }
+
+br {
+  display: block;
+  margin: 0 0 5px; }
+
+ol, ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+body > img {
+  display: none; }
+
+img {
+  border: none;
+  padding: 0;
+  margin: 0; }
+
+a, a:active, a:visited, a:hover {
+  outline: none;
+  text-decoration: none;
+  background-color: none;
+  display: block;
+  -webkit-tap-highlight-color: transparent;
+  color: white; }
+
+table, tr, td {
+  padding: 0;
+  border-spacing: 0; }
+
+/*reset end */
+* {
+  box-sizing: border-box; }
+
+.frame {
+  position: relative;
+  width: 700px;
+  margin: auto;
+  padding: 0 35px 0 35px; }
+  .frame .nav {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid gray; }
+    .frame .nav .button {
+      position: relative;
+      display: inline-block; }
+      .frame .nav .button a {
+        line-height: 3em; }
+    .frame .nav .active a {
+      color: #00a8a0; }
+  .frame .container #home img.title {
+    width: 100%; }
+  .frame .container #home h3 {
+    font-size: 22px;
+    margin-bottom: 10px; }
+  .frame .container #home p {
+    line-height: 2em; }
+  .frame .container #home .logo {
+    float: right;
+    margin-top: 50px; }
+  .frame .container #about h1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-top: 10px;
+    margin-left: -180px; }
+  .frame .container #about .person {
+    width: 50%;
+    font-size: 12px;
+    float: left; }
+    .frame .container #about .person .name {
+      margin-top: 30px; }
+    .frame .container #about .person .pix {
+      height: 45px;
+      padding-left: 50px;
+      margin-top: 10px; }
+    .frame .container #about .person .keynes {
+      background-image: url(img/keynes.png);
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .frame .container #about .person .dab {
+      background-image: url(img/dab.png);
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .frame .container #about .person .wc {
+      background-image: url(img/wc.png);
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .frame .container #about .person .yu {
+      background-image: url(img/yu.png);
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .frame .container #about .person .title {
+      margin-top: 10px; }
+  .frame .container #about .anticipate {
+    margin-top: 400px;
+    clear: both;
+    margin-bottom: 10px; }
+  .frame .container #about .logo {
+    float: right; }
+  .frame .container #program h1 {
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    margin-left: -100px; }
+  .frame .container #program h3 {
+    font-size: 20px;
+    color: gray;
+    text-decoration: underline;
+    margin-bottom: 30px;
+    margin-top: 50px; }
+  .frame .container #program .class {
+    font-size: 18px;
+    margin-bottom: 10px; }
+    .frame .container #program .class span {
+      font-size: 12px; }
+  .frame .container #program .detail {
+    margin-bottom: 30px; }
+  .frame .container #program .logo {
+    float: right; }
+  .frame .container #blog .click, .frame .container #fb .click {
+    position: absolute;
+    display: block;
+    width: 80px;
+    text-align: center;
+    color: black;
+    top: 165px;
+    left: 50%;
+    margin-left: -39px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,1870 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+   <!-- OpenHCI 2014
+     ________  ________  _______   ________   ___  ___  ________  ___           _______  ________    _____  ___   ___     
+    |\   __  \|\   __  \|\  ___ \ |\   ___  \|\  \|\  \|\   ____\|\  \         /  ___  \|\   __  \  / __  \|\  \ |\  \    
+    \ \  \|\  \ \  \|\  \ \   __/|\ \  \\ \  \ \  \\\  \ \  \___|\ \  \       /__/|_/  /\ \  \|\  \|\/_|\  \ \  \\_\  \   
+     \ \  \\\  \ \   ____\ \  \_|/_\ \  \\ \  \ \   __  \ \  \    \ \  \      |__|//  / /\ \  \\\  \|/ \ \  \ \______  \  
+      \ \  \\\  \ \  \___|\ \  \_|\ \ \  \\ \  \ \  \ \  \ \  \____\ \  \         /  /_/__\ \  \\\  \   \ \  \|_____|\  \ 
+       \ \_______\ \__\    \ \_______\ \__\\ \__\ \__\ \__\ \_______\ \__\       |\________\ \_______\   \ \__\     \ \__\
+        \|_______|\|__|     \|_______|\|__| \|__|\|__|\|__|\|_______|\|__|        \|_______|\|_______|    \|__|      \|__|
+       __         ______     ______     ______     __   __     ______   ______     __         ______     ______     __  __    
+      /\ \       /\  __ \   /\  ___\   /\  __ \   /\ "-.\ \   /\__  _\ /\  __ \   /\ \       /\  __ \   /\  ___\   /\ \_\ \   
+      \ \ \____  \ \  __ \  \ \ \__ \  \ \ \/\ \  \ \ \-.  \  \/_/\ \/ \ \ \/\ \  \ \ \____  \ \ \/\ \  \ \ \__ \  \ \____ \  
+       \ \_____\  \ \_\ \_\  \ \_____\  \ \_____\  \ \_\\"\_\    \ \_\  \ \_____\  \ \_____\  \ \_____\  \ \_____\  \/\_____\ 
+        \/_____/   \/_/\/_/   \/_____/   \/_____/   \/_/ \/_/     \/_/   \/_____/   \/_____/   \/_____/   \/_____/   \/_____/ 
+                                                                                                                                                                                                                                                                                                                                               
+  ================================================== -->
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+   <title>OpenHCI 2014</title>
+   <meta name="description" content="OpenHCI 2014 - 2014 年 OpenHCI 即將展開一場探索造成多種平行世界的延滯因子。過去在資訊世界中，Lag 通常指滿載狀態所造成的負面影響，而現在卻因為一場「時空風暴」，時空將 Lag 出八個平行世界，今年將帶領學員重新定義與思考，致使世界產生出「延滯/Lag」的多面向，開創新的人機互動 HCI，編寫出延滯因子底下的 Lag 平行世界！">
+   <meta name="author" content="OpenHCI 2014">
+   <meta property="og:title" content="OpenHCI 2014" />
+   <meta property="og:site_name" content="OpenHCI 2014" />
+   <meta property="og:description" content="OpenHCI 2014 - 2014 年 OpenHCI 即將展開一場探索造成多種平行世界的延滯因子。過去在資訊世界中，Lag 通常指滿載狀態所造成的負面影響，而現在卻因為一場「時空風暴」，時空將 Lag 出八個平行世界，今年將帶領學員重新定義與思考，致使世界產生出「延滯/Lag」的多面向，開創新的人機互動 HCI，編寫出延滯因子底下的 Lag 平行世界！" />
+   <meta property="og:url" content="http://www.openhci.com/" />
+   <meta property="og:image" content="http://www.openhci.com/2014/images/openhci2014/fb_share_link.jpg" />
+   <meta property="og:image" content="http://www.openhci.com/2014/images/openhci2014/fb_share_banner_center.png" />
+   <meta property="og:image" content="http://www.openhci.com/2014/images/openhci2014/fb_head.png" />
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+   <link rel="stylesheet" href="css/animate.min.css">
+   <link rel="stylesheet" href="css/csshake.min.css">
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+</head>
+
+<body>
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#report_book">report</a></li>
+            <li><a class="smoothscroll" href="#about">OpenHCI 2014</a></li>
+	         <li><a class="smoothscroll" href="#intro">Intro & Goals</a></li>
+            <li><a class="smoothscroll" href="#program">Program</a></li>
+            <li><a class="smoothscroll" href="#registration">Registration</a></li>
+            <li><a class="smoothscroll" href="#about-us">About Us</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+         </ul> <!-- end #nav -->
+      </nav> <!-- end #nav-wrap -->
+      <div id="final_ending_video" style="width: 100%; position: absolute; left: 0; top: 48px; display: block;">
+          <embed frameborder="0" height="100%" width="100%"
+          src="https://youtube.com/embed/ZXF9fMJNEFA?autoplay=1&controls=1&showinfo=0&autohide=1">
+          </embed>
+      </div>
+
+   </header> <!-- Header End -->
+
+   <section id="report_book" style="height: 536px; background: #505050; padding-top:48px;">
+      <div data-configid="12981481/8813320" class="issuuembed" style="width: 100%; height: 100%;"></div><script type="text/javascript" src="http://e.issuu.com/embed.js" async="true"></script>
+   </section>
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+      <div class="row">
+         <div class="three columns">
+
+            <img class="profile-pic" src="images/openhci2014/openhci_logo_white.png" alt="" />
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>OpenHCI 2014 : 延滯因子 Lagontology</h2>
+            <p>
+               OpenHCI 2014 是第五屆由學生自治籌備的人機互動工作坊，旨在推廣人機互動學門與跨領域合作。
+               在6天的營期間，來自不同領域的學員會經歷一系列講座與課後實作演練，深入完整 HCI 設計流程，透過合作溝通以實踐構想，將無盡的創意展現給世界！ 
+               <br><br>
+               <span class="highlight">延滯因子 Lagontology = Lag + Ontology</span>
+               <br><br>
+               本屆主題將以一場「時空風暴」激發人機互動的各種想像，跳脫過去資訊世界所定義的 Lag，探究延滯因子將時空 Lag 出的多種平行世界：五感的不同步？時間的延遲？空間的重複？情感的錯失......等，一切等你來挖掘！
+            </p>
+            <p class="cite">OpenHCI 2014 總召集人<br>陳建方 與 鄭宇婷</p>
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+   <!-- Intro Section
+   ================================================== -->  
+   <section id="intro"> 
+      <!-- Intro&Goals
+      ----------------------------------------------- -->
+      <div class="row goals">
+
+         <div class="three columns header-col">
+            <h1><span>Intro & Goals</span></h1>
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>What is Human-Computer Interaction (HCI)</h3>
+                  <p>
+                  HCI —人機互動— 是近年相當活躍的資訊學門之一。HCI 的中心思想是以人為本，透過科技開創人與人之間的互動，可能是解決與提供新的使用經驗，亦可能是探索與創造新的意義，研究的著眼點不但訴求技術創新，更需要擁有跳脫舊框架的創意，以及對使用者行為的瞭解。因此，HCI 整合了資訊、設計、心理、以及其他領域專業知識，透過跨領域合作與溝通創造嶄新的研究成果。
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Organization of OpenHCI</h3>
+                  <p>
+                  為了推廣 HCI 學門、培養新生人才、以及發掘潛在研究議題，臺大資訊學群、臺科大設計學群、以及政大數位內容學位學程的十餘位碩博士生，共同舉辦了 OpenHCI 工作坊。<br><br>
+
+                  OpenHCI 的活動理念為「學以致用、從做中學」。在將近一週的營期中，我們邀請到各界知名講師，針對 HCI 的兩大核心概念： User Experience Engineering (UXE) 以及 User-Centered Design (UCD) ，從不同面向與主題傳授經驗，培養學員基礎知識；課後更有一系列相對應的分組思考與實作活動，引導學員經歷完整的 HCI 設計流程，針對當屆主題完成互動原型作品，並培養跨領域合作與溝通能力。<br><br>
+
+                  各組的構想與互動原型將於工作坊最後一天以互動展覽方式展出，藉此促成學員與各界人士間的意見交流。作品記錄會在活動後收錄進成果書 (Proceedings of OpenHCI ’14) 中，於活動網站公開下載。 OpenHCI 也將作為橋梁，提供管道協助參與者將作品進一步發展為學術論文或是競賽作品，讓創意繼續延伸發展。
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Intro&Goals -->
+   </section><!-- Intro Section End-->
+
+
+   <!-- Program Section
+   ================================================== -->  
+   <section id="program"> 
+      <!-- Program
+      ----------------------------------------------- -->
+      <div class="row">
+         <div class="twelve columns header-col">
+            <h1><span>Program</span></h1>
+            <h2><span class="small">6 Days [ 7/6 - 7/11 ] <a href="https://www.google.com.tw/maps/place/%E5%9C%8B%E7%AB%8B%E8%87%BA%E7%81%A3%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8/@25.013426,121.541801,17z/data=!3m1!4b1!4m2!3m1!1s0x3442aa2176c4c0ad:0x90db5e44ee29f455" target="_blank"><i class="fa fa-map-marker"></i> 台灣科技大學</a></span></h2>
+         </div>
+         <hr>
+         <div class="three columns header-col">
+            <h3 class="date"><span>7/6 (SUN)</span></h3>
+            <span>第零章 | 時空風暴</span>
+         </div>
+
+         <div class="nine columns main-col">
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">08:30 - 09:00</h5>
+               </div>
+
+               <div class="seven columns">
+                  <h5>學員報到</h5>
+               </div>
+
+               <div class="two columns">
+                  <em>E2-324</em>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">09:00 - 09:20</h5>
+               </div>
+
+               <div class="nine columns">
+                  <h5>OpenHCI 2014 前置工作坊開場與說明</h5>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">09:20 - 10:20</h5>
+               </div>
+
+               <div class="nine columns">
+                  <h5>實作教程 I</h5>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">10:40 - 11:40</h5>
+               </div>
+
+               <div class="nine columns">
+                  <h5>實作教程 II</h5>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">11:40 - 13:00</h5>
+               </div>
+
+               <div class="nine columns">
+                  <h5>午餐交流</h5>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">13:00 - 14:00</h5>
+               </div>
+
+               <div class="nine columns">
+                  <h5>實作教程 III</h5>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">14:10 - 15:10</h5>
+               </div>
+
+               <div class="nine columns">
+                  <h5>實作教程 IV</h5>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">15:30 - 16:30</h5>
+               </div>
+
+               <div class="nine columns">
+                  <h5>團隊實作作業</h5>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">16:30 - 18:00</h5>
+               </div>
+
+               <div class="nine columns">
+                  <h5>挑戰時間</h5>
+               </div>
+            </div> <!-- program-row end -->
+
+         </div> <!-- main-col end -->
+      </div> <!-- End Program -->
+
+      <div class="row">
+         <hr class="line">
+         <div class="three columns header-col">
+            <h3 class="date"><span>7/7 (MON)</span></h3>
+            <span>第一章 | 平行世界的誕生</span>
+         </div>
+
+         <div class="nine columns main-col">
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">08:30 - 09:00</h5>
+               </div>
+
+               <div class="seven columns">
+                  <h5>學員、VIP、Passport 報到</h5>
+               </div>
+
+               <div class="two columns">
+                  <em>IB-301</em>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">09:00 - 09:20</h5>
+               </div>
+
+               <div class="nine columns">
+                  <h5>開幕式 & 開幕致詞</h5>
+                  <div class="speaker-avatar">
+                     <img src="images/speakers/jones.jpg">
+                  </div>
+                  <h6>余能豪</h6>
+                  <p>
+                     <span>國立政治大學資訊科學系 助理教授</span><br>
+                     <span>政大創新使用者介面實驗室 指導教授</span>
+                  </p>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">09:20 - 09:30</h5>
+               </div>
+
+               <div class="nine columns">
+                  <h5>工作坊說明</h5>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">09:30 - 10:30</h5>
+               </div>
+
+               <div class="seven columns">
+                  <h5>Talk / HCI Trends</h5>
+                  <div class="speaker-avatar">
+                     <img src="images/speakers/mike.jpg">
+                  </div>
+                  <h6>陳彥仰</h6>
+                  <p>
+                     <span>台大資工行動人機介面實驗室 指導教授</span><br>
+                     <span>曾任職 Intel Research Seattle 與矽谷 Ludic Labs</span>
+                  </p>
+               </div>
+               <div class="two columns">
+                  <div class="passport">
+                     <img src="images/openhci2014/passport.png">
+                  </div>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">10:50 - 11:50</h5>
+               </div>
+
+               <div class="seven columns">
+                  <h5>Talk / 場域觀察法 Field Observation</h5>
+                  <div class="speaker-avatar">
+                     <img src="images/speakers/ts1.jpg">
+                  </div>
+                  <h6>蔡志浩</h6>
+                  <p>
+                     <span>臺灣使用者經驗設計協會理事</span>
+                  </p>
+               </div>
+
+               <div class="two columns">
+                  <div class="passport">
+                     <img src="images/openhci2014/passport.png">
+                  </div>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">13:00 - 13:50</h5>
+               </div>
+
+               <div class="seven columns">
+                  <h5>主題發想</h5>
+               </div>
+
+               <div class="two columns">
+                  <em>RB-409~411</em>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">14:00 - 14:50</h5>
+               </div>
+
+               <div class="nine columns">
+                  <h5>各組5分鐘初步提案</h5>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">15:00 - 17:30</h5>
+               </div>
+
+               <div class="nine columns">
+                  <h5>實地場域觀察</h5>
+               </div>
+            </div> <!-- program-row end -->
+
+         </div> <!-- main-col end -->
+      </div> <!-- End Program -->
+
+      <div class="row">
+         <hr class="line">
+         <div class="three columns header-col">
+            <h3 class="date"><span>7/8 (TUE)</span></h3>
+            <span>第二章 | LAG 因子的無限想像</span>
+         </div>
+
+         <div class="nine columns main-col">
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">08:30 - 09:00</h5>
+               </div>
+
+               <div class="seven columns">
+                  <h5>學員、VIP、Passport 報到</h5>
+               </div>
+
+               <div class="two columns">
+                  <em>IB-301</em>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">09:00 - 09:10</h5>
+               </div>
+
+               <div class="nine columns">
+                  <h5>流程說明</h5>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">09:10 - 09:40</h5>
+               </div>
+
+               <div class="nine columns">
+                  <h5>前情提要：各組發表3分鐘</h5>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">10:00 - 11:00</h5>
+               </div>
+
+               <div class="seven columns">
+                  <h5>Talk / UX Culture in a Start-up Company</h5>
+                  <div class="speaker-avatar">
+                     <img src="images/speakers/kai.jpg">
+                  </div>
+                  <h6>鄭鎧尹</h6>
+                  <p>
+                     <span>LIVEhouse.in / iKala 產品設計總監</span>
+                  </p>
+               </div>
+
+               <div class="two columns">
+                  <div class="passport">
+                     <img src="images/openhci2014/passport.png">
+                  </div>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">11:10 - 12:10</h5>
+               </div>
+
+               <div class="seven columns">
+                  <h5>Talk / 設計理論與社會實務</h5>
+                  <div class="speaker-avatar">
+                     <img src="images/speakers/figure.jpg">
+                  </div>
+                  <h6>蔡敦仁</h6>
+                  <p>
+                     <span>臺灣科技大學 兼任助理教授</span><br>
+                     <span>三創數位育成中心 設計工程實驗室經理</span>
+                  </p>
+               </div>
+
+               <div class="two columns">
+                  <div class="passport">
+                     <img src="images/openhci2014/passport.png">
+                  </div>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">13:00 - 14:30</h5>
+               </div>
+
+               <div class="seven columns">
+                  <h5>主題發想 & 準備中間提報</h5>
+               </div>
+
+               <div class="two columns">
+                  <em>RB-409~411</em>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">14:30 - 17:00</h5>
+               </div>
+
+               <div class="seven columns">
+                  <h5>各組 10 分鐘提案審查</h5>
+               </div>
+
+               <div class="two columns">
+                  <em>IB-301</em>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">17:00 - 17:30</h5>
+               </div>
+
+               <div class="nine columns">
+                  <h5>評審回饋</h5>
+               </div>
+            </div> <!-- program-row end -->
+         </div> <!-- main-col end -->
+      </div> <!-- End Program -->
+
+      <div class="row">
+         <hr class="line">
+         <div class="three columns header-col">
+            <h3 class="date"><span>7/9 (WED)</span></h3>
+            <span>第三章 | 新文明的降生與異變</span>
+         </div>
+
+         <div class="nine columns main-col">
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">08:30 - 09:00</h5>
+               </div>
+
+               <div class="seven columns">
+                  <h5>學員、VIP、Passport 報到</h5>
+               </div>
+
+               <div class="two columns">
+                  <em>IB-301</em>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">09:00 - 09:10</h5>
+               </div>
+
+               <div class="nine columns">
+                  <h5>流程說明</h5>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">09:10 - 09:20</h5>
+               </div>
+
+               <div class="nine columns">
+                  <h5>前情提要：各組分享</h5>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">09:30 - 10:30</h5>
+               </div>
+
+               <div class="seven columns">
+                  <h5>Talk / 服務設計的入門與應用</h5>
+                  <div class="speaker-avatar">
+                     <img src="images/speakers/wan.jpg">
+                  </div>
+                  <h6>汪建均</h6>
+                  <p>
+                     <span>charger / changer 深擊設計管理策略總監</span><br>
+                     <span>UiGathering 台灣使用者經驗設計協會理事</span>
+                  </p>
+               </div>
+
+               <div class="two columns">
+                  <div class="passport">
+                     <img src="images/openhci2014/passport.png">
+                  </div>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">10:50 - 11:50</h5>
+               </div>
+
+               <div class="seven columns">
+                  <h5>Talk / 設計與虛構</h5>
+                  <div class="speaker-avatar">
+                     <img src="images/speakers/jazzliang.jpg">
+                  </div>
+                  <h6>梁容輝</h6>
+                  <p>
+                     <span>臺灣科技大學 工商業設計系副教授</span>
+                  </p>
+               </div>
+
+               <div class="two columns">
+                  <div class="passport">
+                     <img src="images/openhci2014/passport.png">
+                  </div>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">13:00 - 14:00</h5>
+               </div>
+
+               <div class="seven columns">
+                  <h5>數位工具之應用教學</h5>
+               </div>
+
+               <div class="two columns">
+                  <em>RB-409~411</em>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">14:00 - 17:30</h5>
+               </div>
+
+               <div class="nine columns">
+                  <h5>各組實作時間</h5>
+               </div>
+            </div> <!-- program-row end -->
+         </div> <!-- main-col end -->
+      </div> <!-- End Program -->
+
+      <div class="row">
+         <hr class="line">
+         <div class="three columns header-col">
+            <h3 class="date"><span>7/10 (THR)</span></h3>
+            <span>第四章 | 時空校正的倒數計時</span>
+         </div>
+
+         <div class="nine columns main-col">
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">08:30 - 09:00</h5>
+               </div>
+
+               <div class="seven columns">
+                  <h5>學員、VIP、Passport 報到</h5>
+               </div>
+
+               <div class="two columns">
+                  <em>IB-301</em>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">09:00 - 09:10</h5>
+               </div>
+
+               <div class="nine columns">
+                  <h5>流程說明</h5>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">09:10 - 09:20</h5>
+               </div>
+
+               <div class="nine columns">
+                  <h5>前情提要：各組分享</h5>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">09:30 - 10:30</h5>
+               </div>
+
+               <div class="seven columns">
+                  <h5>Talk / 數位製造與 Maker</h5>
+                  <div class="speaker-avatar">
+                     <img src="images/speakers/cheng.jpg">
+                  </div>
+                  <h6>鄭鴻旗</h6>
+                  <p>
+                     <span>OpenLab Taipei</span>
+                  </p>
+               </div>
+
+               <div class="two columns">
+                  <div class="passport">
+                     <img src="images/openhci2014/passport.png">
+                  </div>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">10:50 - 11:50</h5>
+               </div>
+
+               <div class="seven columns">
+                  <h5>Talk / 互動廣告創意</h5>
+                  <div class="speaker-avatar">
+                     <img src="images/speakers/son1.png">
+                  </div>
+                  <h6>宋恆</h6>
+                  <p>
+                     <span>不來梅網路公司互動總監</span>
+                  </p>
+               </div>
+
+               <div class="two columns">
+                  <div class="passport">
+                     <img src="images/openhci2014/passport.png">
+                  </div>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">13:00 - 17:30</h5>
+               </div>
+
+               <div class="seven columns">
+                  <h5>各組發想 x 實作</h5>
+               </div>
+
+               <div class="two columns">
+                  <em>RB-409~411</em>
+               </div>
+            </div> <!-- program-row end -->
+         </div> <!-- main-col end -->
+      </div> <!-- End Program -->
+
+      <div class="row">
+         <hr class="line">
+         <div class="three columns header-col">
+            <h3 class="date"><span>7/11 (FRI)</span></h3>
+            <span>第五章 | Lagontology</span>
+         </div>
+
+         <div class="nine columns main-col">
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">08:30 - 09:00</h5>
+               </div>
+
+               <div class="seven columns">
+                  <h5>學員報到</h5>
+               </div>
+
+               <div class="two columns">
+                  <em>RB-409~411</em>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">09:00 - 10:40</h5>
+               </div>
+
+               <div class="nine columns">
+                  <h5>各組實作時間</h5>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">10:40 - 12:00</h5>
+               </div>
+
+               <div class="seven columns">
+                  <h5>展覽會場佈置</h5>
+               </div>
+
+               <div class="two columns">
+                  <em>IB-1F 展場</em>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">15:10 - 17:00</h5>
+               </div>
+
+               <div class="nine columns">
+                  <h5>互動成果展示</h5>
+               </div>
+            </div> <!-- program-row end -->
+
+            <div class="row program-row">
+               <div class="three columns">
+                  <h5 class="time">17:00 - 18:00</h5>
+               </div>
+
+               <div class="nine columns">
+                  <h5>頒獎典禮 & 閉幕</h5>
+               </div>
+            </div> <!-- program-row end -->
+         </div> <!-- main-col end -->
+      </div> <!-- End Program -->
+   </section><!-- Program Section End-->
+
+
+   <!-- Registration Section
+   ================================================== -->
+   <section id="registration">
+
+      <div class="row">
+         <div class="two columns header-col">
+            <h1><span>報名 OpenHCI 2014</span></h1>
+         </div>
+
+         <div class="ten columns apply-info">
+            <h2>OpenHCI 2014 - 工作坊學員 報名截止</h2>
+            <hr>
+            <!-- <a href="http://apply.openhci.com" class="button" target="_blank">上傳 iDCard <i class="fa fa-rocket"></i></a> -->
+            <div class="apply-banner">
+               <img src="images/openhci2014/apply3.jpg">
+            </div>
+            <h3><span>報名正取名單<span></h3>
+               <div class="content">
+               <span>&#9733; 錄取名單未依排名順序與分隊排列，分隊名單另行公佈。</span>
+               <div class="row">
+               <div class="two columns">
+               <span>何立芹
+               </span>
+               </div>
+               <div class="two columns">
+               <span>吳怡馨
+               </span>
+               </div>
+               <div class="two columns">
+               <span>陳家翊
+               </span>
+               </div>
+               <div class="two columns">
+               <span>葉柏辰
+               </span>
+               </div>
+               <div class="two columns">
+               <span>施博瀚
+               </span>
+               </div>
+               <div class="two columns">
+               <span>王奕方
+               </span>
+               </div>
+               </div>
+               <div class="row">
+               <div class="two columns">
+               <span>郭宛怡
+               </span>
+               </div>
+               <div class="two columns">
+               <span>林 暄
+               </span>
+               </div>
+               <div class="two columns">
+               <span>邱詩雅
+               </span>
+               </div>
+               <div class="two columns">
+               <span>謝孟儒
+               </span>
+               </div>
+               <div class="two columns">
+               <span>簡婉曦
+               </span>
+               </div>
+               <div class="two columns">
+               <span>程芙蕖
+               </span>
+               </div>
+               </div>
+               <div class="row">
+               <div class="two columns">
+               <span>利淑惠
+               </span>
+               </div>
+               <div class="two columns">
+               <span>王昱心
+               </span>
+               </div>
+               <div class="two columns">
+               <span>吳俊儀
+               </span>
+               </div>
+               <div class="two columns">
+               <span>許哲維
+               </span>
+               </div>
+               <div class="two columns">
+               <span>韓政憲
+               </span>
+               </div>
+               <div class="two columns">
+               <span>林湧達
+               </span>
+               </div>
+               </div>
+               <div class="row">
+               <div class="two columns">
+               <span>黃 新
+               </span>
+               </div>
+               <div class="two columns">
+               <span>徐歆婷
+               </span>
+               </div>
+               <div class="two columns">
+               <span>李葳靜
+               </span>
+               </div>
+               <div class="two columns">
+               <span>李家華
+               </span>
+               </div>
+               <div class="two columns">
+               <span>黃健崴
+               </span>
+               </div>
+               <div class="two columns">
+               <span>鄧善元
+               </span>
+               </div>
+               </div>
+               <div class="row">
+               <div class="two columns">
+               <span>吳翎棋
+               </span>
+               </div>
+               <div class="two columns">
+               <span>徐尉齡
+               </span>
+               </div>
+               <div class="two columns">
+               <span>蕭涵潔
+               </span>
+               </div>
+               <div class="two columns">
+               <span>管哲楓
+               </span>
+               </div>
+               <div class="two columns">
+               <span>張家翎
+               </span>
+               </div>
+               <div class="two columns">
+               <span>周庭安
+               </span>
+               </div>
+               </div>
+               <div class="row">
+               <div class="two columns">
+               <span>翁丹洵
+               </span>
+               </div>
+               <div class="two columns">
+               <span>王邦任
+               </span>
+               </div>
+               <div class="two columns">
+               <span>湯詠爭
+               </span>
+               </div>
+               <div class="two columns">
+               <span>謝采瀅
+               </span>
+               </div>
+               <div class="two columns">
+               <span>蔡佑晟
+               </span>
+               </div>
+               <div class="two columns">
+               <span>蘇奕文
+               </span>
+               </div>
+               </div>
+               <div class="row">
+               <div class="two columns">
+               <span>王咨驊
+               </span>
+               </div>
+               <div class="two columns">
+               <span>蔡寶慶
+               </span>
+               </div>
+               <div class="two columns">
+               <span>楊平京
+               </span>
+               </div>
+               <div class="two columns">
+               <span>廖遠文
+               </span>
+               </div>
+               <div class="two columns">
+               <span>朱奕飛
+               </span>
+               </div>
+               <div class="two columns">
+               <span>鄭文凱
+               </span>
+               </div>
+               </div>
+               <div class="row">
+               <div class="two columns">
+               <span>楊順堯
+               </span>
+               </div>
+               <div class="two columns">
+               <span>謝朋儒
+               </span>
+               </div>
+               <div class="two columns">
+               <span>王子維
+               </span>
+               </div>
+               <div class="two columns">
+               <span>童盈超
+               </span>
+               </div>
+               <div class="two columns">
+               <span>陳采薇
+               </span>
+               </div>
+               <div class="two columns">
+               <span>詹雨謙
+               </span>
+               </div>
+               </div>
+               </div>
+            <h3><span>報名備取名單<span></h3>
+            <div class="content">
+            <span>&#9733; 備取名單未依排名順序，備取名額依照正取放棄人數調整，並於6/26(四)另行電話通知。</span>
+            <div class="row">
+            <div class="two columns">
+            <span>張倚寧
+            </span>
+            </div>
+            <div class="two columns">
+            <span>吳潔薇
+            </span>
+            </div>
+            <div class="two columns">
+            <span>曾仲毅
+            </span>
+            </div>
+            <div class="two columns">
+            <span>林廷恩
+            </span>
+            </div>
+            <div class="two columns">
+            <span>李維哲
+            </span>
+            </div>
+            <div class="two columns">
+            <span>薛 庭
+            </span>
+            </div>
+            </div>
+            <div class="row">
+            <div class="two columns">
+            <span>彭柏勳
+            </span>
+            </div>
+            <div class="two columns">
+            <span>林柏安
+            </span>
+            </div>
+            <div class="two columns">
+            <span>金雨辰
+            </span>
+            </div>
+            <div class="two columns">
+            <span>郭姿伶
+            </span>
+            </div>
+            <div class="two columns">
+            <span>呂宜蒨
+            </span>
+            </div>
+            <div class="two columns">
+            <span>黃偉軒
+            </span>
+            </div>
+            </div>
+            <div class="row">
+            <div class="two columns">
+            <span>江泓儒
+            </span>
+            </div>
+            <div class="two columns">
+            <span>黃薰誼
+            </span>
+            </div>
+            <div class="two columns">
+            <span>許逸為
+            </span>
+            </div>
+            <div class="two columns">
+            <span>潘則佑
+            </span>
+            </div>
+            <div class="two columns">
+            <span>林宇軒
+            </span>
+            </div>
+            <div class="two columns">
+            <span>莫 璇
+            </span>
+            </div>
+            </div>
+            <div class="row">
+            <div class="two columns">
+            <span>陳柏全
+            </span>
+            </div>
+            </div>
+            </div>
+            <h3><span>報名保證金須知<span></h3>
+            <div class="content">
+               <span>正取學員會於 6/23 網路公佈與信件通知，請自行上網查看，並請在 6/25 晚上 12 點前繳交 <span class="light">1000</span> 元保證金。</span><br>
+               <span>經由電話通知的備取學員，請於 6/27 (五) 晚上 12 點前繳交保證金以完成報名程序。</span><br>
+               <span>保證金將於全程參加後全額退還。</span>
+            </div>
+            <h3><span>繳交保證金方式<span></h3>
+            <div class="content">
+               <span>指定銀行與匯款帳戶如下 : </span><br>
+               <blockquote>
+                  <span class="indent">指定銀行：華南銀行 永吉分行</span><br>
+                  <span class="indent">銀行代號：0081290</span><br>
+                  <span class="indent">帳號：129200377158</span><br>
+                  <span class="indent">戶名：姚紀徽</span><br>
+                  <span class="indent">金額：1000元</span><br>
+               </blockquote>
+               <span>匯款後請將自己的戶名與帳號後五碼，經由信件回覆主辦人事組：<a href="mailto:human@openhci.com">human@openhci.com</a></span>
+               <span>以確認成功匯款，主辦經由查證後完成報名手續。</span>
+            </div>
+         </div>
+
+         <div class="ten columns">
+            <h2>Passport 演講通行證報名結束囉</h2>
+            <hr>
+            <div class="content">
+               <span>感謝您的參與，報名已經額滿，</span><br> 
+               <span>錄取passport者我們會寄信通知，請再關注您的信箱！</span>
+            </div>
+            <h3><span>目的</span></h3>
+            <div class="content">
+               <span>為服務無法全程參與工作坊或來不及報名的同學們，我們開放部分演講時段，提供持有Passport的學員自由旁聽，但酌收演講報名費。 </span><br>
+               <span>本活動僅對在學學生開放，持有Passport 者，可參照活動網站Program頁面開放之演講。</span><br>
+            </div>
+            <h3><span>錄取passport</span></h3>
+            <div class="content">
+               <span>活動期間，請於每場演講前10分鐘持 “學生証”與 “報名確認憑証信件”， 於服務櫃檯登記與現場繳費。</span><br>
+               <span>報到地點：臺灣科技大學 國際大樓 IB-301</span><br>
+               <br>
+               <span>未錄取者很感謝您的報名參與，雖然無法獲取passprot資格，</span><br>
+               <span>但是還是歡迎您參與OpenHCI的展覽會&互動成果展示 。</span><br>
+               <span>地點：臺灣科技大學 IB國際大樓1樓</span><br>
+               <span>時間：7/11(五) 13:00 - 17:00</span>
+            </div>
+            <h3><span>報名費用</span></h3>
+            <div class="content">
+               <div class="row">
+                  <div class="nine columns">
+                     <span>臺大網媒&資訊/臺科工商資創設/政大資科&數位內容</span>
+                  </div>
+                  <div class="three columns">
+                     <span>新臺幣200元整</span>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="nine columns">
+                     <span>其餘校系</span>
+                  </div>
+                  <div class="three columns">
+                     <span>新臺幣300元整</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section> <!-- Registration Section End-->
+
+
+   <!-- About Us Section
+   ================================================== -->
+   <section id="about-us">
+
+      <div class="row">
+         <div class="twelve columns header-col">
+            <h1><span>OpenHCI 2014 Crew</span></h1>
+         </div>
+      </div>
+      <hr>
+      <div class="row crew-row">
+         <div class="six columns crew-cell">
+            <h2><span>Program</span><a href="mailto:program@openhci.com"><i class="fa fa-envelope-o"></i></a></h2>
+            <div class="row member">
+               <div class="two columns">
+                  <p class="name"><span>陳建方</span></p>
+               </div>
+
+               <div class="ten columns">
+                  <p>
+                     <span>國立政治大學 數位內容碩士學程 碩士班</span><br>
+                     <span>指導教授 余能豪老師</span>
+                  </p>
+               </div>
+            </div>
+            <div class="row member">
+               <div class="two columns">
+                  <p class="name"><span>鄭宇婷</span></p>
+               </div>
+
+               <div class="ten columns">
+                  <p>
+                     <span>國立台灣科技大學 工商業設計系所 碩士班</span><br>
+                     <span>指導教授 陳玲鈴老師</span>
+                  </p>
+               </div>
+            </div>
+         </div>
+
+         <div class="six columns crew-cell">
+            <h2><span>Sponsorship</span><a href="mailto:sponsor@openhci.com"><i class="fa fa-envelope-o"></i></a></h2>
+            <div class="row member">
+               <div class="two columns">
+                  <p class="name"><span>姜翰廷</span></p>
+               </div>
+
+               <div class="ten columns">
+                  <p>
+                     <span>國立清華大學 資訊工程學系 碩士班</span><br>
+                     <span>指導教授 王浩全老師</span>
+                  </p>
+               </div>
+            </div>
+            <div class="row member">
+               <div class="two columns">
+                  <p class="name"><span>何駿銘</span></p>
+               </div>
+
+               <div class="ten columns">
+                  <p>
+                     <span>國立台灣大學 資訊網路與多媒體研究所 碩士班</span><br>
+                     <span>指導教授 陳彥仰老師</span>
+                  </p>
+               </div>
+            </div>
+            <div class="row member">
+               <div class="two columns">
+                  <p class="name"><span>王昱翔</span></p>
+               </div>
+
+               <div class="ten columns">
+                  <p>
+                     <span>國立雲林科技大學 數位媒體設計所 碩士班</span><br>
+                     <span>指導教授 王照明老師</span>
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row crew-row">
+         <div class="six columns crew-cell">
+            <h2><span>Tech</span><a href="mailto:tech@openhci.com"><i class="fa fa-envelope-o"></i></a></h2>
+            <div class="row member">
+               <div class="two columns">
+                  <p class="name"><span>王柏皓</span></p>
+               </div>
+
+               <div class="ten columns">
+                  <p>
+                     <span>國立台灣科技大學 工商業設計系所 碩士班</span><br>
+                     <span>指導教授 梁容輝老師</span>
+                  </p>
+               </div>
+            </div>
+            <div class="row member">
+               <div class="two columns">
+                  <p class="name"><span>林利津</span></p>
+               </div>
+
+               <div class="ten columns">
+                  <p>
+                     <span>國立台北科技大學 互動媒體設計所 碩士班</span><br>
+                     <span>指導教授 鄭建文老師</span>
+                  </p>
+               </div>
+            </div>
+            <div class="row member">
+               <div class="two columns">
+                  <p class="name"><span>楊雅筑</span></p>
+               </div>
+
+               <div class="ten columns">
+                  <p>
+                     <span>國立台灣科技大學 工商業設計系所 碩士班</span><br>
+                     <span>指導教授 范政能老師</span>
+                  </p>
+               </div>
+            </div>
+         </div>
+
+         <div class="six columns crew-cell">
+            <h2><span>Web Service</span><a href="mailto:web@openhci.com"><i class="fa fa-envelope-o"></i></a></h2>
+            <div class="row member" id="andi">
+               <div class="two columns">
+                  <p class="name"><span>郭瀚智</span></p>
+               </div>
+
+               <div class="ten columns">
+                  <p>
+                     <span>國立台灣大學 資訊管理研究所 碩士班</span><br>
+                     <span>指導教授 陳炳宇老師</span>
+                  </p>
+               </div>
+            </div>
+            <div class="row member">
+               <div class="two columns">
+                  <p class="name"><span>周冠廷</span></p>
+               </div>
+
+               <div class="ten columns">
+                  <p>
+                     <span>國立台灣大學 資訊工程學系 學士班</span><br>
+                     <span>指導教授 陳彥仰老師</span>
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row crew-row">
+         <div class="six columns crew-cell">
+            <h2><span>Exhibition / Demo</span><a href="mailto:demo@openhci.com"><i class="fa fa-envelope-o"></i></a></h2>
+            <div class="row member">
+               <div class="two columns">
+                  <p class="name"><span>劉宥佳</span></p>
+               </div>
+
+               <div class="ten columns">
+                  <p>
+                     <span>國立台灣科技大學 工商業設計系所 碩士班</span><br>
+                     <span>指導教授 梁容輝老師</span>
+                  </p>
+               </div>
+            </div>
+            <div class="row member">
+               <div class="two columns">
+                  <p class="name"><span>翁哲川</span></p>
+               </div>
+
+               <div class="ten columns">
+                  <p>
+                     <span>國力台北科技大學 互動媒體設計所 碩士班</span><br>
+                     <span>指導教授 李來春老師</span>
+                  </p>
+               </div>
+            </div>
+         </div>
+
+         <div class="six columns crew-cell">
+            <h2><span>Human Resource</span><a href="mailto:human@openhci.com"><i class="fa fa-envelope-o"></i></a></h2>
+            <div class="row member">
+               <div class="two columns">
+                  <p class="name"><span>蔡丞恩</span></p>
+               </div>
+
+               <div class="ten columns">
+                  <p>
+                     <span>國立台灣科技大學 工商業設計系所 碩士班</span><br>
+                     <span>指導教授 陳建雄老師</span>
+                  </p>
+               </div>
+            </div>
+            <div class="row member">
+               <div class="two columns">
+                  <p class="name"><span>陳  漢</span></p>
+               </div>
+
+               <div class="ten columns">
+                  <p>
+                     <span>國立台灣科技大學 工商業設計系所 碩士班</span><br>
+                     <span>指導教授 陳玲鈴老師</span>
+                  </p>
+               </div>
+            </div>
+            <div class="row member">
+               <div class="two columns">
+                  <p class="name"><span>劉東昇</span></p>
+               </div>
+
+               <div class="ten columns">
+                  <p>
+                     <span>國立台北科技大學 創新設計所 碩士班</span><br>
+                     <span>指導教授 陳殿禮老師</span>
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row crew-row">
+         <div class="six columns crew-cell">
+            <h2><span>Lecture</span><a href="mailto:lecture@openhci.com"><i class="fa fa-envelope-o"></i></a></h2>
+            <div class="row member">
+               <div class="two columns">
+                  <p class="name"><span>王瀚宇</span></p>
+               </div>
+
+               <div class="ten columns">
+                  <p>
+                     <span>國立台灣大學 資訊網路與多媒體研究所 碩士班</span><br>
+                     <span>指導教授 陳彥仰老師</span>
+                  </p>
+               </div>
+            </div>
+            <div class="row member">
+               <div class="two columns">
+                  <p class="name"><span>張文韋</span></p>
+               </div>
+
+               <div class="ten columns">
+                  <p>
+                     <span>國立台灣科技大學 工商業設計系所 學士班</span><br>
+                     <span>指導教授 陳玲鈴老師</span>
+                  </p>
+               </div>
+            </div>
+         </div>
+
+         <div class="six columns crew-cell">
+            <h2><span>Film Crew</span></h2>
+            <div class="row member">
+               <div class="two columns">
+                  <p class="name"><span>林哲緯</span></p>
+               </div>
+
+               <div class="ten columns">
+                  <p>
+                     <span>國立台灣大學 資訊網路與多媒體研究所 碩士班</span><br>
+                     <span>指導教授 陳彥仰老師</span>
+                  </p>
+               </div>
+            </div>
+            <div class="row member">
+               <div class="two columns">
+                  <p class="name"><span>徐笙洋</span></p>
+               </div>
+
+               <div class="ten columns">
+                  <p>
+                     <span>國立台灣科技大學 工商業設計系所 碩士班</span><br>
+                     <span>指導教授 梁容輝老師</span>
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row crew-row">
+         <div class="six columns crew-cell">
+            <h2><span>General Affair</span><a href="mailto:general@openhci.com"><i class="fa fa-envelope-o"></i></a></h2>
+            <div class="row member">
+               <div class="two columns">
+                  <p class="name"><span>姚紀徽</span></p>
+               </div>
+
+               <div class="ten columns">
+                  <p>
+                     <span>國立政治大學 數位內容碩士學程 碩士班</span><br>
+                     <span>指導教授 蔡子傑老師</span>
+                  </p>
+               </div>
+            </div>
+
+            <div class="row member">
+               <div class="two columns">
+                  <p class="name"><span>陳星佐</span></p>
+               </div>
+
+               <div class="ten columns">
+                  <p>
+                     <span>國立政治大學 資訊科學研究所 碩士班</span><br>
+                     <span>指導教授 余能豪老師</span>
+                  </p>
+               </div> 
+            </div>
+         </div>
+
+         <div class="six columns crew-cell">
+            <h2><span>Publicity</span><a href="mailto:publicity@openhci.com"><i class="fa fa-envelope-o"></i></a></h2>
+            <div class="row member">
+               <div class="two columns">
+                  <p class="name"><span>李安婷</span></p>
+               </div>
+
+               <div class="ten columns">
+                  <p>
+                     <span>國立政治大學 數位內容碩士學程 碩士班</span><br>
+                     <span>指導教授</span>
+                  </p>
+               </div>
+            </div>
+            <div class="row member">
+               <div class="two columns">
+                  <p class="name"><span>林禕瑩</span></p>
+               </div>
+
+               <div class="ten columns">
+                  <p>
+                     <span>國立政治大學 數位內容碩士學程 碩士班</span><br>
+                     <span>指導教授 余能豪老師</span>
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row crew-row">
+         <div class="six columns crew-cell">
+            <h2><span>Graphical Design</span><a href="mailto:graphic@openhci.com"><i class="fa fa-envelope-o"></i></a></h2>
+            <div class="row member">
+               <div class="two columns">
+                  <p class="name"><span>林浩翔</span></p>
+               </div>
+
+               <div class="ten columns">
+                  <p>
+                     <span>國立台灣科技大學 工商業設計系所 碩士班</span><br>
+                     <span>指導教授 梁容輝老師</span>
+                  </p>
+               </div>
+            </div>
+            <div class="row member">
+               <div class="two columns">
+                  <p class="name"><span>陳敬恆</span></p>
+               </div>
+
+               <div class="ten columns">
+                  <p>
+                     <span>國立台灣科技大學 工商業設計系所 碩士班</span><br>
+                     <span>指導教授 梁容輝老師</span>
+                  </p>
+               </div>
+            </div>
+         </div>
+
+         <div class="six columns crew-cell">
+            <h2><span>Steering</span><a href="mailto:steering@openhci.com"><i class="fa fa-envelope-o"></i></a></h2>
+            <div class="row member">
+               <div class="two columns">
+                  <p class="name"><span>張明旭</span></p>
+               </div>
+
+               <div class="ten columns">
+                  <p>
+                     <span>國立台灣大學 資訊工程研究所 博士班</span><br>
+                     <span>指導教授 莊永裕老師</span>
+                  </p>
+               </div>
+            </div>
+            <div class="row member">
+               <div class="two columns">
+                  <p class="name"><span>蕭喬尹</span></p>
+               </div>
+
+               <div class="ten columns">
+                  <p>
+                     <span>國立台灣大學 資訊工程研究所 碩士班畢業</span><br>
+                     <span>指導教授 許永真老師</span>
+                  </p>
+               </div>
+            </div>
+            <div class="row member">
+               <div class="two columns">
+                  <p class="name"><span>魏振庭</span></p>
+               </div>
+
+               <div class="ten columns">
+                  <p>
+                     <span>國立台灣科技大學 工商業設計系所 碩士班</span><br>
+                     <span>指導教授 陳玲玲老師</span>
+                  </p>
+               </div>
+            </div>
+			<div class="row member">
+               <div class="two columns">
+                  <p class="name"><span>莊偉銘</span></p>
+               </div>
+
+               <div class="ten columns">
+                  <p>
+                     <span>國立臺灣科技大學 工商業設計所 博士班</span><br>
+                     <span>指導教授 梁容輝老師</span>
+                  </p>
+               </div>
+            </div>
+            <div class="row member">
+               <div class="two columns">
+                  <p class="name"><span>王亦瑀</span></p>
+               </div>
+
+               <div class="ten columns">
+                  <p>
+                     <span>國立台灣科技大學 工商業設計系所 碩士班</span><br>
+                     <span>指導教授 唐玄輝老師</span>
+                  </p>
+               </div>
+            </div>
+            
+
+
+         </div>
+      </div>
+   </section> <!-- About Us End-->
+
+
+
+   <!-- Portfolio Section
+   ================================================== -->
+   <section id="portfolio">
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <h1>Organizers & Sponsors</h1>
+
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+            <div class="row">
+          	   <div class="columns portfolio-item">
+                  <div class="item-wrap">
+                     <img alt="" src="images/sponsors/ntucsie_square.png">
+                     <div class="overlay">
+                        <div class="portfolio-item-meta">
+       					      <h5>NTU CSIE</h5>
+                           <p>國立台灣大學 資訊工程學系</p>
+       					   </div>
+                     </div>
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+                     <img alt="" src="images/sponsors/nccudct_square.png">
+                     <div class="overlay">
+                        <div class="portfolio-item-meta">
+                           <h5>NCCU DCT</h5>
+                           <p>國立政治大學 數位內容學位學程</p>
+                        </div>
+                     </div>
+                  </div>
+               </div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+                     <img alt="" src="images/sponsors/ntustidcd_logo_square.png">
+                     <div class="overlay">
+                        <div class="portfolio-item-meta">
+                           <h5>NTUST IDCD</h5>
+                           <p>國立台灣科技大學 工商業設計系</p>
+                        </div>
+                     </div>
+                  </div>
+               </div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+                     <img alt="" src="images/sponsors/ginm_logo_square.png">
+                     <div class="overlay">
+                        <div class="portfolio-item-meta">
+                           <h5>NTU GINM</h5>
+                           <p>國立台灣大學 資訊網路與多媒體研究所</p>
+                        </div>
+                     </div>
+                  </div>
+               </div> <!-- item end -->
+            </div>
+            <div class="row">
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+                     <img alt="" src="images/sponsors/IDAE.png">
+                     <div class="overlay">
+                        <div class="portfolio-item-meta">
+                           <h5>IDAE</h5>
+                           <p>Innovative Design & Applications Electronics</p>
+                        </div>
+                     </div>
+                  </div>
+               </div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+                     <img alt="" src="images/sponsors/aja.png">
+                     <div class="overlay">
+                        <div class="portfolio-item-meta">
+                           <h5>AJA Creative</h5>
+                           <p>大予創意設計</p>
+                        </div>
+                     </div>
+                  </div>
+               </div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+                     <img alt="Skymizer" src="images/sponsors/skymizer.png">
+                     <div class="overlay">
+                        <div class="portfolio-item-meta">
+                           <h5>Skymizer</h5>
+                           <p>Skymizer</p>
+                        </div>
+                     </div>
+                  </div>
+               </div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+                     <img alt="" src="images/sponsors/user_xper_3.jpg">
+                     <div class="overlay">
+                        <div class="portfolio-item-meta">
+                           <h5>UserXper</h5>
+                           <p>悠識</p>
+                        </div>
+                     </div>
+                  </div>
+               </div> <!-- item end -->
+            </div>
+            <h1>Media Sponsors</h1>
+            <div class="row">
+               
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+                     <img alt="" src="images/sponsors/live_house_in.jpg">
+                     <div class="overlay">
+                        <div class="portfolio-item-meta">
+                           <h5>LIVEhouse.in</h5>
+                           <p>線上直播平台</p>
+                        </div>
+                     </div>
+                  </div>
+               </div> <!-- item end -->
+               
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+                     <img alt="" src="images/sponsors/hpx.png">
+                     <div class="overlay">
+                        <div class="portfolio-item-meta">
+                           <h5>HPX</h5>
+                           <p>數位產品設計與企劃工作者交流平台</p>
+                        </div>
+                     </div>
+                  </div>
+               </div> <!-- item end -->
+            
+            </div>
+
+            </div> <!-- portfolio-wrapper end -->
+
+         </div> <!-- twelve columns end -->
+      </div> <!-- row End -->
+
+   </section> <!-- Portfolio Section End-->
+
+
+   <!-- Contact Section
+   ================================================== -->
+   <section id="contact">
+
+         <div class="row section-head">
+
+            <div class="two columns header-col">
+
+               <h1><span>Get In Touch OpenHCI 2014.</span></h1>
+
+            </div>
+
+            <div class="ten columns">
+               <h4>Email : <a href="mailto:program@openhci.com">program@openhci.com</a></h4>
+               <h4>Facebook Page : <a href="https://www.facebook.com/pages/Open-HCI-%E4%BA%BA%E6%A9%9F%E4%BA%92%E5%8B%95%E5%B7%A5%E4%BD%9C%E5%9D%8A/711503132244489" target="_blank">Open HCI 人機互動工作坊</a></h4>
+               <h4>OpenHCI : <a href="index.html" target="_blank">2014</a> | <a href="../2013/index.html" target="_blank">2013</a> | <a href="https://dev-dot-ntu-openhci.appspot.com/" target="_blank">2012</a> | <a href="https://2011-dot-ntu-openhci.appspot.com/" target="_blank">2011</a> | <a href="/2009" target="_blank">2009</a></h4>
+            </div>
+
+         </div>
+   </section> <!-- Contact Section End-->
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+      <div class="row">
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <li><a class="smoothscroll" title="Back to Top" href="#home"><img src="images/openhci2014/openhci_logo_blue.png" width="80" height="90"></a></li>
+            </ul>
+
+            <ul class="copyright">
+               <li>&copy; Copyright 2014 OpenHCI.</li>
+               <!-- <li>Design by <a href="http://andikan.github.io/">Andikan</a></li>    -->
+            </ul>
+
+            <ul class="copyright styleshout">
+               <li><a title="Styleshout" href="http://www.styleshout.com/" target="_blank">Styleshout</a></li>
+            </ul>
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+      </div>
+   </footer> <!-- Footer End-->
+
+
+   <!-- Google Analytics code
+   ================================================== -->
+   <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+     ga('create', 'UA-51743643-1', 'openhci.com');
+     ga('send', 'pageview');
+   </script>
+   
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/jquery.stellar.min.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/init.js"></script>
+</body>
+
+</html>
