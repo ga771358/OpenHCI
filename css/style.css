@@ -1,30 +1,17 @@
-*{
+* {
     box-sizing: border-box;
 }
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-}
-@media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-}
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
 
 body{
 	font-size:16px;
 }
 
+p {
+    font-size: 1.2em;
+    line-height: 1.45em;
+}
 
 
 .home-img{
@@ -53,36 +40,603 @@ body{
 @media only screen and (max-width: 768px) {
 	#home{
 		padding:0px;
-		height:auto;
+		
+		height: initial;
 	}
 }
 
 #openhci2017{
-	height: 705px;
-	border: 1px solid red;
-	padding:100px 0px 0px 0px ;
+	width:100%;
+	border: 2px solid red;
+	padding:80px 0px 0px 0px ;
+	height:100vh;
+	
+	
+}
+
+#openhci2017 .half-container{
+	float:left;
+	width:45%;
+	padding:30px;
+	margin-bottom: 2%;
+	
+}
+
+#openhci2017 .hcilogo{
+	padding-left:8%;
+}
+
+#openhci2017 .half-container .subtitle{
+	font-size: 13px;
+	margin-top: 50px;
+}
+#openhci2017 .content-container{
+	float:left;
+	width:30%;
+	padding:40px 40px;
+	margin-left:30px;
+	margin-top: 10px;
+	
 }
 @media only screen and (max-width: 768px) {
 	#openhci2017{
 		padding:0px;
 		height:auto;
-
+		margin:auto;
 	}
 }
-#openhci2017 .container .row .col-md-8 .content :nth-child(1){
-	font-size: 26px;
+@media only screen and (max-width: 768px) {
+	#openhci2017 .half-container{
+		float:none;
+		width:100%;
+		margin:auto;
+		padding:20px 30px;
+	}
 }
+@media only screen and (max-width: 768px) {
+	#openhci2017 .content-container{
+		float:none;
+		width:100%;
+		margin:auto;
+		padding:20px 30px;
+	}
+}
+
+
+
 #intro_goals{
 	height: 705px;
-	border: 1px solid red;
+	border: 2px solid red;
 	padding:100px 0px 0px 0px ;
+	height:auto !important;
+	min-height: 705px;
+}
+
+#intro_goals .half-container{
+	float:left;
+	width:75%;
+	padding:30px;
+	margin-bottom: 1%;
+	
+}
+#intro_goals .hcilogo{
+	padding-left:8%;
+}
+#intro_goals .content-container{
+	float:left;
+	width:30%;
+	padding:40px 40px;
+	margin-left:30px;
+	margin-top: 10px;
+
 }
 @media only screen and (max-width: 768px) {
 	#intro_goals{
 		padding:0px;
+		border:1px solid blue;
 		height:auto;
 	}
 }
+@media only screen and (max-width: 768px) {
+	#intro_goals .half-container{
+		float:none;
+		width:100%;
+		margin:auto;
+		padding:20px 30px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	#intro_goals .content-container{
+		float:none;
+		width:100%;
+		margin:auto;
+		padding:20px 30px;
+	}
+}
+
+
+
+
+
+
+
+#program{
+  height:100vh;
+}
+
+@media screen and (max-width: 768px){
+  #program {
+    height: 750px;
+  }
+}
+
+#program .title {
+    padding-top: 20px;
+}
+
+
+@media screen and (max-width: 768px){
+  #program .title {
+    margin-bottom: 50px;
+  }
+}
+
+#program  .program-container {
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 1050px){
+
+  #program  .program-container {
+      margin-top: 16px;
+  }
+}
+/*
+#program .frame .title{
+  width:100%;
+  height:100px;
+  float:left;
+  padding-top: 20px; 
+  text-align: center;
+}
+*/
+
+/*
+#program .left-side-container{
+  width:20%;
+  height:inherit;
+  float:left;
+  border: 1px solid red; 
+}
+*/
+
+#program .left-side-container{
+    display: block;
+    width: 10%;
+    float: left;
+    padding-left: 20px;
+    border-left: 1px solid white;
+  }
+
+
+#program .left-side-container .btn-up{
+  width:50%;
+  height:50px;
+  margin:0 auto;
+  margin-top:200px;
+  transform: rotate(-45deg);
+  /* border: 1px solid red; */
+}
+
+
+#program .left-side-container .btn-up .text{
+	width: 10vw;
+	height: 2vh;
+  font-size: 1em;
+}
+
+#program .left-side-container .btn-down{
+  width:50%;
+  height:60px;
+  margin:0 auto;
+  transform: rotate(-45deg);
+  /* border: 1px solid red; */
+}
+
+#program .left-side-container .btn-down .text{
+	width: 10vw;
+	height: 2vh;
+  font-size: 1em;
+}
+
+#program .content {
+    width: 75%;
+    float: left;
+}
+
+@media screen and (max-width: 1050px){
+  #program .content {
+      width: 100%;
+      float: none;
+  }
+}
+
+/*
+#program .content{
+  width:60%;
+  height:603px;
+  padding-top:30px;
+  float:left;
+  
+}
+*/
+
+#program .content .schedule{
+  position: relative;
+  width:60%;
+  padding-left: 50px;
+  height:inherit;
+  float:left;
+  margin-left: 30px;
+  /* border: 1px solid red; */
+}
+
+@media screen and (max-width: 1000px){
+  #program .content .schedule{
+    width:90%;
+    /* border: 1px solid red; */
+  }
+}
+
+#program .content .schedule .day1-content{
+	position: absolute;
+}
+
+#program .content .schedule .day1-content *{
+	opacity: 1;
+}
+
+#program .content .schedule .day2-content{
+	position: absolute;
+}
+
+#program .content .schedule .day2-content *{
+	opacity: 0;
+}
+
+#program .content .schedule .day3-content{
+	position: absolute;
+}
+
+#program .content .schedule .day3-content *{
+	opacity: 0;
+}
+
+#program .content .schedule .day4-content{
+	position: absolute;
+}
+
+#program .content .schedule .day4-content *{
+	opacity: 0;
+}
+
+#program .content .schedule .day5-content{
+	position: absolute;
+	
+}
+
+#program .content .schedule .day5-content *{
+	opacity: 0;
+}
+
+#program .content .schedule .day6-content{
+	position: absolute;
+}
+
+#program .content .schedule .day6-content *{
+	opacity: 0;
+}
+
+
+#program .content .speaker{
+  position: relative;
+  width:30%;
+  height:inherit;
+  float:right;
+  padding-top : 50px;
+  padding-left : 50px;
+  /* border: 0px solid red; */
+}
+
+@media screen and (max-width: 1000px) {
+  #program .content .speaker{
+    display: none;    
+  }
+}
+
+
+#program .content .speaker .day2-speaker,.day3-speaker,.day4-speaker,.day5-speaker{
+	position: absolute;
+	opacity: 0;
+}
+
+
+
+
+
+
+#registration{
+	border: 1px solid blue;
+	height:100vh;
+	position:relative;
+}
+/* Registration */
+
+#registration section {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 35px;
+    min-height: 330px;
+    z-index: 10;
+}
+
+#registration .animate-right {
+    transition: all .8s cubic-bezier(0.650,0.000,0.175,1.000);
+    transform: translateX(100%);
+}
+
+#registration .animate-left {
+    transition: all .8s cubic-bezier(0.650,0.000,0.175,1.000);
+    transform: translateX(-100%);
+}
+
+#registration .animate-center {
+    transition: all .8s cubic-bezier(0.650,0.000,0.175,1.000);
+    transform: translateX(0%);
+}
+
+#registration .logo {
+  position: absolute;
+  width: 100%;
+  height: 230px;
+  text-align: center;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#registration .logo .flip {
+  position: relative;
+  top:5%;
+  left: 50%;
+  margin-left: -90px;
+  perspective: 800;
+  margin-top: 25px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-image: url("../image/hello.png")
+}
+
+#registration .logo .flip .flipper {
+  transition: 0.7s ease-in-out;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  
+}
+
+#registration .logo .flip .flipper .front,.back {
+  width: 180px;
+  height: 180px;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: repeat;
+  border-radius: 50%;
+  
+}
+
+#registration .logo .flip .flipper .front {
+  z-index: 2;
+  
+}
+#registration .logo .flip .flipper .back {
+  transform: rotateY(180deg);
+}
+
+#registration .logo .back-btn {
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  position: absolute;
+  margin-left: -65px;
+  background: #2a2e3a;
+  padding: 5px;
+  left: 0%;
+  top: 53%;
+  display: none;
+  transition: background-color 0.1s ease-in-out;
+}
+#registration .logo .back-btn a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 3px;
+  border-radius: 50%;
+  background: url("http://www.digitalatelier.ro/css/../images/x.png") center #05b9dc no-repeat;
+  transition: background-color 0.1s ease-in-out;
+}
+
+#registration .bar .next a:hover {
+  background-color: #f04e37;
+}
+#registration .bar .prev a:hover{
+  background-color: #f04e37;
+}
+#registration .logo .back-btn a:hover{
+  background-color: #f04e37;
+}
+
+#registration .bar {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  top: 280px;
+  z-index: 100;
+  text-align: center;
+}
+#registration .bar-text {
+  position: absolute;
+  width: 100%;
+  font-weight: 700;
+}
+#registration .bar-text p {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 2.2;
+  display: inline-block;
+  word-spacing: 2px;
+  background: #333745;
+  color: white;
+  padding: 0 18px;
+  padding-bottom: 3px;
+  border-radius: 50px;
+}
+
+#registration .bar .next,.prev {
+  display: none;
+  top: -10px;
+  background: #333745;
+  position: absolute;
+  z-index: 99;
+  padding: 5px;
+}
+#registration .bar .next {
+  left: 100%;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+}
+#registration .bar .next a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 3px;
+  background: url("http://www.digitalatelier.ro/css/../images/ar-l.png") center no-repeat #05b9dc;
+  border-radius: 50%;
+  transition: background-color 0.1s ease-in-out;
+}
+#registration .bar .prev {
+  left:-65px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+}
+#registration .bar .prev a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 3px;
+  background: url("http://www.digitalatelier.ro/css/../images/ar-r.png") center no-repeat #05b9dc;
+  border-radius: 50%;
+  transition: background-color 0.1s ease-in-out;
+}
+
+
+#registration .work ul {
+  margin: 0 auto;
+  margin-left: 100px;
+  display: block;
+  overflow: hidden;
+  list-style-type:none;
+}
+#registration .work ul li {
+  float: left;
+  width: 170px;
+  height: 170px;
+  margin: 15px;
+  margin-top: 0;
+  margin-bottom: 26px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  border:1px solid blue;
+}
+
+#registration .pic{
+  display: inline;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#registration .work ul li a img{
+	max-height: 100%;
+	max-width: 100%;
+}
+
+#registration .work{
+	position: absolute;
+	top:400px;
+	
+}
+.project-step01{
+	display: none;
+	position: absolute;
+	top:350px;
+}
+.project-step02{
+	display: none;
+	position: absolute;
+	top:350px;
+}
+.project-step03{
+	display: none;
+	position: absolute;
+	top:350px;
+}
+.project-step04{
+	display: none;
+	position: absolute;
+	top:350px;
+}
+.project-step05{
+	display: none;
+	position: absolute;
+	top:350px;
+}
+
+#registration  .project-step01 .contact-container{
+	float:left;
+	width:50%;
+	padding:20px 0px;
+}
+@media only screen and (max-width: 768px) {
+	#registration  .project-step01 .contact-container{
+	float:none;
+	width:100%;
+	
+}
+}
+#registration  .project-step01 .contact-container-01{
+	float:left;
+	width:50%;
+	padding:20px 100px 20px 0px;
+}
+@media only screen and (max-width: 768px) {
+	#registration .project-step01 .contact-container-01{
+	float:none;
+	width:100%;
+	padding:20px 0px;
+	
+}
+}
+#registration .project-step02 .contact-container{
+	float:left;
+	width:100%;
+	padding:20px 0px;
+}
+
 
 #crew{
 	height:705px;
@@ -92,6 +646,9 @@ body{
 		height:auto;
 	}
 }
+#crew .crewlogo{
+	margin-top: 5%;
+}
 #crew #crewMember h4{
 	font-weight: 700;
 	font-size:20px;
@@ -99,6 +656,7 @@ body{
 	font-weight: bolder;
 	-webkit-text-stroke:2px black;
 	color: transparent;
+	font-family:"Montserrat";
 }
 #crew .member .name{
 	font-family: "Work Sans";
@@ -116,28 +674,25 @@ body{
     font-weight: 300;
     line-height: 1.3em;
 }
-
-
-
-
-
+#crew .VD{
+	float:left;
+}
 
 
 /* Carousel indicator */
 .crew_slider{
-	margin-top: 3%;
-}
-#crew .carousel-indicators {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    left: 0;
+	margin-top: 10%;
 }
 
+@media only screen and (max-width: 768px){
+	#crew .carousel-inner {
+		height:909px;
+	}
+}
 #crew .carousel-indicators li {
     text-indent: initial;
-    width: 20%;
-    height: 5px;
+    width: 30%;
+    height: 6px;
     margin: 0 2% 0 0;
     border-radius: 0;
     background:#696969;
@@ -148,7 +703,7 @@ body{
 	#crew .carousel-indicators li{
 		text-indent: initial;
 	    width: 20%;
-	    height: 5px;
+	    height: 6px;
 	    margin: 0 2% 0 0;
 	    border-radius: 0;
 	    background:#696969;
@@ -159,7 +714,6 @@ body{
 #crew .carousel-indicators li:last-child {
     margin: 0;
 }
-
 #crew .carousel-indicators li.active {
     opacity: 0.8;
     position: relative;
@@ -167,7 +721,7 @@ body{
 #crew .carousel-indicators li.active:after {
     content: "";
     width: 30%;
-    height: 5px;
+    height: 6px;
     top: 0;
     left: 0;
     position: absolute;
@@ -176,6 +730,120 @@ body{
 #crew .carousel-indicators li:hover{
 	opacity: 0.6;
 }
+
+
+/* Navigation */
+nav.side-nav {
+	position: fixed;
+	right: 30px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	text-align: right;
+	z-index: 100; 
+}
+nav.side-nav a, a:hover, a:active, a:visited, a:focus {
+	display: block;
+	line-height: 25px;
+	position: relative;
+	padding-right: 20px;
+	color: #000000;
+	text-decoration: none; 
+}
+nav.side-nav a:hover .nav-label {
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+	opacity: 1;
+	color: #000000;
+	visibility: visible;
+}
+nav.side-nav .nav-dot {
+	display: block;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+    right: 0;
+	top: 50%;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 100%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	-webkit-transition: all 0.3s linear;
+	transition: all 0.3s linear; 
+}
+nav.side-nav .nav-label {
+	display: block;
+	opacity: 0.5;
+	visibility: hidden;
+	-webkit-transform: translateX(-10px);
+	-ms-transform: translateX(-10px);
+	transform: translateX(-10px);
+	-webkit-transition: all 0.2s cubic-bezier(.17, .67, .83, .67);
+	transition: all 0.2s cubic-bezier(.17, .67, .83, .67); 
+}
+
+/* 當符合 nav中的li with .active中的nav-label */
+nav.side-nav li.active a .nav-label {
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+	opacity: 1;
+	visibility: visible; 
+}
+nav.side-nav ul {
+	margin: 0;
+	padding: 0; 
+}
+nav.side-nav li {
+	width: auto;
+	list-style: none; 
+}
+
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 1px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 20s infinite linear;
+}
+
+.text-copy:nth-child(1){
+    stroke: #4D163D;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+  stroke: #840037;
+  animation-delay: -10s;
+}
+
+.text-copy:nth-child(3){
+  stroke: #BD0034;3
+  animation-delay: -11s;
+}
+
+.text-copy:nth-child(4){
+  stroke: #BD0034;
+  animation-delay: -12s;
+}
+
+.text-copy:nth-child(5){
+  stroke: #FDB731;
+  animation-delay: -1s;
+}
+
+@keyframes stroke-offset{
+  100% {stroke-dashoffset: -45%;}
+}
+
+
+
+
 
 
 

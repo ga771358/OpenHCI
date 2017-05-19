@@ -10,7 +10,17 @@
     
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- ScrollMagic.js -->
+
+      <script type="text/javascript" src="scrollMagicJS/TweenMax.min.js"></script>
+      <script type="text/javascript" src="scrollMagicJS/ScrollMagic.min.js"></script>
+      <script type="text/javascript" src="scrollMagicJS/animation.gsap.min.js"></script>
+      <script type="text/javascript" src="scrollMagicJS/debug.addIndicators.min.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,6 +30,22 @@
     <![endif]-->
   </head>
   <body>
+
+    
+    
+    <nav class="side-nav">
+        <ul>
+                  <li class="nav-home"><a href="#home" ><span class="nav-dot"></span><span class="nav-label">Home</span></a></li>
+                  <li class="nav-openhci2017"><a href="#openhci2017" ><span class="nav-dot"></span><span class="nav-label">OpenHCI 2017</span></a></li>
+                  <li class="nav-intro_goals"><a href="#intro_goals" ><span class="nav-dot"></span><span class="nav-label">Intro &amp Goals</span></a></li>
+                  <li class="nav-program"><a href="#program" ><span class="nav-dot"></span><span class="nav-label">Program</span></a></li>
+                  <li class="nav-registration"><a href="#registration" ><span class="nav-dot"></span><span class="nav-label">Registration</span></a></li>
+                  <li class="nav-crew"><a href="#crew" ><span class="nav-dot"></span><span class="nav-label">Crew</span></a></li>
+                  <li class="nav-contact"><a href="#contact" ><span class="nav-dot"></span><span class="nav-label">Contact</span></a></li>
+        </ul>
+    </nav>
+
+
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -61,38 +87,40 @@
     <!-- section openhci2017 begin-->
 
     <section id="openhci2017">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-xs-12">
-            <img src="image/logo_s.png">
-            <br/>
-            <strong>8th</strong>student-organized workshop on human-computer interaction
-          </div>
-          <div class="col-md-8 col-xs-12">
+    <div class='frame'>
+      <div class="half-container hcilogo">
+        <img src="image/logo_s.png">
+        <div class="subtitle"><strong>8th</strong>student-organized workshop </br>on human-computer interaction</div>
+      </div>
+
+      <div class="half-container">
             <div class="content">
               <p>
-                超覺未來Gitopia
-              </p>
-              <br/>
-              <p>
-                「科技流動於人與環境之間，達到平衡而完美的世界」
-              </p>
-              <br/>
-              <p>
-                「超覺未來 Gitopia」取自「未來科技」、「與人文結合」以及「提升知覺」等核心價值展開，希望透過主題串連六天的活動，帶領學員發想、小組合作、建構、實現互動展示物。
-              </p>
-              <br/>
-              <p>
-                過去，我們總如此的想像：當科技突破人的想像、文明超越形體的限制之後，人類將擁有更廣闊的覺知、知識、能力與情感。現在，將時光的尺度收縮拉至眼前，等待未來最快捷的路徑就是創造，期待夢想中的世界在此展開。
-              </p>
-              <br/>
-              <p>
-                除了團隊合作，一系列的講座與議題討論，聚焦於當今互動設計、人機互動領域中的課題，探討人與智慧物件在物連網時代下的新互動模式以及其設計框架。
+                <font size="4">本屆活動主題為「Re:__ 」</font>，作為開頭，意味著再一次的思考、改造與重生，之於物件、之於人們對於Re 的想像，以一種所謂自我的重構，顛覆習以為常的認知，更深入探索物與人之間的相互關係。
               </p>
             </div>
-          </div>
-        </div>
       </div>
+        
+      <div class="content-container">
+        <p>
+          從古至今，物件建構了人類美好又方便的生活；但曾幾何時，被頻繁使用過後，物件逐漸失去最佳效能、產生失誤，故障的狀態無可避免。然而淘汰的概念一如物件本身，皆是人類所製造，是誰能決定它們何時誕生又何時殞落？
+        </p>
+      </div>
+
+      <div class="content-container">
+        <p>
+          仍堪用的物品經過修補、失敗的產品必須改良、經典設計永遠獨占鰲頭，但也有因為回憶的連結而無法割捨的它們。因此，我們意圖將不完美、有缺陷的物件拆分解構，將原本帶有遺憾的存在，經由再造轉換成恍若初生的靈魂，重新賦予物件內在的平衡與外裝的非凡意義。
+        </p>
+	  </div>
+
+      <div class="content-container">
+        <p>
+          我們以此主題為綱串連長達六天的工作坊，帶領學員發想、小組合作，進而建構、實現互動展示物。除了團隊合作之外，亦有與此主題相關的系列講座與議題討論，聚焦於當今互動設計、人機互動（HCI）領域中的關鍵議題 — 以跨越文化、社會、設計、電資領域，來探討人與智慧物件在物聯網時代下的新互動模式以及其設計框架。
+        </p>
+      </div>
+    </div>
+
+      
     </section>
 
     <!-- section openhci2017 over-->
@@ -101,63 +129,373 @@
     <!-- section intro begin-->
 
     <section id="intro_goals">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-xs-12">
-            <img src="image/logo_s.png">
-            <br/>
-            <strong>8th</strong>student-organized workshop on human-computer interaction
-          </div>
-          <div class="col-md-8 col-xs-12">
-            <div class="content">
-              <h1>What is HCI</h1>
-              <br/>
-              <p>
-                Human-Computer Interaction （HCI）為近年來相當活躍的跨領域學門。相較於其他專門領域，HCI學門獨特的複合特性，使得其創造過程需要高度的跨領域合作。研究的著眼點不但訴求技術、更試圖從以人為本的角度去探討，以創造更佳的使用者經驗。
-              </p>
-              <br/>
-              <h1>History of OpenHCI</h1>
-              <p>
-                OpenHCI 2016是第七屆由學生自治籌備的人機互動工作坊，旨在推廣人機互動學門與跨領域合作。 在六天的營期間，來自不同領域的學員會經歷一系列講座與課後實作演練，深入完整 HCI 設計流程，透過合作溝通以實踐構想，將無盡的創意展現給世界！
-              </p>
-              <br/>   
-              <p>
-                本活動希望能夠以推廣HCI為主要宗旨，招收工程與設計背景的學生、共同學習並進行跨領域的合作，探索人類生活空間中與周遭環境、物件或工具的互動模式。為期六天的工作坊，期盼參與者能以此概念體察其日常經驗裡的互動缺口或議題，實際動手解決問題或創造出新的意義的能力，進而尋思更和諧的人機互動遠景。
-              </p>
-            </div>
-          </div>
-        </div> 
+      <div class="half-container hcilogo">
+        <img src="image/logo_s.png">
+        <div class="subtitle"><strong>8th</strong>student-organized workshop </br>on human-computer interaction</div>
+      </div>
+      <div class="content-container">
+        <div class="content">
+          <h3>What is HCI</h3>
+          <p>
+            Human-Computer Interaction （HCI）為近年來相當活躍的資訊學門之一。相較於其他專門領域，HCI學門獨特的 Multi-discipline 特性，使得其研究過程需要仰賴高度的跨領域合作與溝通。研究的著眼點不但訴求技術上的創新，更試圖從以人為本的角度去作探討，以創造更佳的使用者經驗。
+          </p>
+        </div>
+      </div>
+
+      <div class="content-container">
+        <div class="content">  
+          <h3>History of OpenHCI</h3>
+          <p>
+            OpenHCI 2017是第八屆由學生自治籌備的人機互動工作坊，旨在推廣人機互動學門與跨領域合作。 在六天的營期間，來自不同領域的學員會經歷一系列講座與課後實作演練，深入完整 HCI 設計流程，透過合作溝通以實踐構想，將無盡的創意展現給世界！
+          </p>
+        </div>
+      </div>
+      <div class="content-container">
+        <div class="content">  
+          <h3>Goals</h3> 
+          <p>
+            本活動希望能夠以推廣HCI學門為主要宗旨，招收資訊工程與設計背景的學生，共同學習並進行跨領域的溝通與合作，且探索人類生活空間中與周遭環境、物件或工具的新互動模式，進行為期六天的工作坊，期盼參與者能以此概念體察其日常經驗裡的互動缺口或議題，實際動手解決問題或創造出新的意義的能力，進而尋思更和諧互惠的人機互動遠景。
+          </p>
+        </div>
       </div>
     </section> 
 
     <!-- section intro over -->
     
     <!-- section program begin -->
-
     <section id="program">
-      <div class="container">
+      
+		<div class="title">
+	       	<img src="image/logo_s.png">
+	    </div>
+      	
+      	<div class="program-container">
+      	<div class="left-side-container">
+        <div class="btn-up">
+          <div class="text"></div>
+				<a>
+					<i class="fa fa-arrow-right fa-3x" aria-hidden="true"></i>
+				</a>
+        	</div>
+        <div class="btn-down">
+          	<a>
+				<i class="fa fa-arrow-left fa-3x" aria-hidden="true"></i>
+			</a>
+			<div class="text">Day 2</div>
+        </div>
+      </div>
+      
+      <div class="content">
+        <div class="schedule">
+        	<div class="day1-content">
+	      		<h4 class="date">2017 / 6 / 27 Tuesday</h4>
+	      		<h2 class="day">Day 1 : 前置工作坊-實作教材</h2>
+				<p>08:30 - 09:00  報到</p>
+				<p>09:00 - 09:20  前置開場與說明</p>
+				<p>09:20 - 10:30  互動設計概論(ㄧ)</p>
+				<p>10:30 - 10:40  中場休息</p>
+				<p>10:40 - 12:00  互動設計概論(二)</p>
+				<p>12:00 - 13:00  午餐時間</p>
+				<p>13:00 - 14:50  互動設計應用</p>
+				<p>14:50 - 15:10  中場休息</p>
+				<p>15:10 - 17:00  設計實作</p>
+				<p>17:00 - 18:00  討論</p>
+			</div>
+						
+			<div class="day2-content">
+				<h4 class="date">2017 / 6 / 28 Wednesday</h4>
+				<h2 class="day">Day 2 : 行為與觀察</h2>
+				<p>08:30 - 09:00  學員報到</p>
+				<p>09:00 - 09:05  開場</p>
+				<p>09:05 - 09:30  開幕致詞</p>
+				<p>09:30 - 10:30  演講 I - </p> 
+				<p>梁容豪 (設計無接縫的人機互動)</p>
+				<p>10:30 - 10:50  中場休息</p>
+				<p>10:50 - 11:50  演講 II - 蔡志浩 (觀察與設計)</p>
+				<p>11:50 - 13:00  午餐時間</p>
+				<p>13:00 - 14:20  觀察準備與討論</p>
+				<p>14:20 - 16:20  場域觀察</p>
+				<p>16:20 - 17:00  整理發表與分享</p>
+				<p>17:00 - 18:00  Brainstorming - 主題發想</p>
+			</div>
+
+			<div class="day3-content">
+				<h4 class="date">2017 / 6 / 29 Thursday</h4>
+				<h2 class="day">Day 3 : 實作與媒材I</h2>
+				<p>08:30 - 09:00  學員報到</p>
+				<p>09:00 - 09:30  前情提要與分享</p>
+				<p>09:30 - 10:30  演講 III - 梁容輝 (盒子中的野獸）</p>
+				<p>10:30 - 10:50  中場休息</p>
+				<p>10:50 - 11:50  演講 IV -  張博智 (能量轉換的藝術)</p>
+				<p>11:50 - 13:00  午餐時間</p>
+				<p>13:00 - 14:00  數位工具介紹</p>
+				<p>14:00 - 16:30  問題發想與討論</p>
+				<p>16:30 - 18:00  主題討論與實作</p>
+			</div>
+
+			<div class="day4-content">
+				<h4 class="date">2017 / 6 / 30 Friday</h4>
+				<h2 class="day">Day 4 : 實作與媒材I</h2>
+				<p>08:30 - 09:00  學員報到</p>
+				<p>09:00 - 09:30  故事前情提要</p>
+				<p>09:30 - 10:30  演講 V - 陳雅博 (從使用者研究開始的UX)</p>
+				<p>10:30 - 10:50  中場休息</p>
+				<p>10:50 - 11:50  演講 VI - 唐玄輝 (用戶體驗服務的新世界)</p>
+				<p>11:50 - 13:00  午餐時間</p>
+				<p>13:00 - 14:00  各組準備中間提案</p>
+				<p>14:00 - 15:00  前四組提案</p>
+				<p>15:00 - 15:10  中場休息</p>
+				<p>15:10 - 16:10  後四組提案</p>
+				<p>16:10 - 16:20  中場休息</p>
+				<p>16:20 - 17:50  評審總評</p>
+				<p>17:50 - 18:30  綜合討論</p>
+			</div>
+
+			<div class="day5-content">
+				<h4 class="date">2017 / 7 / 1 Saturday</h4>
+				<h2 class="day">Day 5 : 實作與媒材II</h2>
+				<p>08:30 - 09:00  學員報到</p>
+				<p>09:00 - 09:30  故事前情提要</p>
+				<p>09:30 - 10:30  演講 VII - 陳文剛 (Usability Test)</p>
+				<p>10:30 - 10:50  中場休息</p>
+				<p>10:50 - 11:50  演講 VIII - 宋恆 (互動廣告創意)</p>
+				<p>11:50 - 13:00  午餐時間</p>
+				<p>13:00 - 15:00  設計實作</p>
+				<p>15:00 - 15:20  中場休息</p>
+				<p>15:20 - 17:00  設計實作</p>
+				<p>17:00 - 18:00  開放使用數位製造器材</p>	
+			</div>
+
+			<div class="day6-content">
+				<h4 class="date">2017 / 7 / 2 Sunday</h4>
+				<h2 class="day">Day 6 : 發表與展覽</h2>
+				<p>08:30 - 09:00  學員報到</p>
+				<p>09:00 - 10:30  各組實作時間</p>
+				<p>10:30 - 10:40  各組展場報到</p>
+				<p>10:40 - 12:00  佈置互動會場</p>
+				<p>12:00 - 13:00  午餐時間</p>
+				<p>13:00 - 13:10  互動會場開場</p>
+				<p>13:10 - 15:30  各組成果發表</p>
+				<p>15:30 - 17:30  互動成果展示</p>
+				<p>17:30 - 18:30  頒獎＆閉幕式</p>
+			</div>
+
+        </div>
+        <div class="speaker">
+        	<div class="day2-speaker">
+				<img src="image/openhci.jpeg" width="150px" height="150px">
+					<p>
+						2Name</br>
+						Text Text Text Text
+					</p>
+				<img src="image/openhci.jpeg" width="150px" height="150px">
+					<p>
+						2Name</br>
+						Text Text Text Text
+					</p>
+			</div>
+
+			<div class="day3-speaker">
+				<img src="image/openhci.jpeg" width="150px" height="150px">
+				<p>
+					1Name</br>
+					Text Text Text Text
+				</p>
+				<img src="image/openhci.jpeg" width="150px" height="150px">
+				<p>
+					1Name</br>
+					Text Text Text Text
+				</p>
+			</div>
+
+			<div class="day4-speaker">
+				<img src="image/openhci.jpeg" width="150px" height="150px">
+				<p>
+					1Name</br>
+					Text Text Text Text
+				</p>
+				<img src="image/openhci.jpeg" width="150px" height="150px">
+				<p>
+					1Name</br>
+					Text Text Text Text
+				</p>
+			</div>
+
+			<div class="day5-speaker">
+				<img src="image/openhci.jpeg" width="150px" height="150px">
+				<p>
+					1Name</br>
+					Text Text Text Text
+				</p>
+				<img src="image/openhci.jpeg" width="150px" height="150px">
+				<p>
+					1Name</br>
+					Text Text Text Text
+				</p>
+			</div>
+        </div>
+      </div>
+      
       </div>
     </section>
     <!-- section program over -->
 
     <!-- section registration begin -->
+	<section id="registration">
+      <!--logo-->
+	  <article class="logo">
+	    <div class="flip">
+		    <div class="flipper">
+			   <div class="sides front"></div>
+			   <div class="sides back"></div>
+	  	  </div>
+		  </div>
+		  <img src="" class="fade">
+		  <div class="back-btn"><div><a></a></div></div>
+	  </article>
+	  
+	  <!--bar-->
+	  <article class="bar">
+	  	<article class="bar-text bar-work">
+	  		<p>Did you want to join us? Follow the steps listed below!!!</p>
+	  	</article>
 
-    <section id="registration">
-      <div class="container">
-      </div>
-    </section>
+	  	<article class="bar-text bar-project-step01 animate-left" >
+	  		<p>活動與報名資訊</p>
+	  	</article>
+
+	  	<article class="bar-text bar-project-step02 animate-left" style="display: none;">
+	  		<p>線上問券</p>
+	  	</article>
+
+	  	<article class="bar-text bar-project-step03 animate-left" style="display: none;">
+	  		<p>ID-Card內容說明</p>
+	  	</article>
+
+	  	<article class="bar-text bar-project-step04 animate-left" style="display: none;">
+	  		<p>提交保證金</p>
+	  	</article>
+		
+		<article class="bar-text bar-project-step05 animate-left" style="display: none;">
+	  		<p>錄取名單公佈</p>
+	  	</article>
+
+	  	<div class="next"><div><a class="next-btn"></a></div></div>
+
+    	<div class="prev"><div><a class="prev-btn"></a></div></div>
+      </article>
+	   
+	   <!--project(step)-->
+      <section class="project project-step01 animate-left" data-flipper='image/step01.png' data-project-name='step01'>
+        <div class='images'>
+          <div class='contact-container'>
+			2016 年 7 月 5 日 (二) 至 2016 年 7 月 10 日 (日) ，共 6 天。<br/>
+			每日活動開始時間皆為 09:00，結束時間為 18:00 – 18:30 不等。 <br/>
+			 <br/>
+			 【 活動地點 】 <br/>
+			 國立臺灣科技大學<br/>
+			 <br/>
+			【 報名學員資格 】 <br/>
+			全國各大專院校在學學生，包含大學部三年級以上與碩/博生。<br/>
+			 <br/>
+			【 招生時程 】<br/>
+			線上報名時間：6/11(六) 00:00 至 6/23(四) 23:59 前<br/>
+			正取名單公佈：6/25(六) 網路公佈與信件通知，請自行上網查看<br/>
+			遞補備取通知：6/27(一) 個別電話通知
+		  </div>
+		  <div class="contact-container-01">
+			【 報名方式 】<br/>
+			<br/>
+			在報名期限內，備妥報名相關資料後，經報名連結線上報名。<br/>
+			公佈與通知正/備取之學員，請於指定時間內繳交1000元保證金，並回覆系統匯款資訊以確認成功匯款，經由查證後完成報名程序。<br/>
+			未依照指定報名期限內完成報名程序者，視為放棄報名資格，會依據備取順序遞補。正取者請於6/27(ㄧ) 17:00 前繳交保證金以完成報名程序。備取名單會於6/27(一) 後個別電話通知，備取者請於6/28(二) 17:00 前繳交保證金以完成報名程序。<br/>
+			（本活動透過報名資料作為錄取參考依據，挑選正/備取學員並於網站公佈與通知，與報名順序時間無關。）
+		  </div>
+        </div>
+      </section>
+
+      <section class="project project-step02 animate-left" data-flipper='image/step02.png' data-project-name='step02'>
+       	<div class='images'>
+       	  <div class="contact-container">
+       	    
+       	  	進入線上報名系統前需準備兩份報名資料，包含「線上問卷」與「IDCard」兩部分：<br/>
+			&nbsp;&nbsp;1.「線上問卷」為線上填寫作業，包含個人基本資料、教育背景兩部分。<br/>
+			&nbsp;&nbsp;2.「IDCard」為一份兩頁之投影片，包含“個人簡歷”與“問題發想”<br/>
+			PS.檔案請自行製作與編排，並存檔輸出PDF檔<br/>
+			可於“問題發想”內容中附加輔助說明之素材 (手繪、電繪圖片、照片或另附影片，格式不限)<br/>
+			PDF檔名標題請依格式填寫： [2016 IDCard] 校系_姓名 (範例：[2016 IDCard] 台科大工商業設計系_王曉明)<br/>
+			若有其他輔助說明之素材，請將檔案放至上傳空間(ex. dropbox)後將上傳連結附於報名系統內。<br/>
+			若檔名或檔案格式不符，造成漏檔，報名者請自行負責。
+			
+  		  </div>
+        </div>
+      </section>
+
+      <section class="project project-step03 animate-left" data-flipper='image/step03.png' data-project-name='step03'>
+       	<div class='images'>
+          123
+        </div>
+      </section>
+
+      <section class="project project-step04 animate-left" data-flipper='image/step04.png' data-project-name='step04'>
+       	<div class='images'></div>
+       	123
+      </section>
+
+      <section class="project project-step05 animate-left" data-flipper='image/step05.png' data-project-name='step05'>
+       	<div class='images'></div>
+       	123
+      </section>
+
+      <!-- work -->
+	  <section class="work animate-center" data-flipper='image/hello.png'>
+	  	<article class='sub'></article> 
+	  	<ul>
+	  	  <li>
+	  	  	<a>
+	  	  	  <img data-project-id="1" data-project-name="step01" src="image/step01.png" class="pic" style="position: absolute;"> 
+	  	  	</a>
+	  	  </li>
+
+	  	  <li>
+	  	  	<a>
+	  	  	  <img data-project-id="2" data-project-name="step02" src="image/step02.png" class="pic" style="position: absolute;"> 
+	  	  	</a>
+	  	  </li>
+
+	  	  <li>
+	  	  	<a>
+	  	  	  <img data-project-id="3" data-project-name="step03" src="image/step03.png" class="pic" style="position: absolute;"> 
+	  	  	</a>
+	  	  </li>
+
+	  	  <li>
+	  	  	<a>
+	  	  	  <img data-project-id="4" data-project-name="step04" src="image/step04.png" class="pic" style="position: absolute;"> 
+	  	  	</a>
+	  	  </li>
+
+	  	  <li>
+	  	  	<a>
+	  	  	  <img data-project-id="5" data-project-name="step05" src="image/step05.png" class="pic" style="position: absolute;"> 
+	  	  	</a>
+	  	  </li>
+		</ul>
+	  </section>
+	</section>
+    
 
     <!-- section rigistraion over -->
     
     <!-- section crew begin -->
-    <section id="crew">
+    <section id="crew" >
 
         <div class="container">
           <div class="row">
-            <div class="col-md-12 col-xs-12">
+            <div class="col-md-12 col-xs-12 crewlogo">
               <img src="image/logo_s.png">
               <br/>
-              <strong>8th</strong>student-organized workshop on human-computer interaction
+              <strong>8th</strong>student-organized workshop </br>on human-computer interaction
             </div>
           </div>
         </div>
@@ -169,11 +507,11 @@
           <div class="carousel-inner" role="list-box">
             <div class="item active">
               <div class="container">
-                <div claa="row">
+                <div class="row">
                   <div class="col-md-4 col-xs-6">
                     <h4>PROGRAM</h4>
                     <div class="member">
-                      <div class="name">陳品亘</div>
+                      <div class="name animated bounce infinite">陳品亘</div>
                       <div class="description">
                         國立政治大學資訊科學系<br/>
                         指導教授 余能豪老師
@@ -273,8 +611,10 @@
                         指導教授 詹力韋老師
                       </div>
                     </div>
+                  </div>
+                  <div class="col-md-4 col-xs-6">
                     <h4>VISUAL DESIGN</h4>
-                    <div class="member">
+                    <div class="member ">
                       <div class="name">張巧玗</div>
                       <div class="description">
                         國立臺灣科技大學工商業設計系商設組<br/>
@@ -338,7 +678,7 @@
 
                   <div class="col-md-4 col-xs-6">
                     <h4>TECH</h4>
-                    <div class="member">
+                    <div class="member ">
                       <div class="name">史佳欣</div>
                       <div class="description">
                         國立政治大學數位內容碩士學位學程<br/>
@@ -429,20 +769,25 @@
 
     <!-- section contact begin -->
 
-    <section id="contact">
-      <div class="container">
-      </div>
-    </section>
-
-    <!-- section contact over -->
-
+    
+	
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="jquery/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
-
+	
     <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/slideNav.js" ></script>
+    <script type="text/javascript" src="js/DA.js" ></script>
+    <script type="text/javascript" src="js/modernizr-custom.js"></script>
+    <script src="js/programPage.js"></script>
+    
+   
+    
+    
   </body>
 </html>
