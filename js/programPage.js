@@ -5,6 +5,7 @@
 		const downArrow = document.querySelector("#program .left-side-container .btn-down");
 		const textTimeLine = new TimelineMax();
 		const dateTimeLine = new TimelineMax();
+		const speakerTimeLine = new TimelineMax();
 
 		const activityDay = 6;
 		let currentDay = 1;
