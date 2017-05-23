@@ -19,10 +19,20 @@
 			animationComplete = true;
 		}
 
+		const updateContainerHeight = function(){
+			let windowHeight = $(window).height();
+			let containerHeight = ($(`#program .day${currentDay}-content`).offset().top - $(`#program`).offset().top) + $(`#program .day${currentDay}-content`).height();
+			
+			windowHeight < containerHeight && $(`#program`).css("min-height", `${containerHeight}px`);
+		}
+
 		const upArrowHandler = function(e){
 			currentDay --;
 			if(currentDay > 0 && animationComplete) {
 				console.log(currentDay);
+
+				
+				updateContainerHeight();
 				diableArrowHandler();
 
 				// Update Content .
@@ -73,6 +83,8 @@
 			currentDay ++;
 			if(currentDay <= activityDay && animationComplete){
 				console.log(currentDay);
+
+				updateContainerHeight();
 				diableArrowHandler();
 
 				// Update Content .
