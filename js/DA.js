@@ -1,3 +1,5 @@
+(()=> {
+
 var DA = {};
 
 DA.avaliablePaths  = [];
@@ -8,77 +10,27 @@ DA.fadeFunction = function() {};
 DA.animating = false;
 
 
-
-
-
 DA.init = function() {
     $(window).load(function(){
 		$('.work').delay(0).fadeIn(300);
-        //$('#qLbar').delay(800).fadeOut(500, 'easeInOutExpo');
-		//$('.loader').delay(1000).fadeOut(500, 'easeInOutExpo', function(){$('nav').topZIndex();});
-        
 	    setTimeout(function(){
             window.scrollTo(0, 1);
         }, 0);
     });
-
-    //$('#registration section').each(function(){
-        //DA.avaliablePaths.push($(this).attr("class").replace('project ', ''));
-    //});
 
     $('.work ul li').hover(function() {
         $(this).find('img .pic').fadeIn(1000);
     }, function(){
         $(this).find('img .pic').fadeOut(1000);
     });
-
-
-
-    //$('.tip').hover(function(){
-    //    $('.tooltip', this).fadeIn($.browser.msie ? 0 : 200);
-    //},function(){
-    //    $('.tooltip', this).fadeOut($.browser.msie ? 0 : 200);
-    //});
-
-    
-    // $.address.change(DA.handleAddress);
-
-    //$('.contact .sub a').hover( function(){
-    //    $('.contact .sub a .over').fadeIn(150);
-    //},  function(){
-    //    $('.contact .sub a .over').fadeOut(150);
-    //});
-
-
-    // fix js animations init
-    // $('#registration section').css('visibility', 'hidden');
-    //$.address.init(function(){
-    //    $('#registration section').css('visibility', 'hidden');
-    //});
     
     DA.slideFunction = Modernizr.csstransitions ? DA.slideTo : DA.slideToJs;
     DA.fadeFunction = Modernizr.cssanimations && !$.browser.msie && !$.browser.opera ? DA.fadeTo : DA.fadeToJs;
-
-    //$("label").inFieldLabels({fadeOpacity:0, fadeDuration:250});
     
     $(window).resize(DA.updateBG);
     
-    //DA.clearErrors();
-    
-    //$('.register-btn').click(function(){
-    //    DA.sendMessage();
-    //    return false;
-    //});
-
-    //$('a.ok').click(function(){
-    //    DA.clearErrors(true);        
-    //    return false;
-    //});
 };
 
-// DA.validAddress = function(address) {
-//   return $.inArray(address, DA.avaliablePaths) !== -1;
-//};
 
 DA.handleAddress = function(event) {
     if (DA.animating) return false;
@@ -95,7 +47,6 @@ DA.handleAddress = function(event) {
     DA.slideFunction(address, event.pathNames[1]);
     DA.toggleNavArrows(address, event.pathNames[1]);
     if (event.pathNames[0] === 'project'){
-        // XXX .
         DA.loadProject(event.pathNames[1]);
     }
     DA.updateBG();
@@ -166,20 +117,6 @@ DA.toggleNavArrows = function(page, project) {
         $('.prev').show().animate({'margin-left':'65px'}, 800, 'easeInOutQuart');
         $('.next').show().animate({'margin-left':'-65px'}, 800, 'easeInOutQuart');
         $('.back-btn').show().animate({'margin-left':'0px'}, 800, 'easeInOutQuart');
-        /*
-        var prev = $('.' + page).prev().attr("data-project-name");
-        var next = $('.' + page).next().attr("data-project-name");
-        if (prev) {
-            $(".prev-btn").removeClass('last-btn').attr("href", "#/project/" + prev);
-        } else {
-            $(".prev-btn").addClass('last-btn').attr("href", "javascript:;");
-        }
-        if (next) {
-            $(".next-btn").removeClass('last-btn').attr("href", "#/project/" + next);
-        } else {
-            $(".next-btn").addClass('last-btn').attr("href", "javascript:;");
-        }
-        */
     } else {        
         $('.prev').animate({'margin-left':'0px'}, 800, function() {$(this).hide();});
         $('.next').animate({'margin-left':'0px'}, 800, function() {$(this).hide();});
@@ -187,7 +124,7 @@ DA.toggleNavArrows = function(page, project) {
     }
 };
 
-//understand not yet
+
 DA.updateBG = function() {
     var max = -1;
     $('#registration section').each(function(){
@@ -195,9 +132,6 @@ DA.updateBG = function() {
         if (h > max) max = h;
     });
     var winh = $(window).height() - 370;
-    //console.log(max + ' ' + winh);
-    //
-    
     
     let page = DA.address.split("-");
     page = page[0];
@@ -212,28 +146,6 @@ DA.updateBG = function() {
     $('.blur-bg').css('height', max + 30 + 'px');
     
 };
-
-/*
-DA.loadProject = function(project) {
-    $.get('project_details.php', {project: project}, function(response){
-        try {
-            var imgs = '';
-            $.each(response.images, function(k, v){
-                imgs += '<div class="image"><img src="' + v + '" /></div>\n';
-            });        
-            imgs += '<p class="back-top"><a href="#"></a> </p>';
-            $('.project-' + project + ' .images').html(imgs);
-            $('.back-top').click(function(){
-                $('html, body').animate({scrollTop: 0}, 1000, "easeInOutExpo");
-                return false;
-            });
-            setTimeout(DA.updateBG, 100);
-        } catch (e) { };
-    }, 'json');
-    
-};
-*/
-
 
 DA.fadeToJs = function(page) {
     var $img = $('img.fade');
@@ -263,8 +175,6 @@ DA.fadeTo = function (page) {
         $back.css("background-image", "url(" + $('.' + page).attr("data-flipper") + ")").addClass('current');
     }
 };
-
-
 
 const backBtn = document.querySelector("#registration .back-btn");
 const preBtn = document.querySelector("#registration .prev");
@@ -315,11 +225,8 @@ const onAddressChange = function(address){
     noPreStep = prev ? false: true;
     noNextStep = next ? false: true;
 
-    // project-XXX .
     let pathNames = address.split("-");
-    // project or work .
     DA.updateNav(pathNames[0]);
-    // project-XXX .
     DA.slideFunction(address, pathNames[1]);
     DA.toggleNavArrows(address, pathNames[1]);
     DA.updateBG();
@@ -334,59 +241,6 @@ stepBtns.forEach((elem)=>{
     elem.addEventListener("click", stepBtnHandler);
 });
 
-/*
-//可能用不到
-DA.clearErrors = function(form) {
-    $('.note').hide();
-    if (form) {
-        if (Modernizr.cssanimations && !$.browser.msie && !$.browser.opera) {
-            $('.form-flipper').css({transform:'rotateY(0deg)'});
-        } else {
-            $('.form-front').fadeIn(500);
-        }
-        $('#register-form input, #register-form textarea').each(function(){
-            $(this).val('').blur();
-        });
-    }
-};
-*/
-//可能用不到
-/*
-DA.sendMessage = function() {
-    if ($('.sending').length) {
-        return false;
-    }
-    DA.clearErrors();
-    var data = {};
-    $.each($('form').serializeArray(), function(key, value){
-        data[value.name] = value.value;
-    });
-    $('.register-btn').addClass('sending');
-    $.post('contact_us.php', {data: data}, function(response){
-        console.log(response);
-        if(response.success) {
-            if (Modernizr.cssanimations && !$.browser.msie && !$.browser.opera) {
-                $('.form-flipper').css({transform:'rotateY(180deg)'});
-            } else {
-                $('.form-front').fadeOut(500);
-                $('.form-fade').fadeIn(300);
-            }
-            setTimeout(function(){
-                $('.register-btn').removeClass('sending');
-            }, 500);
-            return;
-        }
-        $('.register-btn').removeClass('sending');
-        if (response.errors) {
-            $.each(response.errors, function(key, value) {
-                $("span[for=" + key + "]").show();
-                $("span[for=" + key + "] .err-msg").html(value);
-            });
-            return;
-        }
-        alert('Unknown error has occurred. Please try again.');
-    }, 'json');
-};
-*/
-
 $(DA.init);
+
+})();
