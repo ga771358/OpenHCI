@@ -796,19 +796,20 @@ p {
 /* Navigation */
 nav.side-nav {
   position: fixed;
+  left: 1%;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   text-align: left;
-  z-index: 100; 
+  z-index: 1000; 
 }
 nav.side-nav a, a:hover, a:active, a:visited, a:focus {
   display: block;
   line-height: 25px;
   position: relative;
   padding-right: 20px;
-  color: #000000;
+  color: #ffffff;
   text-decoration: none; 
 }
 nav.side-nav a:hover .nav-label {
@@ -816,7 +817,7 @@ nav.side-nav a:hover .nav-label {
   -ms-transform: translateX(30%);
   transform: translateX(30%);
   opacity: 1;
-  color: #000000;
+  color: #ffffff;
   visibility: visible;
 }
 nav.side-nav .nav-pic {

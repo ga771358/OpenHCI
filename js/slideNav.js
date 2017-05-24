@@ -29,7 +29,7 @@
 				}
 			})
 				.setClassToggle(`nav .nav-home`,`active`)
-				.addIndicators({name: `home`})
+				// .addIndicators({name: `home`})
 				.addTo(controller)
 			);
 		scences.push(new ScrollMagic.Scene({
@@ -40,7 +40,7 @@
 				}
 			})
 				.setClassToggle(`nav .nav-openhci2017`,`active`)
-				.addIndicators({name: `openhci2017`})
+				// .addIndicators({name: `openhci2017`})
 				.addTo(controller)
 			);
 		scences.push(new ScrollMagic.Scene({
@@ -51,7 +51,7 @@
 				}
 			})
 				.setClassToggle(`nav .nav-intro_goals`,`active`)
-				.addIndicators({name: `intro_goals`})
+				// .addIndicators({name: `intro_goals`})
 				.addTo(controller)
 			);
 		scences.push(new ScrollMagic.Scene({
@@ -62,7 +62,7 @@
 				}
 			})
 				.setClassToggle(`nav .nav-program`,`active`)
-				.addIndicators({name: `program`})
+				// .addIndicators({name: `program`})
 				.addTo(controller)
 			);
 		scences.push(new ScrollMagic.Scene({
@@ -73,7 +73,7 @@
 				}
 			})
 				.setClassToggle(`nav .nav-registration`,`active`)
-				.addIndicators({name: `registration`})
+				// .addIndicators({name: `registration`})
 				.addTo(controller)
 			);
 		scences.push(new ScrollMagic.Scene({
@@ -84,7 +84,7 @@
 				}
 			})
 				.setClassToggle(`nav .nav-crew`,`active`)
-				.addIndicators({name: `crew`})
+				// .addIndicators({name: `crew`})
 				.addTo(controller)
 			);
 		scences.push(new ScrollMagic.Scene({
@@ -95,21 +95,25 @@
 				}
 			})
 				.setClassToggle(`nav .nav-contact`,`active`)
-				.addIndicators({name: `contact`})
+				// .addIndicators({name: `contact`})
 				.addTo(controller)
 			);
 
-		// Color change .
-		scences.push(new ScrollMagic.Scene({
-				triggerElement: 'section.red-bg', // trigger CSS animation when header is in the middle of the viewport
+		// Color Change due to bg color .
+		const redBGSection = ["#intro_goals", "#program", "#registration"];
+
+		redBGSection.forEach((elem)=>{
+			scences.push(new ScrollMagic.Scene({
+				triggerElement: `${elem}`, // trigger CSS animation when header is in the middle of the viewport
 	        	duration: function(){
 					/* End when scroll after that slide */
-					return document.querySelector(`section.red-bg`).offsetHeight;
+					return document.querySelector(`${elem}`).offsetHeight -5 ;
 				}
 	    	})
 	    	.setClassToggle('nav.side-nav li', 'active-blue') // set class to active slide
 	    	.addTo(controller)
-		);
+			);
+		});
 
 
 		let navClickHandler = function(e){
