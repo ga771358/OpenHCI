@@ -704,13 +704,18 @@ p {
 }
 
 
+/* Taichi */
+#taichi{
+  height: 100vh;
+  background-color: #2a4399;
+}
 
 
 
 
 
 
-
+/* crew */
 
 #crew{
   height:100vh;
@@ -722,21 +727,22 @@ p {
     height:auto;
   }
 }
-#crew .crewlogo{
-  margin-top: 5%;
+#crew .crew_container{
+  border: 1px solid white;
+  padding-left: 100px;
 }
+
 #crew #crewMember h4{
-  font-weight: 700;
-  font-size:20px;
-  margin: 30px 0 20px 0;
-  font-weight: bolder;
-  -webkit-text-stroke:2px black;
-  color: transparent;
-  font-family:"Montserrat";
+  border:1px solid white;
+  text-align: center;
+  width:70%;
+  padding:8px;
+  color:#ec675a;
+  font-weight: 400;
 }
 #crew .member .name{
-  font-family: "Work Sans";
-  font-weight:500;
+  color: #ec675a;
+  font-weight:100;
   margin: 5px 0 3px 0;
 }
 #crew .member .name:hover{
@@ -744,17 +750,23 @@ p {
     transition: color 0.3s ease;
 }
 #crew .member .description{
-  font-size: 13px;
-    font-weight: 300;
-    line-height: 1.3em;
+    color: white;
+    line-height: 1.5em;
+    font-weight: 100;
+    font-size: 12px;
 }
 
 
 /* Carousel indicator */
 .crew_slider{
   margin-top: 10%;
+  display: inline-block;
+  width: 10%;
+  border:1px solid white;
 }
-
+.carousel-indicators{
+  border:1px solid white;
+}
 @media only screen and (max-width: 768px){
   #crew .carousel-inner {
     height:909px;
@@ -801,6 +813,17 @@ p {
 #crew .carousel-indicators li:hover{
   opacity: 0.6;
 }
+
+
+
+
+
+/* contact */
+#contact{
+  height:100vh;
+  background-color: #2a4399;
+}
+
 
 
 /* Navigation */
