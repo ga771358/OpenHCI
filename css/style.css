@@ -5,21 +5,30 @@
 
 
 body{
-  font-size:16px;
+  font-size:14px;
+  font-weight: 100;
+  line-height: 1.2em;
+  letter-spacing: 1px;
 }
 
 p {
     font-size: 1.2em;
     line-height: 1.45em;
+
 }
 
 
-.home-img{
-  max-width:49%;
-  display:block;
-  margin:auto;
-}
 
+.navbar {
+  display: none;
+}
+@media only screen and (max-width:768px){
+  .navbar{
+    width:100%;
+    display:inline-block;
+  }
+}
+/*
 .glyphicon.glyphicon-download{
   font-size: 200%;
   margin-left:49.5%;
@@ -30,26 +39,46 @@ p {
     margin-left:49%;
   }
 }
+*/
 
 #home{
   height: 705px;
-  border: 1px solid red;
-  padding:60px 0px 0px 0px ;
-
+  padding:0px 0px 0px 0px ;
+  background-color: #2a4399;
 }
 @media only screen and (max-width: 768px) {
   #home{
-    padding:0px;
-    
-    height: initial;
   }
 }
+#home .home-background{
+  top:5%;
+  width:70%;
+  height: 185%;
+  right:32%; 
+  position: absolute;
+  float:left;
+}
+#home .title{
+  margin-top:21.5%;
+  margin-right:15%;
+  left:60%;
+  float:right;
+  width:19%;
+}
+#home .subtitle{
+  color:#ec675a;
+  padding-left: 20px;
+  margin-top: -5px;
+}
+
+/*openhci2017*/
 
 #openhci2017{
   width:100%;
   border: 2px solid red;
   padding:80px 0px 0px 0px ;
   height:100vh;
+  background-color: #2a4399;
 }
 
 #openhci2017 .half-container{
@@ -109,6 +138,7 @@ p {
   padding:100px 0px 0px 0px ;
   height:auto !important;
   min-height: 705px;
+  background-color: #ec675a;
 }
 
 #intro_goals .half-container{
@@ -163,6 +193,7 @@ p {
   min-height: 100vh;
   position: relative;
   border: 1px solid green;
+  background-color: #ec675a;
 }
 
 #program .title {
@@ -335,20 +366,18 @@ p {
 
 
 
-
-
-
-
-
-
-
-
+/* Registration */
 #registration{
   border: 1px solid blue;
-  height:100vh;
+  height:705px;
   position:relative;
+  background-color: #ec675a;
 }
-/* Registration */
+@media screen and (max-width: 768px) {
+  #registration{
+
+  }
+}
 
 #registration section {
     width: 100%;
@@ -374,9 +403,9 @@ p {
 }
 
 #registration .logo {
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: 230px;
+  height: ;
   text-align: center;
   z-index: 0;
   margin: 0;
@@ -389,11 +418,11 @@ p {
   left: 50%;
   margin-left: -90px;
   perspective: 800;
-  margin-top: 25px;
+  margin-top: 35px;
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  background-image: url("../image/hello.png")
+  
 }
 
 #registration .logo .flip .flipper {
@@ -435,6 +464,12 @@ p {
   display: none;
   transition: background-color 0.1s ease-in-out;
 }
+
+@media only screen and (max-width: 768px) {
+  #registration .logo .back-btn{
+    padding:3px;
+  }
+}
 #registration .logo .back-btn a {
   display: block;
   width: 50px;
@@ -443,6 +478,12 @@ p {
   border-radius: 50%;
   background: url("http://www.digitalatelier.ro/css/../images/x.png") center #05b9dc no-repeat;
   transition: background-color 0.1s ease-in-out;
+}
+@media only screen and (max-width: 768px) {
+  #registration .logo .back-btn a{
+    width:35px;
+    height: 35px;
+  }
 }
 
 #registration .bar .next a:hover {
@@ -458,9 +499,9 @@ p {
 #registration .bar {
   position: absolute;
   width: 100%;
-  height: 30px;
-  top: 280px;
+  height: 0px;
   z-index: 100;
+  top:260px;
   text-align: center;
 }
 #registration .bar-text {
@@ -481,6 +522,15 @@ p {
   padding-bottom: 3px;
   border-radius: 50px;
 }
+@media only screen and (max-width: 768px) {
+  #registration .bar-text p {
+    font-size: 15px;
+    padding: 5px 5px;
+    padding-bottom: 9px;
+
+  }
+}
+
 
 #registration .bar .next,.prev {
   display: none;
@@ -495,6 +545,12 @@ p {
   border-bottom-left-radius: 50px;
   border-top-left-radius: 50px;
 }
+@media only screen and (max-width: 768px) {
+  #registration .bar .next {
+    top:1.5px;
+    left:104.5%;
+  }
+}
 #registration .bar .next a {
   display: block;
   width: 50px;
@@ -504,10 +560,23 @@ p {
   border-radius: 50%;
   transition: background-color 0.1s ease-in-out;
 }
+@media only screen and (max-width: 768px) {
+  #registration .bar .next a{
+    width:35px;
+    height: 35px;
+    margin:2px;
+  }
+}
+
 #registration .bar .prev {
   left:-65px;
   border-bottom-right-radius: 50px;
   border-top-right-radius: 50px;
+}
+@media only screen and (max-width: 768px) {
+  #registration .bar .prev {
+    top:1.5px;
+  }
 }
 #registration .bar .prev a {
   display: block;
@@ -518,17 +587,25 @@ p {
   border-radius: 50%;
   transition: background-color 0.1s ease-in-out;
 }
+@media only screen and (max-width: 768px) {
+  #registration .bar .prev a{
+    width:35px;
+    height: 35px;
+    margin:2px;
+  }
+}
 
 
 #registration .work ul {
-  margin: 0 auto;
-  margin-left: 100px;
+  padding-left: 0px;
+  text-align: center;
   display: block;
   overflow: hidden;
   list-style-type:none;
 }
+
 #registration .work ul li {
-  float: left;
+  display: inline-block;
   width: 170px;
   height: 170px;
   margin: 15px;
@@ -540,6 +617,12 @@ p {
   border:1px solid blue;
 }
 
+@media only screen and (max-width: 768px){
+  #registration .work ul li{
+    width:150px;
+    height:150px;
+  }
+}
 #registration .pic{
   display: inline;
   z-index: 1;
@@ -558,30 +641,25 @@ p {
   top:400px;
   
 }
-.project-step01{
-  display: none;
-  position: absolute;
-  top:350px;
+
+@media only screen and (max-width: 768px){
+  #registration .work{
+    top:320px;
+  }
 }
-.project-step02{
+.project-step01,.project-step02,.project-step03,.project-step04,.project-step05{
   display: none;
   position: absolute;
   top:350px;
+
 }
-.project-step03{
-  display: none;
-  position: absolute;
-  top:350px;
-}
-.project-step04{
-  display: none;
-  position: absolute;
-  top:350px;
-}
-.project-step05{
-  display: none;
-  position: absolute;
-  top:350px;
+
+@media only screen and (max-width: 768px) {
+
+  .project-step01,.project-step02,.project-step03,.project-step04,.project-step05{
+    position: absolute;
+    top:310px;
+  }
 }
 
 #registration  .project-step01 .contact-container{
@@ -593,8 +671,8 @@ p {
   #registration  .project-step01 .contact-container{
   float:none;
   width:100%;
-  
-}
+  padding:20px 30px;
+  }
 }
 #registration  .project-step01 .contact-container-01{
   float:left;
@@ -605,19 +683,29 @@ p {
   #registration .project-step01 .contact-container-01{
   float:none;
   width:100%;
-  padding:20px 0px;
+  padding:20px 30px;
   
 }
 }
 #registration .project-step02 .contact-container{
   float:left;
   width:100%;
-  padding:20px 0px;
+  padding:20px 20px;
 }
 
 
+
+
+
+
+
+
+
+
 #crew{
-  height:705px;
+  height:100vh;
+  border:1px solid red;
+  background-color: #2a4399;
 }
 @media only screen and (max-width: 768px) {
   #crew{
@@ -642,18 +730,13 @@ p {
   margin: 5px 0 3px 0;
 }
 #crew .member .name:hover{
-
     color: #1E90FF;
     transition: color 0.3s ease;
-    
 }
 #crew .member .description{
   font-size: 13px;
     font-weight: 300;
     line-height: 1.3em;
-}
-#crew .VD{
-  float:left;
 }
 
 
@@ -679,7 +762,7 @@ p {
 }
 @media only screen and (max-width: 768px){
   #crew .carousel-indicators li{
-    text-indent: initial;
+      text-indent: initial;
       width: 20%;
       height: 6px;
       margin: 0 2% 0 0;
