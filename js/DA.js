@@ -165,7 +165,7 @@ DA.toggleNavArrows = function(page, project) {
     if (project) {
         $('.prev').show().animate({'margin-left':'65px'}, 800, 'easeInOutQuart');
         $('.next').show().animate({'margin-left':'-65px'}, 800, 'easeInOutQuart');
-        $('.back-btn').show().animate({'margin-left':'0px'}, 800, 'easeInOutQuart');
+        $('#registration .back-btn').show().animate({'margin-left':'0px'}, 800, 'easeInOutQuart');
         /*
         var prev = $('.' + page).prev().attr("data-project-name");
         var next = $('.' + page).next().attr("data-project-name");
@@ -183,7 +183,7 @@ DA.toggleNavArrows = function(page, project) {
     } else {        
         $('.prev').animate({'margin-left':'0px'}, 800, function() {$(this).hide();});
         $('.next').animate({'margin-left':'0px'}, 800, function() {$(this).hide();});
-        $('.back-btn').animate({'margin-left':'-65px'}, 800, function() {$(this).hide();});
+        $('#registration .back-btn').animate({'margin-left':'-65px'}, 800, function() {$(this).hide();});
     }
 };
 
