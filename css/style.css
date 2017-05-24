@@ -12,12 +12,15 @@ body{
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 12px;
     line-height: 1.45em;
-
+    color:white;
 }
-
-
+@media only screen and (max-width:768px){
+  p{
+    font-size: 14px;
+  }
+}
 
 .navbar {
   display: none;
@@ -52,7 +55,7 @@ p {
 }
 #home .home-background{
   top:5%;
-  width:70%;
+  width:68%;
   height: 185%;
   right:32%; 
   position: absolute;
@@ -70,41 +73,46 @@ p {
   padding-left: 20px;
   margin-top: -5px;
 }
-
 /*openhci2017*/
 
 #openhci2017{
   width:100%;
-  border: 2px solid red;
   padding:80px 0px 0px 0px ;
   height:100vh;
   background-color: #2a4399;
 }
-
-#openhci2017 .half-container{
-  display: inline-block;
-  width:45%;
-  padding:30px;
-  margin-bottom: 2%;
-  vertical-align: top;
-}
-
-#openhci2017 .hcilogo{
-  padding-left:8%;
-}
-
-#openhci2017 .half-container .subtitle{
-  font-size: 13px;
-  margin-top: 50px;
-}
 #openhci2017 .content-container{
-  display: inline-block;
-  width:30%;
-  padding:40px 40px;
-  margin-left:30px;
-  margin-top: 10px;
-  vertical-align: top;
-  
+  float:right;
+  width:25%;
+  margin-right:10%;  
+}
+#openhci2017 .title{
+  width:35%;
+  float:left;
+  clear:auto;
+}
+#openhci2017 .half-container{
+  float:left;
+  padding:0 9%;
+  margin-top: 4%;
+}
+#openhci2017 .half-container p{
+  font-size:12px;
+  font-weight: 100;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  color:#ec675a;
+}
+#openhci2017 .half-container-eng{
+  float:left;
+  color:white;
+  padding:0 9%;
+}
+#openhci2017 .half-container-eng p{
+  font-size:10px;
+  font-weight: 100;
+  line-height: 1.2em;
+  letter-spacing: 1px;
 }
 @media only screen and (max-width: 768px) {
   #openhci2017{
@@ -123,58 +131,54 @@ p {
 }
 @media only screen and (max-width: 768px) {
   #openhci2017 .content-container{
-    float:none;
-    width:100%;
-    margin:auto;
-    padding:20px 30px;
+    
   }
 }
 
-
+/*  intro_goals */
 
 #intro_goals{
-  height: 705px;
-  border: 2px solid red;
   padding:100px 0px 0px 0px ;
-  height:auto !important;
+  height:auto ;
   min-height: 705px;
   background-color: #ec675a;
 }
-
-#intro_goals .half-container{
+#intro_goals .frame{
   display: inline-block;
-  width:75%;
-  padding:30px;
-  margin-bottom: 1%;
+  width:40%;
   vertical-align: top;
+  margin-left: 13%;
+  margin-right: 2%;
 }
-
-#intro_goals .hcilogo{
-  padding-left:8%;
+#intro_goals .title{
+  display: inline-block;
+  width:13%;
 }
-
+#intro_goals .intro-background{
+  display: inline-block;
+  width:44%;
+  margin-top: -8%;
+}
 #intro_goals .content-container{
   display: inline-block;
-  width:30%;
-  padding:40px 40px;
-  margin-left:30px;
-  margin-top: 10px;
+  width:100%;
   vertical-align: top;
+  font-color:white;
 }
-
+#intro_goals .content-container h3{
+  color: #2a4399;
+  font-size: 20px;
+}
 @media only screen and (max-width: 768px) {
   #intro_goals{
     padding:0px;
-    border:1px solid blue;
     height:auto;
   }
 }
 @media only screen and (max-width: 768px) {
-  #intro_goals .half-container{
-    float:none;
+  #intro_goals .frame{
     width:100%;
-    margin:auto;
-    padding:20px 30px;
+    margin:0 auto;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -182,10 +186,16 @@ p {
     float:none;
     width:100%;
     margin:auto;
-    padding:20px 30px;
+    padding:0px 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #intro_goals .intro-background{
+    display: none;
   }
 }
 
+/*program*/
 
 #program{
   border: 1px solid red;
