@@ -99,6 +99,18 @@
 				.addTo(controller)
 			);
 
+		// Color change .
+		scences.push(new ScrollMagic.Scene({
+				triggerElement: 'section.red-bg', // trigger CSS animation when header is in the middle of the viewport
+	        	duration: function(){
+					/* End when scroll after that slide */
+					return document.querySelector(`section.red-bg`).offsetHeight;
+				}
+	    	})
+	    	.setClassToggle('nav.side-nav li', 'active-blue') // set class to active slide
+	    	.addTo(controller)
+		);
+
 
 		let navClickHandler = function(e){
 			if (this.hash !== "") {
