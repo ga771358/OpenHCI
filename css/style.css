@@ -309,10 +309,10 @@ p {
 
 /* Registration */
 #registration{
-  border: 1px solid blue;
   height:705px;
   position:relative;
   background-color: #ec675a;
+  border: 1px solid #ec675a;
 }
 @media screen and (max-width: 768px) {
   #registration{
@@ -635,12 +635,24 @@ p {
 }
 
 
+
 /* Taichi */
 #taichi{
   height: 100vh;
-  background-color: #2a4399;
+  background-color: #ec675a;
 }
-
+#taichi .content-container{
+  float:right;
+  width:50%;
+  padding-top: 10%;
+  padding-right:3%;
+}
+#taichi .content-container h4{
+  color: #2a4399;
+}
+#taichi .content-container p{
+  font-size: 16px;
+}
 
 
 
