@@ -8,9 +8,110 @@
 		const dateTimeLine = new TimelineMax();
 		const titleTimeLine = new TimelineMax();
 
-		const pages = 2;
-		let currentPage = 1;
+		const dayCount = 6;
+
+		$(window).resize(()=>{
+			initialize();
+			currentPage = 0 ;
+			// console.log(pages);
+			// console.log(blockNum);
+			// console.log(currentPage);
+			// console.log(groups);
+		})
+
+
+		// 
+		let pages = 2;
+		let blockNum = 3;
+		let currentPage = 0;
+		let groups = [];
 		let animationComplete = true;
+
+		const updateCurrentPage = function(){
+
+		}
+
+		const updateActiveClass = function(){
+
+			for(let i = 1 ; i <= dayCount ; i ++ ){
+				$(`#program .day${i}`).removeClass("active");
+				$(`#program .day${i}`).removeClass("pre-active");
+			}
+
+			groups[0].forEach((elem)=>{
+				elem.addClass("active");
+			});
+		}
+		
+		const updateBlockDOM = function(){
+			$(`#program .day-block1`).empty();
+			$(`#program .day-block2`).empty();
+			$(`#program .day-block3`).empty();
+
+			for(let i = 0 ; i < pages ; i ++){
+				for(let j = 0 ; j < blockNum ; j ++){
+					$(`#program .day-block${j+1}`).append(groups[i][j]);
+				}
+			}
+
+		}
+		
+		const updatePageElem = function(){
+			// init groups .
+			groups = [];
+			
+
+			for(let i = 0 ; i < pages ; i ++){
+				let group = [];
+				for(let j = 0 ; j < blockNum ; j ++){
+					group.push($(`#program .day${i*blockNum + j + 1}`));
+				}
+				groups.push(group);
+			}
+
+			
+		}
+
+		const updateBlockAndPageNum = function(){
+			let windowWidth = $(window).width();
+
+			if(windowWidth > 1024){
+				pages = 2;
+				blockNum = 3;
+
+				$(`#program .day-block1`).css({"display": "initial"});
+				$(`#program .day-block2`).css({"display": "initial"});
+				$(`#program .day-block3`).css({"display": "initial"});
+
+			} else if( 684 <= windowWidth && windowWidth <= 1024) {
+				pages = 3;
+				blockNum = 2;
+
+				$(`#program .day-block1`).css({"display": "initial"});
+				$(`#program .day-block2`).css({"display": "initial"});
+				$(`#program .day-block3`).css({"display": "none"});
+			} else {
+				pages = 6;
+				blockNum = 1;
+
+				$(`#program .day-block1`).css({"display": "initial"});
+				$(`#program .day-block2`).css({"display": "none"});
+				$(`#program .day-block3`).css({"display": "none"});
+			}
+
+			// init style in .html side (priority higher than .css side).
+			for(let i = 1 ; i <= 6 ; i ++ ) {
+				$(`.day${i}`).children().css({"opacity": "", "transform": ""});
+			}
+			
+		}
+
+		const initialize = function(){
+			updateBlockAndPageNum();
+			updatePageElem();
+			updateBlockDOM();
+			updateActiveClass();
+		}
 
 		const diableBtnHandler = function(){
 			animationComplete = false;
@@ -31,9 +132,12 @@
 			console.log("Back");
 			
 			currentPage --;
+
+
 			
-			if(currentPage > 0 && animationComplete) {
+			if(currentPage > -1 && animationComplete) {
 				console.log(currentPage);
+
 
 				
 				// updateContainerHeight();
@@ -41,16 +145,41 @@
 
 				// Update Content .
 				
+				/*
+				for(let i = 1 ; i <= 6 ; i ++){
+					$(`.day${i}.pre-active`).removeClass( "pre-active" );
+					$(`.day${i}.active`).addClass( "pre-active" );
+				}
+				*/
+			
+				for(let i = 1 ; i <= 6 ; i ++){
+					$(`.day${i}`).removeClass( "active pre-active" );
+				}
+
+				for(let i = 0 ; i < blockNum ; i ++){
+					groups[currentPage][i].addClass("active");
+					groups[currentPage+1][i].addClass("pre-active");
+				}
+
+				/*
+				for(let i = 1 ; i <= 6 ; i ++){
+					$(`.day${i}`).toggleClass( "active" );
+					
+				}
+				*/
+				
 				let currentDateImgs = [];
 				let currentTitles = [];
 				let currentIcons = [];
 				let currentScheduleTexts = [];
 
-				for(let i = 0 ; i < 3 ; i ++){
-					currentDateImgs.push(document.querySelector(`#program .day-block${i+1} .page${currentPage} .date`));
-					currentTitles.push(document.querySelector(`#program .day-block${i+1} .page${currentPage} .title`));
-					currentIcons.push(document.querySelector(`#program .day-block${i+1} .page${currentPage} .icon`));
-					currentScheduleTexts.push(document.querySelectorAll(`#program .day-block${i+1} .page${currentPage} p`));
+				// i : current block #
+				for(let i = 0 ; i < blockNum ; i ++){
+					// page : current Group 
+					currentDateImgs.push(document.querySelector(`#program .day-block${i+1} .active .date`));
+					currentTitles.push(document.querySelector(`#program .day-block${i+1} .active .title`));
+					currentIcons.push(document.querySelector(`#program .day-block${i+1} .active .icon`));
+					currentScheduleTexts.push(document.querySelectorAll(`#program .day-block${i+1} .active p`));
 				}
 
 				let preDateImgs = [];
@@ -58,14 +187,14 @@
 				let preIcons = [];
 				let preScheduleTexts = [];
 
-				for(let i = 0 ; i < 3 ; i ++){
-					preDateImgs.push(document.querySelector(`#program .day-block${i+1} .page${currentPage+1} .date`));
-					preTitles.push(document.querySelector(`#program .day-block${i+1} .page${currentPage+1} .title`));
-					preIcons.push(document.querySelector(`#program .day-block${i+1} .page${currentPage+1} .icon`));
-					preScheduleTexts.push(document.querySelectorAll(`#program .day-block${i+1} .page${currentPage+1} p`));
+				for(let i = 0 ; i < blockNum ; i ++){
+					preDateImgs.push(document.querySelector(`#program .day-block${i+1} .pre-active .date`));
+					preTitles.push(document.querySelector(`#program .day-block${i+1} .pre-active .title`));
+					preIcons.push(document.querySelector(`#program .day-block${i+1} .pre-active .icon`));
+					preScheduleTexts.push(document.querySelectorAll(`#program .day-block${i+1} .pre-active p`));
 				}
 
-				for(let i = 0 ; i < 3 ; i ++){
+				for(let i = 0 ; i < blockNum ; i ++){
 
 					let dateImgsTimeLine = new TimelineMax();
 					let titlesTimeLine = new TimelineMax();
@@ -97,12 +226,37 @@
 			
 			currentPage ++;
 			
-			if(currentPage <= pages && animationComplete){
+			if(currentPage < pages && animationComplete){
 				console.log(currentPage);
 
 				
 				// updateContainerHeight();
 				diableBtnHandler();
+
+				/*
+				for(let i = 1 ; i <= 6 ; i ++){
+					$(`.day${i}.pre-active`).removeClass( "pre-active" );
+					$(`.day${i}.active`).addClass( "pre-active" );
+				}
+				*/
+			
+
+				for(let i = 1 ; i <= 6 ; i ++){
+					$(`.day${i}`).removeClass( "active pre-active" );
+				}
+
+				for(let i = 0 ; i < blockNum ; i ++){
+					groups[currentPage][i].addClass("active");
+					groups[currentPage-1][i].addClass("pre-active");
+				}
+
+
+				
+				/*
+				for(let i = 1 ; i <= 6 ; i ++){
+					$(`.day${i}`).toggleClass( "active" );
+				}
+				*/
 
 				// Update Content .
 				
@@ -112,11 +266,11 @@
 				let currentIcons = [];
 				let currentScheduleTexts = [];
 
-				for(let i = 0 ; i < 3 ; i ++){
-					currentDateImgs.push(document.querySelector(`#program .day-block${i+1} .page${currentPage} .date`));
-					currentTitles.push(document.querySelector(`#program .day-block${i+1} .page${currentPage} .title`));
-					currentIcons.push(document.querySelector(`#program .day-block${i+1} .page${currentPage} .icon`));
-					currentScheduleTexts.push(document.querySelectorAll(`#program .day-block${i+1} .page${currentPage} p`));
+				for(let i = 0 ; i < blockNum ; i ++){
+					currentDateImgs.push(document.querySelector(`#program .day-block${i+1} .active .date`));
+					currentTitles.push(document.querySelector(`#program .day-block${i+1} .active .title`));
+					currentIcons.push(document.querySelector(`#program .day-block${i+1} .active .icon`));
+					currentScheduleTexts.push(document.querySelectorAll(`#program .day-block${i+1} .active p`));
 				}
 
 				let preDateImgs = [];
@@ -124,14 +278,14 @@
 				let preIcons = [];
 				let preScheduleTexts = [];
 
-				for(let i = 0 ; i < 3 ; i ++){
-					preDateImgs.push(document.querySelector(`#program .day-block${i+1} .page${currentPage-1} .date`));
-					preTitles.push(document.querySelector(`#program .day-block${i+1} .page${currentPage-1} .title`));
-					preIcons.push(document.querySelector(`#program .day-block${i+1} .page${currentPage-1} .icon`));
-					preScheduleTexts.push(document.querySelectorAll(`#program .day-block${i+1} .page${currentPage-1} p`));
+				for(let i = 0 ; i < blockNum ; i ++){
+					preDateImgs.push(document.querySelector(`#program .day-block${i+1} .pre-active .date`));
+					preTitles.push(document.querySelector(`#program .day-block${i+1} .pre-active .title`));
+					preIcons.push(document.querySelector(`#program .day-block${i+1} .pre-active .icon`));
+					preScheduleTexts.push(document.querySelectorAll(`#program .day-block${i+1} .pre-active p`));
 				}
 
-				for(let i = 0 ; i < 3 ; i ++){
+				for(let i = 0 ; i < blockNum ; i ++){
 
 					let dateImgsTimeLine = new TimelineMax();
 					let titlesTimeLine = new TimelineMax();
@@ -161,6 +315,8 @@
 
 		backBtn.addEventListener("click",backBtnHandler);
 		nextBtn.addEventListener("click",nextBtnHandler);
+
+		initialize();
 
 	});
 })();

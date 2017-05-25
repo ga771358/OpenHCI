@@ -199,7 +199,7 @@ p {
 
 #program{
   height: auto;
-  min-height: 100vh;
+  min-height: 705px;
   position: relative;
   display:flex;
   background-color: #ec675a;
@@ -213,7 +213,14 @@ p {
 
 #program .left-side-bar .back-btn,.next-btn{
  width: 20%;
- margin:0 auto;
+ margin-left: 30px;
+}
+
+@media screen and (max-width: 768px){
+  #program .left-side-bar .back-btn,.next-btn {
+      width: 40%;
+      margin:0 auto;
+  }
 }
 
 #program .left-side-bar .next-btn,.back-btn .text{
@@ -247,7 +254,7 @@ p {
   color: #ffffff;
   font-size: 13px;
   font-weight: lighter;
-  line-height:13px;
+  line-height:12px;
 } 
 
 #program .right-container .day-block1,.day-block2,.day-block3{
@@ -259,38 +266,41 @@ p {
   position: absolute;
 }
 
-#program .right-container .page1 p{
-  opacity: 1;
-}
-
-#program .right-container .page1 .date{
-  opacity: 1;
-}
-
-#program .right-container .page1 .title{
-  opacity: 1;
-}
-
-#program .right-container .page1 .icon{
-  opacity: 1;
-}
-
-#program .right-container .page2 p{
+#program .right-container  p{
   opacity: 0;
 }
 
-#program .right-container .page2 .date{
+#program .right-container  .date{
   opacity: 0;
 }
 
-#program .right-container .page2 .title{
+#program .right-container  .title{
   opacity: 0;
 }
 
-
-#program .right-container .page2 .icon{
+#program .right-container  .icon{
   opacity: 0;
 }
+
+#program .right-container .active p{
+  opacity: 1;
+}
+
+#program .right-container .active .date{
+  opacity: 1;
+}
+
+#program .right-container .active .title{
+  opacity: 1;
+}
+
+#program .right-container .active .icon{
+  opacity: 1;
+}
+
+
+
+
 
 
 
@@ -641,7 +651,6 @@ p {
 #crew{
   height:auto;
   min-height:100vh;
-  border:1px solid red;
   background-color: #2a4399;
   position: relative;
   padding-top: 100px;
@@ -673,12 +682,13 @@ p {
 
 #crew .crew-slide-bar .back-btn , #crew .crew-slide-bar .next-btn{
  width: 20%;
- margin:0 auto;
+ margin-left: 30px;
 }
 @media only screen and (max-width: 768px){
   #crew .crew-slide-bar .back-btn,#crew .crew-slide-bar .next-btn{
      -ms-transform: rotate(90deg); /* IE 9 */
     -webkit-transform: rotate(90deg); /* Safari */
+    margin: 0 auto;
     transform: rotate(90deg);
   }
 }
@@ -719,6 +729,11 @@ p {
   color:#ec675a;
   font-weight: 400;
   margin: 20px 0;
+}
+@media only screen and (max-width: 768px){
+  #crew .crew-member .member-container h4{
+    width:95%;
+  }
 }
 #crew .crew-member .member-container .member .name{
   color: #ec675a;
