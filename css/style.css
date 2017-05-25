@@ -636,105 +636,77 @@ p {
 
 
 
-/* crew */
+/*crew*/
 
 #crew{
   height:100vh;
   border:1px solid red;
   background-color: #2a4399;
+  position: relative;
+  padding-top: 100px;
 }
 @media only screen and (max-width: 768px) {
   #crew{
     height:auto;
   }
 }
-#crew .crew_container{
-  border: 1px solid white;
-  padding-left: 100px;
+#crew .crew-slide-bar{
+  display: inline-block;
+  width:15%;
+  vertical-align: top;
 }
 
-#crew #crewMember h4{
+#crew .crew-slide-bar .back-btn , .next-btn{
+ width: 20%;
+ margin:0 auto;
+}
+
+#crew .crew-slide-bar .next-btn,.back-btn .text{
+  text-align: center;
+  font-size: 12px;
+  color:#ec675a;
+}
+#crew .crew-member{
+  display: inline-block;
+  width:79%;
+  border:1px solid red;
+  position: relative;
+  overflow: hidden;
+  height:500px;
+
+}
+#crew .crew-member .member-page{
+  
+}
+#crew .crew-member .member-container{
+  display: inline-block;
+  width:33%;
+  vertical-align: top;
+  
+}
+#crew .crew-member .member-container h4{
   border:1px solid white;
   text-align: center;
   width:70%;
   padding:8px;
   color:#ec675a;
   font-weight: 400;
+  margin: 20px 0;
 }
-#crew .member .name{
+#crew .crew-member .member-container .member .name{
   color: #ec675a;
   font-weight:100;
-  margin: 5px 0 3px 0;
+  margin: 18px 0 3px 0;
 }
-#crew .member .name:hover{
-    color: #1E90FF;
-    transition: color 0.3s ease;
-}
-#crew .member .description{
+#crew .crew-member .member-container .member .description{
     color: white;
     line-height: 1.5em;
     font-weight: 100;
     font-size: 12px;
 }
-
-
-/* Carousel indicator */
-.crew_slider{
-  margin-top: 10%;
-  display: inline-block;
-  width: 10%;
-  border:1px solid white;
+#crew .crew-member .member-page02{
+      display: none;
 }
-.carousel-indicators{
-  border:1px solid white;
-}
-@media only screen and (max-width: 768px){
-  #crew .carousel-inner {
-    height:909px;
-  }
-}
-#crew .carousel-indicators li {
-    text-indent: initial;
-    width: 30%;
-    height: 6px;
-    margin: 0 2% 0 0;
-    border-radius: 0;
-    background:#696969;
-    border: none;
-    opacity: 0.3;
-}
-@media only screen and (max-width: 768px){
-  #crew .carousel-indicators li{
-      text-indent: initial;
-      width: 20%;
-      height: 6px;
-      margin: 0 2% 0 0;
-      border-radius: 0;
-      background:#696969;
-      border: none;
-      opacity: 0.3;
-  }
-}
-#crew .carousel-indicators li:last-child {
-    margin: 0;
-}
-#crew .carousel-indicators li.active {
-    opacity: 0.8;
-    position: relative;
-}
-#crew .carousel-indicators li.active:after {
-    content: "";
-    width: 30%;
-    height: 6px;
-    top: 0;
-    left: 0;
-    position: absolute;
-    background: #1E90FF;
-}
-#crew .carousel-indicators li:hover{
-  opacity: 0.6;
-}
-
 
 
 
