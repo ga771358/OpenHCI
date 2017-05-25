@@ -639,7 +639,8 @@ p {
 /*crew*/
 
 #crew{
-  height:100vh;
+  height:auto;
+  min-height:100vh;
   border:1px solid red;
   background-color: #2a4399;
   position: relative;
@@ -648,41 +649,48 @@ p {
 @media only screen and (max-width: 768px) {
   #crew{
     height:auto;
+    padding-top:50px;
   }
 }
 #crew .crew-slide-bar{
   display: inline-block;
   width:15%;
   vertical-align: top;
+  border:1px solid white;
 }
-
-#crew .crew-slide-bar .back-btn , .next-btn{
+@media only screen and (max-width:768px) {
+  #crew .crew-slide-bar{
+    width:100%;
+  }
+}
+#crew .crew-slide-bar .back-btn , #crew .crew-slide-bar .next-btn{
  width: 20%;
  margin:0 auto;
+ border:1px solid red;
 }
 
-#crew .crew-slide-bar .next-btn,.back-btn .text{
+#crew .crew-slide-bar .next-btn,#crew .back-btn .text{
   text-align: center;
   font-size: 12px;
   color:#ec675a;
 }
 #crew .crew-member{
   display: inline-block;
-  width:79%;
+  width:84%;
   border:1px solid red;
   position: relative;
-  overflow: hidden;
-  height:500px;
 
-}
-#crew .crew-member .member-page{
-  
 }
 #crew .crew-member .member-container{
   display: inline-block;
   width:33%;
   vertical-align: top;
-  
+}
+@media only screen and (max-width: 768px){
+  #crew .crew-member .member-container{
+    width:49%;
+    padding:0px 20px;
+  }
 }
 #crew .crew-member .member-container h4{
   border:1px solid white;
@@ -704,9 +712,7 @@ p {
     font-weight: 100;
     font-size: 12px;
 }
-#crew .crew-member .member-page02{
-      display: none;
-}
+
 
 
 
