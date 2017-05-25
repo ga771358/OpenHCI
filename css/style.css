@@ -669,11 +669,13 @@ p {
  border:1px solid red;
 }
 
+
 #crew .crew-slide-bar .next-btn,#crew .back-btn .text{
   text-align: center;
   font-size: 12px;
   color:#ec675a;
 }
+
 #crew .crew-member{
   display: inline-block;
   width:84%;
@@ -728,7 +730,7 @@ p {
 /* Navigation */
 nav.side-nav {
   position: fixed;
-  left: 1%;
+  left: 3%;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -744,24 +746,12 @@ nav.side-nav a, a:hover, a:active, a:visited, a:focus {
   color: #ffffff;
   text-decoration: none; 
 }
-nav.side-nav a:hover .nav-label {
-  -webkit-transform: translateX(30%);
-  -ms-transform: translateX(30%);
-  transform: translateX(30%);
-  opacity: 1;
-  color: #ffffff;
-  visibility: visible;
-}
 nav.side-nav .nav-pic {
   display: block;
   width: 25px;
   height: 25px;
   position: absolute;
   top: 50%;
-  /*
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 100%;
-  */
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -818,6 +808,15 @@ nav.side-nav li.active-blue .nav-pic.red-pic{
 
 nav.side-nav li.active-blue .nav-label{
   color:#2a4399;
+}
+
+nav.side-nav a:hover .nav-label {
+  -webkit-transform: translateX(30%);
+  -ms-transform: translateX(30%);
+  transform: translateX(30%);
+  opacity: 1;
+  color: #ffffff;
+  visibility: visible;
 }
 
 
