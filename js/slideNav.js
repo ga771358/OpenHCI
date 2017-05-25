@@ -77,6 +77,17 @@
 				.addTo(controller)
 			);
 		scences.push(new ScrollMagic.Scene({
+				triggerElement: `#taichi`,
+				duration: function(){
+					// End when scroll after that slide 
+					return document.querySelector(`#taichi`).offsetHeight;
+				}
+			})
+				.setClassToggle(`nav .nav-taichi`,`active`)
+				// .addIndicators({name: `registration`})
+				.addTo(controller)
+			);
+		scences.push(new ScrollMagic.Scene({
 				triggerElement: `#crew`,
 				duration: function(){
 					// End when scroll after that slide 
@@ -100,7 +111,7 @@
 			);
 
 		// Color Change due to bg color .
-		const redBGSection = ["#intro_goals", "#program", "#registration"];
+		const redBGSection = ["#intro_goals", "#program", "#registration", "#taichi"];
 
 		redBGSection.forEach((elem)=>{
 			scences.push(new ScrollMagic.Scene({
