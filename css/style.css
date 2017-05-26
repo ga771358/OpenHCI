@@ -5,7 +5,7 @@
 
 
 body{
-  font-size:14px;
+  font-size:12px;
   font-weight: 100;
   line-height: 1.2em;
   letter-spacing: 1px;
@@ -13,12 +13,13 @@ body{
 
 p {
     font-size: 12px;
-    line-height: 1.45em;
+    line-height: 1.70em;
     color:white;
+
 }
 @media only screen and (max-width:768px){
   p{
-    font-size: 14px;
+    font-size: 16px !important;
   }
 }
 
@@ -31,18 +32,6 @@ p {
     display:inline-block;
   }
 }
-/*
-.glyphicon.glyphicon-download{
-  font-size: 200%;
-  margin-left:49.5%;
-}
-@media only screen and (max-width:768px){
-  .glyphicon.glyphicon-download{
-    font-size: 100%;
-    margin-left:49%;
-  }
-}
-*/
 
 #home{
   height: auto;
@@ -55,9 +44,9 @@ p {
   }
 }
 #home .home-background{
-  top:5%;
+  top:6%;
   width:68%;
-  height: 185%;
+  height: 178%;
   right:32%; 
   position: absolute;
   float:left;
@@ -71,15 +60,16 @@ p {
 }
 #home .subtitle{
   color:#ec675a;
-  padding-left: 20px;
-  margin-top: -5px;
+  padding-left: 10%;
+  margin-top: -3%;
 }
 /*openhci2017*/
 
 #openhci2017{
   width:100%;
   padding:80px 0px 0px 0px ;
-  height:100vh;
+  height:auto;
+  min-height: 100vh;
   background-color: #2a4399;
 }
 #openhci2017 .content-container{
@@ -103,6 +93,8 @@ p {
   line-height: 1.5em;
   letter-spacing: 1px;
   color:#ec675a;
+  text-align: justify;　/*　Firefox到此即可對齊　*/
+  text-justify: auto;　/*　IE需再加上此行　*/
 }
 #openhci2017 .half-container-eng{
   float:left;
@@ -110,10 +102,11 @@ p {
   padding:0 9%;
 }
 #openhci2017 .half-container-eng p{
-  font-size:10px;
+  font-size:12px;
   font-weight: 100;
   line-height: 1.2em;
-  letter-spacing: 1px;
+  text-align: justify;　/*　Firefox到此即可對齊　*/
+  text-justify: auto;　/*　IE需再加上此行　*/
 }
 @media only screen and (max-width: 768px) {
   #openhci2017{
@@ -139,7 +132,7 @@ p {
 /*  intro_goals */
 
 #intro_goals{
-  padding:100px 0px 0px 0px ;
+  padding:3% 0px 0px 0px ;
   height:auto ;
   min-height: 100vh;
   background-color: #ec675a;
@@ -150,15 +143,17 @@ p {
   vertical-align: top;
   margin-left: 13%;
   margin-right: 2%;
+  
 }
 #intro_goals .title{
   display: inline-block;
-  width:13%;
+  width:20%;
+  margin-left: -4%;
 }
 #intro_goals .intro-background{
   display: inline-block;
   width:44%;
-  margin-top: -8%;
+  margin-top: -1%;
 }
 #intro_goals .content-container{
   display: inline-block;
@@ -169,6 +164,7 @@ p {
 #intro_goals .content-container h3{
   color: #2a4399;
   font-size: 20px;
+
 }
 @media only screen and (max-width: 768px) {
   #intro_goals{
@@ -214,7 +210,7 @@ p {
 
 #program .left-side-bar .back-btn,.next-btn{
  width: 20%;
- margin-left: 30px;
+ margin-left: 14%;
 }
 
 @media screen and (max-width: 768px){
@@ -234,20 +230,26 @@ p {
 #program .right-container{
   flex:1;
   display:flex;
-  /*border: 1px solid blue;*/
+  margin-left:-4.4%;
 }
-
+@media only screen and (max-width: 768px){
+  #program .right-container{
+    flex:0.8;
+  }
+}
 #program .right-container .date{
-  margin-top: 50px;
-  margin-left: 10px;
+  margin-top: 17.5%;
+  margin-left: -2.5%;
+
 }
 
 #program .right-container .title{
   color: #2a4399;
+  margin-top:-1%;
 }
 
 #program .right-container .title span{
-  font-size: 15px;
+  font-size: 14px;
   color: #ffffff;
 }
 
@@ -255,18 +257,24 @@ p {
   color: #ffffff;
   font-size: 13px;
   font-weight: lighter;
-  line-height:12px;
+  line-height:140%;
 } 
+
 
 #program .right-container .day-block1,.day-block2,.day-block3{
   flex:1;
-  /*border: 1px solid green;*/
 }
 
 #program .right-container .day1,.day2,.day3,.day4,.day5,.day6{
   position: absolute;
+  width:27.7%;
+  height: 100%;
 }
-
+@media only screen and (max-width: 768px){
+  #program .right-container .day1,.day2,.day3,.day4,.day5,.day6{
+    width: 80%;
+  }
+}
 #program .right-container  p{
   opacity: 0;
 }
@@ -281,6 +289,8 @@ p {
 
 #program .right-container  .icon{
   opacity: 0;
+  margin-left:-2%; 
+  margin-bottom:2%;
 }
 
 #program .right-container .active p{
@@ -785,7 +795,7 @@ nav.side-nav {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   text-align: left;
-  z-index: 1000; 
+  z-index: 5; 
 }
 nav.side-nav a, a:hover, a:active, a:visited, a:focus {
   display: block;
@@ -793,7 +803,8 @@ nav.side-nav a, a:hover, a:active, a:visited, a:focus {
   position: relative;
   padding-right: 20px;
   color: #ffffff;
-  text-decoration: none; 
+  text-decoration: none;
+  font-weight: 500; 
 }
 nav.side-nav .nav-pic {
   display: block;

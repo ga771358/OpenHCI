@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 61 66" style="enable-background:new 0 0 61 66;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#2A4399;}
-	.st1{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
-	.st2{font-family:'Helvetica-Bold';}
-	.st3{font-size:21.7549px;}
-	.st4{fill:none;}
-	.st5{font-size:44px;}
-</style>
-<text transform="matrix(0.9405 -1.106099e-02 1.177000e-02 0.9999 0.8369 18.326)" class="st0 st2 st3"> July</text>
-<g>
-	<rect x="5.1" y="22.8" class="st4" width="50" height="43.1"/>
-	<text transform="matrix(0.9495 0 0 1 5.1185 60.6006)" class="st1 st2 st5">02</text>
-</g>
-</svg>
+<svg id="圖層_1" data-name="圖層 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 70"><defs><style>.cls-1{font-size:22px;fill:#2a4399;}.cls-1,.cls-2{font-family:Helvetica-Bold, Helvetica;font-weight:700;}.cls-2{font-size:47.33px;fill:none;stroke:#fff;stroke-miterlimit:10;}</style></defs><title>日期</title><text class="cls-1" transform="matrix(0.94, 0, 0, 1, 6.38, 21.38)"><tspan xml:space="preserve"> July</tspan></text><text class="cls-2" transform="translate(10.31 66.55) rotate(0.41) scale(0.95 1)">02</text></svg>
