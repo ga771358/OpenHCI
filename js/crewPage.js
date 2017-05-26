@@ -1,64 +1,4 @@
-/*
-$(document).ready(function(){
-	var speed = 1000;
-	var autoswitch = true;
-	var autoswitch_speed = 6000;
 
-	$('.member-page').first().addClass('active');
-	$('.member-page').hide();
-
-	$('.crew-member .active').show();
-
-	$('#crew .next-btn').on('click', function(){
-		$('.crew-member .active').removeClass('active').addClass('oldActive');
-		if ($('.crew-member .oldActive').is(':last-child')){
-				$('.member-page').first().addClass('active');
-			}
-			else{
-				$('.crew-member .oldActive').next().addClass('active');
-			}
-		$('.crew-member .oldActive').removeClass('oldActive');
-		//$('.member-page').fadeOut(speed);
-		setTimeout(function() { $('.crew-member .active').fadeOut(speed) },speed)
-		setTimeout(function() { $('.crew-member .active').fadeIn(speed) },speed)
-		
-	});
-
-	$('#crew .back-btn').on('click', function(){
-		$('.crew-member .active').removeClass('active').addClass('oldActive');
-		if ($('.crew-member .oldActive').is(':first-child')){
-				$('.member-page').last().addClass('active');
-			}
-			else{
-				$('.crew-member .oldActive').next().addClass('active');
-			}
-		$('.crew-member .oldActive').prev().addClass('active');
-		$('.crew-member .oldActive').removeClass('oldActive');
-		$('.member-page').fadeOut(speed);
-		$('.crew-member .active').fadeIn(speed);
-		setTimeout(function() { $('.crew-member .active').fadeIn(speed) },speed)
-	});
-
-	if (autoswitch == true){
-		setInterval(function(){
-			$('.crew-member .active').removeClass('active').addClass('oldActive');
-			if ($('.crew-member .oldActive').is(':last-child')){
-				$('.member-page').first().addClass('active');
-			}
-			else{
-				$('.crew-member .oldActive').next().addClass('active');
-			}
-			
-			$('.crew-member .oldActive').removeClass('oldActive');
-			$('.member-page').fadeOut(speed);
-			$('.crew-member .active').fadeIn(speed);
-		},autoswitch_speed);
-	}
-
-})
-*/
-//var sliderWidth = $('#crew .member-page').width();
-//var sliderHeight = $('#crew .member-page').height();
 var sliderWidth = ($(window).width()) *0.84;
 var sliderHeight = 500;
 $(document).ready(function(){
@@ -95,6 +35,7 @@ $(document).ready(function(){
 
     });
 });
+
 if($(window).width()<768){
 	sliderWidth = $(window).width();
 	sliderHeight = 1230;
@@ -104,7 +45,7 @@ $(" #crew .slider").diyslider({
     height: sliderHeight  + 'px', // height of the slider
     display: 1, // number of slides you want it to display at once
     loop: false // disable looping on slides
-}); // this is all you need!
+}); 
 
 // use buttons to change slide
 $("#crew .back-btn").bind("click", function(){
