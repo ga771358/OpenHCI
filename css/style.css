@@ -323,341 +323,161 @@ p {
 
 
 
-
-
-
-
-
-
-
 /* Registration */
 #registration{
+  position: relative;
+  min-height:100vh;
+  width: 100vw;
   height:auto;
-  min-height: 100vh;
-  position:relative;
+  display:flex;
   background-color: #ec675a;
-  border: 1px solid red;
-}
-@media screen and (max-width: 768px) {
-  #registration{
-
-  }
+  /*border: 3px solid red;*/
 }
 
-#registration section {
-    width: 100%;
-    text-align: center;
-    padding-bottom: 35px;
-    min-height: 330px;
-    z-index: 10;
+#registration .left-side-container{
+  flex:0.15;
+  /*border: 1px solid red;*/
+}
+
+#registration .right-side-container{
+  flex:1;
+  /*border: 1px solid green;*/
+}
+
+
+#registration .right-side-container .right-top{
+  position:relative;
+  min-height:20vh;
+  /*border: 2px solid green;*/
+}
+
+#registration .right-side-container .right-top .current-step{
+  position:absolute;
+  text-align:center;
+  bottom:0;
+  left:40%;
+  min-height:10vh;
+  /*border: 1px solid red;*/
+}
+
+#registration .right-side-container .right-btm{
+  min-height:80vh;
+  /*border: 2px solid yellow;*/
+}
+
+#registration .right-side-container .right-btm .cart-container{
+  position:absolute;
+  width:70vw;
+  min-height:40vh;
+  margin-top:8%;
+  /*border: 1px solid black;*/
+}
+
+#registration .right-side-container .right-btm .cart-container .cart{
+  position:absolute;
+  min-height:40vh;
+  width:18%;
+  border: 2px solid #fff;
+}
+
+#registration .right-side-container .right-btm .cart-container .cart .img-text img{
+  text-align: center;
+  
+}
+
+#registration .right-side-container .right-btm .cart-container .cart .img-text .text{
+  color: #fff;
+  font-weight: lighter;
+  font-size: 20%;
+  text-align: center;
+}
+
+#registration .right-side-container .right-btm .cart-container .cart .hover-sign{
+  position:absolute;
+  background-color: #2a4399;
+  bottom: 10%;
+  left: 10%;
+  width: 80%;
+  height: 1%;
+  opacity: 0;
+}
+
+#registration .right-side-container .right-btm .cart-container .cart1{
+  left:0%;
+}
+#registration .right-side-container .right-btm .cart-container .cart2{
+  left:23%;
+}
+#registration .right-side-container .right-btm .cart-container .cart3{
+  left:46%;
+}
+#registration .right-side-container .right-btm .cart-container .cart4{
+  left:69%;
+}
+#registration .right-side-container .right-btm .cart-container .cart5{
+  left:92%;
+}
+
+#registration .right-side-container .right-btm .cart-container .cart5{
+  background-color: #2a4399;
+  border:0px;
+}
+
+#registration .right-side-container .right-btm .btn-container{
+  position: absolute;
+  opacity: 0;
+  top:40%;
+  right: 3%;
+  width: 5%;
+  z-index: 1;
+  /*border: 1px solid black;*/
+}
+
+#registration .right-side-container .right-btm .btn-container .text{
+  color:#2a4399;
+  text-align: center;
+  font-size: 50%;
+  font-weight:bold;
+}
+
+
+#registration .right-side-container .right-btm .image{
+  position: absolute;
+  bottom:3%;
+  right: 2%;
+  /*border: 1px solid black;*/
 }
 
 #registration .animate-right {
-    transition: all .8s cubic-bezier(0.650,0.000,0.175,1.000);
-    transform: translateX(100%);
-}
-
-#registration .animate-left {
-    transition: all .8s cubic-bezier(0.650,0.000,0.175,1.000);
-    transform: translateX(-100%);
+  transition: all .5s cubic-bezier(0.650,0.000,0.175,1.000);
+  transform: translateX(200%);
 }
 
 #registration .animate-center {
-    transition: all .8s cubic-bezier(0.650,0.000,0.175,1.000);
+    transition: all .5s cubic-bezier(0.650,0.000,0.175,1.000);
     transform: translateX(0%);
 }
 
-#registration .logo {
-  position: relative;
-  width: 100%;
-  height: ;
-  text-align: center;
-  z-index: 0;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-#registration .logo .flip {
-  position: relative;
-  top:5%;
-  left: 50%;
-  margin-left: -90px;
-  perspective: 800;
-  margin-top: 35px;
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  
-}
-
-#registration .logo .flip .flipper {
-  transition: 0.7s ease-in-out;
-  transform-style: preserve-3d;
-  transform-origin: center;
-  
-}
-
-#registration .logo .flip .flipper .front,.back {
-  width: 180px;
-  height: 180px;
-  backface-visibility: hidden;
+#registration .right-side-container .right-btm .step01,.step02,.step03,.step04,.step05{
   position: absolute;
-  top: 0;
-  left: 0;
-  background-repeat: repeat;
-  border-radius: 50%;
-  
-}
-
-#registration .logo .flip .flipper .front {
-  z-index: 2;
-  
-}
-#registration .logo .flip .flipper .back {
-  transform: rotateY(180deg);
-}
-
-#registration .logo .back-btn {
-  border-bottom-right-radius: 50px;
-  border-top-right-radius: 50px;
-  position: absolute;
-  margin-left: -65px;
-  background: #2a2e3a;
-  padding: 5px;
-  left: 0%;
-  top: 53%;
   display: none;
-  transition: background-color 0.1s ease-in-out;
+  left: 30%;
+  min-width:60vw;
+  min-height:80vh;
+  
 }
 
-@media only screen and (max-width: 768px) {
-  #registration .logo .back-btn{
-    padding:3px;
-  }
-}
-#registration .logo .back-btn a {
-  display: block;
-  width: 50px;
-  height: 50px;
-  margin: 3px;
-  border-radius: 50%;
-  background: url("http://www.digitalatelier.ro/css/../images/x.png") center #05b9dc no-repeat;
-  transition: background-color 0.1s ease-in-out;
-}
-@media only screen and (max-width: 768px) {
-  #registration .logo .back-btn a{
-    width:35px;
-    height: 35px;
-  }
-}
-
-#registration .bar .next a:hover {
-  background-color: #f04e37;
-}
-#registration .bar .prev a:hover{
-  background-color: #f04e37;
-}
-#registration .logo .back-btn a:hover{
-  background-color: #f04e37;
-}
-
-#registration .bar {
+#registration .right-side-container .right-btm .content{
   position: absolute;
-  width: 100%;
-  height: 0px;
-  z-index: 100;
-  top:260px;
-  text-align: center;
-}
-#registration .bar-text {
-  position: absolute;
-  width: 100%;
-  font-weight: 700;
-}
-#registration .bar-text p {
-  font-style: italic;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 2.2;
   display: inline-block;
-  word-spacing: 2px;
-  background: #333745;
-  color: white;
-  padding: 0 18px;
-  padding-bottom: 3px;
-  border-radius: 50px;
-}
-@media only screen and (max-width: 768px) {
-  #registration .bar-text p {
-    font-size: 15px;
-    padding: 5px 5px;
-    padding-bottom: 9px;
-
-  }
+  height: 100%;
 }
 
-
-#registration .bar .next,.prev {
-  display: none;
-  top: -10px;
-  background: #333745;
-  position: absolute;
-  z-index: 99;
-  padding: 5px;
+#registration .right-side-container .right-btm .content p{
+  color:#fff;
+  font-size: 14px;
+  line-height: 1.6em;
 }
-#registration .bar .next {
-  left: 100%;
-  border-bottom-left-radius: 50px;
-  border-top-left-radius: 50px;
-}
-@media only screen and (max-width: 768px) {
-  #registration .bar .next {
-    top:1.5px;
-    left:104.5%;
-  }
-}
-#registration .bar .next a {
-  display: block;
-  width: 50px;
-  height: 50px;
-  margin: 3px;
-  background: url("http://www.digitalatelier.ro/css/../images/ar-l.png") center no-repeat #05b9dc;
-  border-radius: 50%;
-  transition: background-color 0.1s ease-in-out;
-}
-@media only screen and (max-width: 768px) {
-  #registration .bar .next a{
-    width:35px;
-    height: 35px;
-    margin:2px;
-  }
-}
-
-#registration .bar .prev {
-  left:-65px;
-  border-bottom-right-radius: 50px;
-  border-top-right-radius: 50px;
-}
-@media only screen and (max-width: 768px) {
-  #registration .bar .prev {
-    top:1.5px;
-  }
-}
-#registration .bar .prev a {
-  display: block;
-  width: 50px;
-  height: 50px;
-  margin: 3px;
-  background: url("http://www.digitalatelier.ro/css/../images/ar-r.png") center no-repeat #05b9dc;
-  border-radius: 50%;
-  transition: background-color 0.1s ease-in-out;
-}
-@media only screen and (max-width: 768px) {
-  #registration .bar .prev a{
-    width:35px;
-    height: 35px;
-    margin:2px;
-  }
-}
-
-
-#registration .work ul {
-  padding-left: 0px;
-  text-align: center;
-  display: block;
-  overflow: hidden;
-  list-style-type:none;
-}
-
-#registration .work ul li {
-  display: inline-block;
-  width: 170px;
-  height: 170px;
-  margin: 15px;
-  margin-top: 0;
-  margin-bottom: 26px;
-  border-radius: 50%;
-  cursor: pointer;
-  position: relative;
-  border:1px solid blue;
-}
-
-@media only screen and (max-width: 768px){
-  #registration .work ul li{
-    width:150px;
-    height:150px;
-  }
-}
-#registration .pic{
-  display: inline;
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-#registration .work ul li a img{
-  max-height: 100%;
-  max-width: 100%;
-}
-
-#registration .work{
-  position: absolute;
-  top:400px;
-  
-}
-
-@media only screen and (max-width: 768px){
-  #registration .work{
-    top:320px;
-  }
-}
-.project-step01,.project-step02,.project-step03,.project-step04,.project-step05{
-  display: none;
-  position: absolute;
-  top:350px;
-
-}
-
-@media only screen and (max-width: 768px) {
-
-  .project-step01,.project-step02,.project-step03,.project-step04,.project-step05{
-    position: absolute;
-    top:310px;
-  }
-}
-
-#registration  .project-step01 .contact-container{
-  float:left;
-  width:50%;
-  padding:20px 0px;
-}
-@media only screen and (max-width: 768px) {
-  #registration  .project-step01 .contact-container{
-  float:none;
-  width:100%;
-  padding:20px 30px;
-  }
-}
-#registration  .project-step01 .contact-container-01{
-  float:left;
-  width:50%;
-  padding:20px 100px 20px 0px;
-}
-@media only screen and (max-width: 768px) {
-  #registration .project-step01 .contact-container-01{
-  float:none;
-  width:100%;
-  padding:20px 30px;
-  
-}
-}
-#registration .project-step02 .contact-container{
-  float:left;
-  width:100%;
-  padding:20px 20px;
-}
-
 
 
 /* Taichi */
@@ -665,7 +485,6 @@ p {
   height: auto;
   min-height: 100vh;
   background-color: #ec675a;
-  border: 1px solid red;
 }
 #taichi .tai-background{
   display: inline-block;
