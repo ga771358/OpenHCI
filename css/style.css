@@ -768,13 +768,14 @@ p {
   display: inline-block;
   width:84%;
   position: relative;
-  margin-left:-2.2%;
+  margin-left:-2.3%;
 
 }
 #crew .crew-member .member-container{
   display: inline-block;
-  width:33%;
+  width:32%;
   vertical-align: top;
+  margin-left: 0.3%;
 }
 @media only screen and (max-width: 768px){
   #crew .crew-member .member-container{
@@ -798,7 +799,7 @@ p {
 }
 #crew .crew-member .member-container .member .name{
   color: #ec675a;
-  font-weight:100;
+  font-weight:200;
   margin: 18px 0 3px 0;
 }
 #crew .crew-member .member-container .member .description{
@@ -852,7 +853,8 @@ p {
   margin-top:-11%;
 }
 #contact .info{
-  float:left;
+  position:absolute;
+  display: inline-block;
   width:100%;
   padding-left:44%;
   margin-top: -9%;
@@ -1026,4 +1028,6 @@ nav.side-nav a:hover .nav-label {
 @keyframes stroke-offset{
   100% {stroke-dashoffset: -45%;}
 }
+
+
 

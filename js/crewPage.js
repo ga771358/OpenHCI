@@ -1,6 +1,6 @@
 
 var sliderWidth = ($(window).width()) *0.84;
-var sliderHeight = 500;
+var sliderHeight =($(window).height()) *0.9;
 $(document).ready(function(){
     $(window).resize(function() {
         sliderWidth = ($(window).width());
