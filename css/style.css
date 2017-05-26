@@ -45,7 +45,8 @@ p {
 */
 
 #home{
-  height: 705px;
+  height: auto;
+  min-height: 100vh;
   padding:0px 0px 0px 0px ;
   background-color: #2a4399;
 }
@@ -140,7 +141,7 @@ p {
 #intro_goals{
   padding:100px 0px 0px 0px ;
   height:auto ;
-  min-height: 705px;
+  min-height: 100vh;
   background-color: #ec675a;
 }
 #intro_goals .frame{
@@ -199,7 +200,7 @@ p {
 
 #program{
   height: auto;
-  min-height: 705px;
+  min-height: 100vh;
   position: relative;
   display:flex;
   background-color: #ec675a;
@@ -309,10 +310,11 @@ p {
 
 /* Registration */
 #registration{
-  height:705px;
+  height:auto;
+  min-height: 100vh;
   position:relative;
   background-color: #ec675a;
-  border: 1px solid #ec675a;
+  border: 1px solid red;
 }
 @media screen and (max-width: 768px) {
   #registration{
@@ -638,8 +640,10 @@ p {
 
 /* Taichi */
 #taichi{
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   background-color: #ec675a;
+  border: 1px solid red;
 }
 #taichi .content-container{
   float:right;
@@ -700,7 +704,7 @@ p {
   #crew .crew-slide-bar .back-btn,#crew .crew-slide-bar .next-btn{
      -ms-transform: rotate(90deg); /* IE 9 */
     -webkit-transform: rotate(90deg); /* Safari */
-    margin: 0 auto;
+    margin: ;
     transform: rotate(90deg);
   }
 }
@@ -744,7 +748,7 @@ p {
 }
 @media only screen and (max-width: 768px){
   #crew .crew-member .member-container h4{
-    width:95%;
+    width:105%;
   }
 }
 #crew .crew-member .member-container .member .name{
@@ -765,7 +769,8 @@ p {
 
 /* contact */
 #contact{
-  height:100vh;
+  height:auto;
+  min-height: 100vh;
   background-color: #2a4399;
 }
 
