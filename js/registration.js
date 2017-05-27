@@ -6,25 +6,44 @@
 	const cart = document.querySelectorAll("#registration .cart");
 	const buttonContainer = document.querySelector("#registration .btn-container");
 	const homeBtn = buttonContainer.querySelector(".reg-btn");
+	const sectionOriginHeight = $(`#registration`).height();
+	// 錄取名單 Step !
+	const finalStep = document.querySelector("#registration .cart5");
+	console.log(finalStep);
+
 	
 	let currentCartIndex = 0;
 	let unChoosedCarts = [];
 	let isHomePage = true;
 	let currentCart = null;
 
+	const resetSectionHeight = function(){
+		$(`#registration`).css({height: `${sectionOriginHeight}px`});
+	}
+
+	const updateSectionHeight = function(){
+		let stepTextAreaHeight = $(`#registration .right-side-container .right-btm .step0${currentCartIndex} .content`).height();
+		let heightOffset = $(`#registration .right-side-container .right-btm`).offset().top - $(`#registration`).offset().top;
+
+		$(`#registration`).css({height: `${stepTextAreaHeight + heightOffset}px`});
+	}
+
 	const noneTheStep = function(){
 		console.log("hide" + currentCartIndex);
-		$(`#registration .step0${currentCartIndex}`).hide();
+		$(`#registration .step0${currentCartIndex}`).css({display: "none"});
 	}
 
 	const homeClickHandler = function(){
 		console.log("Yo");
 		if(!isHomePage){
 			isHomePage = !isHomePage;
-			$(`#registration .step0${currentCartIndex}`).removeClass("animate-center");
+			$(currentCart).removeClass("selected");
+
+			$(`#registration .step0${currentCartIndex}`).toggleClass("animate-right");
 			
 			TweenMax.to(currentCart,0.8,{height: "40vh",y: "0%", x:"0%"});
-			TweenMax.to(unChoosedCarts,0.8,{opacity:1});
+			TweenMax.to(unChoosedCarts,0.8,{opacity:1,onComplete:resetSectionHeight});
+			TweenMax.to(finalStep,0.8,{opacity:0.3}); 	// Special !
 			TweenMax.to(buttonContainer,0.5,{opacity:0,onComplete:noneTheStep});
 			
 			$(currentCart.querySelector(".hover-sign")).css({opacity:0});
@@ -33,10 +52,12 @@
 	}
 
 	const toggleStepClass = function(){
-		$(`#registration .step0${currentCartIndex}`).show();
+		$(`#registration .step0${currentCartIndex}`).css({display: "block"});
+		updateSectionHeight();
 
 		setTimeout(()=>{
-			$(`#registration .step0${currentCartIndex}`).addClass("animate-center");
+			$(`#registration .step0${currentCartIndex}`).toggleClass("animate-right");
+			// $(`#registration .step0${currentCartIndex}`).addClass("animate-center");
 		},10);
 		
 	}
@@ -45,7 +66,8 @@
 		unChoosedCarts = [];
 
 		cart.forEach((elem)=>{
-			if(elem.dataset.index !== currentCartIndex)
+			// disable 錄取名單, 之後才enable !
+			if(elem.dataset.index !== currentCartIndex && elem.dataset.index !== "5")
 				unChoosedCarts.push(elem);
 		});
 	}
@@ -67,6 +89,7 @@
 		if(isHomePage){
 
 			currentCart = this;
+			$(this).addClass("selected");
 
 			isHomePage = !isHomePage;
 			
@@ -74,18 +97,18 @@
 			currentCartIndex = this.dataset.index;
 			setUnChoosedCarts();
 			console.log(unChoosedCarts);
+			
 
 			let timeLine = new TimelineMax({onComplete:toggleStepClass});
 
 			console.log(cartDes[currentCartIndex-1]);
 
 			timeLine
-				.to(unChoosedCarts,0.8,{opacity:0},0)
-				.to(buttonContainer,0.8,{opacity:1},0)
-				.to(currentCart,0.8,cartDes[currentCartIndex-1]);
+				.to(unChoosedCarts,0.5,{opacity:0},0)
+				.to(finalStep,0.5,{opacity:0},0)	// Special .
+				.to(buttonContainer,0.5,{opacity:1},0)
+				.to(currentCart,0.5,cartDes[currentCartIndex-1]);
 		}
-
-
 	}
 
 	cart.forEach((elem)=>{
@@ -99,6 +122,5 @@
 
 	homeBtn.addEventListener("click",homeClickHandler);
 
-	
-	
+
 })();
