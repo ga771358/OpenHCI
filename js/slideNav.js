@@ -5,22 +5,6 @@
 
 		// init controller
 		const controller = new ScrollMagic.Controller();
-
-		/*
-		for(let i = 1 ; i <= slideAmount ; i ++ ){
-			scences.push(new ScrollMagic.Scene({
-				triggerElement: `#slide0${i}`,
-				duration: function(){
-					// End when scroll after that slide 
-					return document.querySelector(`#slide0${i}`).offsetHeight;
-				}
-			})
-				.setClassToggle(`nav .nav-slide0${i}`,`active`)
-				.addIndicators({name: `slide0${i}`})
-				.addTo(controller)
-			);
-		}
-		*/
 		scences.push(new ScrollMagic.Scene({
 				triggerElement: `#home`,
 				duration: function(){
@@ -135,7 +119,7 @@
 				$("html body").animate({
 					scrollTop: document.querySelector(hash).offsetTop
 				}, 100, function(){
-					window.location.hash = hash;
+					// window.location.hash = hash;
 				});
 			}
 		}
