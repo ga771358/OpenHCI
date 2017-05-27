@@ -29,7 +29,7 @@ p {
 .navbar {
   display: none;
 }
-@media only screen and (max-width:768px){
+@media only screen and (max-width:480px){
   .navbar{
     width:100%;
     display:inline-block;
@@ -420,7 +420,7 @@ p {
 #registration .right-side-container .right-btm .cart-container .cart .img-text .text{
   color: #fff;
   font-weight: lighter;
-  font-size: 20%;
+  font-size: 14px;
   text-align: center;
   
 }
@@ -479,7 +479,7 @@ p {
 #registration .right-side-container .right-btm .btn-container .text{
   color:#2a4399;
   text-align: center;
-  font-size: 50%;
+  font-size: 14px;
   font-weight:bold;
   
 }
@@ -791,6 +791,11 @@ nav.side-nav {
   transform: translateY(-50%);
   text-align: left;
   z-index: 5; 
+}
+@media only screen and (max-width: 480px){
+  nav .side-nav {
+    display: none;
+  }
 }
 nav.side-nav a, nav.side-nav a a:hover, nav.side-nav a a:active, nav.side-nav a a:visited, nav.side-nav a a:focus {
   display: block;
