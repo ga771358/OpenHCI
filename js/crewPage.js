@@ -13,10 +13,14 @@ $(document).ready(function(){
        		sliderHeight = 980;
        	}
        	else sliderHeight = $(window).height()*0.9;
-        if($(window).width()<768){
+        if($(window).width()<769){
     			sliderWidth = $(window).width();
-    			sliderHeight = 1180;
+    			sliderHeight = 1580;
 		    }
+        if($(window).width()<480){
+          sliderWidth = $(window).width();
+          sliderHeight = 1180;
+        }
 
         $(" #crew .slider").diyslider({
 		    width: sliderWidth+'px', // width of the slider
