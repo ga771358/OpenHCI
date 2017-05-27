@@ -5,16 +5,18 @@ $(document).ready(function(){
     $(window).resize(function() {
         sliderWidth = ($(window).width());
         sliderWidth = sliderWidth * 0.84;
-       	sliderHeight = $('#crew .member-page').height();
-       	console.log(sliderWidth);
+       	sliderHeight = $(window).height();
+        sliderHeight = sliderHeight;
+
+       	
        	if (sliderWidth <= 979){
        		sliderHeight = 980;
        	}
-       	else sliderHeight = 500;
+       	else sliderHeight = $(window).height()*0.9;
         if($(window).width()<768){
-			sliderWidth = $(window).width();
-			sliderHeight = 1180;
-		}
+    			sliderWidth = $(window).width();
+    			sliderHeight = 1180;
+		    }
 
         $(" #crew .slider").diyslider({
 		    width: sliderWidth+'px', // width of the slider
@@ -38,7 +40,7 @@ $(document).ready(function(){
 
 if($(window).width()<768){
 	sliderWidth = $(window).width();
-	sliderHeight = 1230;
+	sliderHeight = 1240;
 }
 $(" #crew .slider").diyslider({
     width: sliderWidth + 'px', // width of the slider
