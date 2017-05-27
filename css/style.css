@@ -10,12 +10,14 @@ body{
   line-height: 1.2em;
   letter-spacing: 1px;
   color:white;
+   -webkit-font-smoothing: subpixel-antialiased;
 }
 
 p {
     font-size: 12px;
     line-height: 1.70em;
     color:white;
+     -webkit-font-smoothing: subpixel-antialiased;
 
 }
 @media only screen and (max-width:768px){
@@ -59,6 +61,14 @@ p {
   float:right;
   width:19%;
 }
+#home .title img{
+  width:100%;
+}
+@media only screen and (max-width: 768px){
+  #home .home-background{
+    display: none;
+  }
+}
 #home .subtitle{
   color:#ec675a;
   padding-left: 10%;
@@ -83,16 +93,23 @@ p {
   float:left;
   clear:auto;
 }
+@media only screen and (max-width: 768px){
+  #openhci2017 .title{
+    width:100%;
+  }
+}
 #openhci2017 .half-container{
   float:left;
-  padding:0 8%;
+  padding:0 10%;
   margin-top: 4%;
+
 }
 @media only screen and (max-width: 768px){
   #openhci2017 .content-container{
     float:none;
     padding:0;
     width:100%;
+
   }
 }
 #openhci2017 .half-container p{
@@ -107,7 +124,7 @@ p {
 #openhci2017 .half-container-eng{
   float:left;
   color:white;
-  padding:0 8%;
+  padding:0 10%;
 }
 #openhci2017 .half-container-eng p{
   font-size:12px;
@@ -127,13 +144,16 @@ p {
   #openhci2017 .half-container{
     float:none;
     width:100%;
-    margin:auto;
-    padding:20px 30px;
+    margin:0 auto;
+    padding:20px 20px;
   }
 }
 @media only screen and (max-width: 768px) {
-  #openhci2017 .content-container{
-    
+  #openhci2017 .half-container-eng{
+    float:none;
+    width:100%;
+    margin:0 auto;
+    padding:20px 20px;
   }
 }
 
@@ -329,18 +349,20 @@ p {
   min-height:100vh;
   width: 100vw;
   height:auto;
-  display:flex;
+  display: inline-block;
   background-color: #ec675a;
   /*border: 3px solid red;*/
 }
 
 #registration .left-side-container{
-  flex:0.15;
+  display: inline-block;
+  width:12%;
   /*border: 1px solid red;*/
 }
 
 #registration .right-side-container{
-  flex:1;
+  display: inline-block;
+  width: 86%;
   /*border: 1px solid green;*/
 }
 
@@ -388,7 +410,7 @@ p {
 #registration .right-side-container .right-btm .cart-container .cart .img-text .text{
   color: #fff;
   font-weight: lighter;
-  font-size: 20%;
+  font-size: 12px;
   text-align: center;
 }
 
@@ -430,14 +452,11 @@ p {
   right: 3%;
   width: 5%;
   z-index: 1;
-  /*border: 1px solid black;*/
-}
-
-#registration .right-side-container .right-btm .btn-container .text{
   color:#2a4399;
   text-align: center;
-  font-size: 50%;
+  font-size: 12px;
   font-weight:bold;
+  /*border: 1px solid black;*/
 }
 
 
@@ -464,7 +483,6 @@ p {
   left: 30%;
   min-width:60vw;
   min-height:80vh;
-  
 }
 
 #registration .right-side-container .right-btm .content{
@@ -675,13 +693,10 @@ p {
   margin-top:-11%;
 }
 #contact .info{
-  position:absolute;
-  display: inline-block;
-  width:100%;
+  position: absolute;
   padding-left:44%;
   margin-top: -8%;
   letter-spacing:0.5px; 
-  z-index: 100;
   line-height: 1.6em;
   font-size: 12px;
 }
@@ -690,10 +705,11 @@ p {
   display: inline-block;
 }
 
-#contact a:hover{
+#contact a:hover {
   color:#ec675a;
   text-orientation: none;
   text-decoration-line: none;
+  text-decoration-style: none;
 }
 
 
@@ -710,8 +726,9 @@ p {
 @media only screen and (max-width: 768px){
     #contact .info{
       text-align: center;
-      padding: 0;
-      margin-top: -5%;
+      padding: initial;
+      margin: -5% auto;
+      position: relative;
     }
 }
 @media only screen and (max-width: 768px){
