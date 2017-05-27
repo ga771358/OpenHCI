@@ -136,8 +136,9 @@ p {
 @media only screen and (max-width: 768px) {
   #openhci2017{
     padding:0px;
-    height:auto;
+    min-height:auto;
     margin:auto;
+
   }
 }
 @media only screen and (max-width: 768px) {
@@ -201,7 +202,7 @@ p {
 }
 @media only screen and (max-width: 768px) {
   #intro_goals{
-    height:auto;
+    min-height:auto;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -234,7 +235,11 @@ p {
   background-color: #ec675a;
   /*border: 1px solid green;*/
 }
+@media only screen and (max-width: 768px){
+  #program{
 
+  }
+}
 #program .left-side-bar{
   flex:0.2;
   padding-top: 100px;
@@ -350,10 +355,14 @@ p {
   width: 100vw;
   height:auto;
   background-color: #ec675a;
-  
   display: flex;
 }
 
+@media screen and (max-width: 768px) {
+  #registration {
+    min-height:auto;
+  }
+}
 #registration .left-side-container{
   flex:0.15;
 }
@@ -548,6 +557,12 @@ p {
   min-height: 100vh;
   background-color: #ec675a;
 }
+@media screen and (max-width: 768px) {
+  #taichi{
+    min-height: auto;
+  }
+}
+
 #taichi .tai-background{
   display: inline-block;
   width:50%;
@@ -576,6 +591,7 @@ p {
   #taichi .content-container{
     width:100%;
     padding: 20px 20px;
+    float: none;
   }
 }
 @media only screen and (max-width: 768px){
@@ -655,6 +671,12 @@ p {
   margin-left:-2.3%;
 
 }
+@media  screen and (min-width: 481px)and (max-width: 768px){
+  #crew .crew-member {
+    margin-left:2.3%;
+  }
+}
+
 #crew .crew-member .member-container{
   display: inline-block;
   width:32%;
