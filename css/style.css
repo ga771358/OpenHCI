@@ -85,7 +85,7 @@ p {
 }
 #openhci2017 .half-container{
   float:left;
-  padding:0 9%;
+  padding:0 8%;
   margin-top: 4%;
 }
 @media only screen and (max-width: 768px){
@@ -107,7 +107,7 @@ p {
 #openhci2017 .half-container-eng{
   float:left;
   color:white;
-  padding:0 9%;
+  padding:0 8%;
 }
 #openhci2017 .half-container-eng p{
   font-size:12px;
@@ -497,6 +497,8 @@ p {
   width:43%;
   padding-top: 16%;
   padding-right:2%;
+  text-align: justify;　/*　Firefox到此即可對齊　*/
+  text-justify: auto;　/*　IE需再加上此行　*/
 }
 #taichi .content-container h3{
   color: #2a4399;
@@ -506,6 +508,7 @@ p {
   width:54%;
   font-size: 20px;
   margin-left: 1px;
+
 }
 @media only screen and (max-width: 768px){
   #taichi .content-container{
@@ -676,21 +679,24 @@ p {
   display: inline-block;
   width:100%;
   padding-left:44%;
-  margin-top: -9%;
-  letter-spacing:0.4px; 
+  margin-top: -8%;
+  letter-spacing:0.5px; 
   z-index: 100;
-  line-height: 2.2em;
+  line-height: 1.6em;
+  font-size: 12px;
 }
 #contact a{
   color: white;
   display: inline-block;
 }
+
 #contact a:hover{
-  color: #ec675a;
-  letter-spacing:0.4px; 
-  padding:0;
-  margin:0;
+  color:#ec675a;
+  text-orientation: none;
+  text-decoration-line: none;
 }
+
+
 @media only screen and (max-width: 768px){
     #contact .contact-title{
     width:35%;
@@ -725,7 +731,7 @@ nav.side-nav {
   text-align: left;
   z-index: 5; 
 }
-nav.side-nav a, a:hover, a:active, a:visited, a:focus {
+nav.side-nav a, nav.side-nav a a:hover, nav.side-nav a a:active, nav.side-nav a a:visited, nav.side-nav a a:focus {
   display: block;
   line-height: 25px;
   position: relative;

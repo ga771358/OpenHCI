@@ -8,3 +8,4 @@ $('.reg-btn').addClass('hvr-pulse-shrink');
 $('.hvr-pulse-shrink').css("display","block");
 $('.hvr-pulse-shrink').css("cursor","pointer");
 
+
