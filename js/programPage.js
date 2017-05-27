@@ -74,6 +74,7 @@
 
 		const updateBlockAndPageNum = function(){
 			let windowWidth = $(window).width();
+			console.log(windowWidth);
 
 			if(windowWidth > 1024){
 				pages = 2;
@@ -83,7 +84,7 @@
 				$(`#program .day-block2`).css({"display": "initial"});
 				$(`#program .day-block3`).css({"display": "initial"});
 
-			} else if( 684 <= windowWidth && windowWidth <= 1024) {
+			} else if( 768 < windowWidth && windowWidth <= 1024) {
 				pages = 3;
 				blockNum = 2;
 
