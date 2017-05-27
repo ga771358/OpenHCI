@@ -343,34 +343,36 @@ p {
 
 
 
-/* Registration */
+/* registration */
 #registration{
   position: relative;
   min-height:100vh;
   width: 100vw;
   height:auto;
-  display: inline-block;
   background-color: #ec675a;
-  /*border: 3px solid red;*/
+  
+  display: flex;
 }
 
 #registration .left-side-container{
-  display: inline-block;
-  width:12%;
-  /*border: 1px solid red;*/
+  flex:0.15;
+}
+
+@media screen and (max-width: 480px) {
+  #registration .left-side-container{
+    flex:0.06;
+  }
 }
 
 #registration .right-side-container{
-  display: inline-block;
-  width: 86%;
-  /*border: 1px solid green;*/
+ flex:1;
 }
 
 
 #registration .right-side-container .right-top{
   position:relative;
   min-height:20vh;
-  /*border: 2px solid green;*/
+  
 }
 
 #registration .right-side-container .right-top .current-step{
@@ -379,21 +381,29 @@ p {
   bottom:0;
   left:40%;
   min-height:10vh;
-  /*border: 1px solid red;*/
+  
 }
 
 #registration .right-side-container .right-btm{
   min-height:80vh;
-  /*border: 2px solid yellow;*/
+  
 }
 
 #registration .right-side-container .right-btm .cart-container{
   position:absolute;
+  display: inline-block;
   width:70vw;
   min-height:40vh;
   margin-top:8%;
-  /*border: 1px solid black;*/
 }
+
+@media screen and (max-width: 480px) {
+  #registration .right-side-container .right-btm .cart-container{
+    width: 80vw;
+  }
+}
+
+
 
 #registration .right-side-container .right-btm .cart-container .cart{
   position:absolute;
@@ -410,8 +420,9 @@ p {
 #registration .right-side-container .right-btm .cart-container .cart .img-text .text{
   color: #fff;
   font-weight: lighter;
-  font-size: 12px;
+  font-size: 20%;
   text-align: center;
+  
 }
 
 #registration .right-side-container .right-btm .cart-container .cart .hover-sign{
@@ -422,6 +433,7 @@ p {
   width: 80%;
   height: 1%;
   opacity: 0;
+  
 }
 
 #registration .right-side-container .right-btm .cart-container .cart1{
@@ -442,6 +454,7 @@ p {
 
 #registration .right-side-container .right-btm .cart-container .cart5{
   background-color: #2a4399;
+  opacity: 0.3;
   border:0px;
 }
 
@@ -452,29 +465,43 @@ p {
   right: 3%;
   width: 5%;
   z-index: 1;
+  
+}
+
+@media screen and (max-width: 768px) {
+  #registration .right-side-container .right-btm .btn-container{
+    width: 25%;
+    left: 10%;
+    top:10px;
+  }
+}
+
+#registration .right-side-container .right-btm .btn-container .text{
   color:#2a4399;
   text-align: center;
-  font-size: 12px;
+  font-size: 50%;
   font-weight:bold;
-  /*border: 1px solid black;*/
+  
 }
 
 
 #registration .right-side-container .right-btm .image{
   position: absolute;
-  bottom:3%;
+  top:500px;
   right: 2%;
-  /*border: 1px solid black;*/
+  
+}
+
+@media screen and (max-width: 768px) {
+  #registration .right-side-container .right-btm .image{
+    display: none;
+  }
 }
 
 #registration .animate-right {
-  transition: all .5s cubic-bezier(0.650,0.000,0.175,1.000);
+  transition: all .4s cubic-bezier(0.650,0.000,0.175,1.000);
   transform: translateX(200%);
-}
-
-#registration .animate-center {
-    transition: all .5s cubic-bezier(0.650,0.000,0.175,1.000);
-    transform: translateX(0%);
+  
 }
 
 #registration .right-side-container .right-btm .step01,.step02,.step03,.step04,.step05{
@@ -483,18 +510,35 @@ p {
   left: 30%;
   min-width:60vw;
   min-height:80vh;
+  height: auto;
+  transition: all .4s cubic-bezier(0.650,0.000,0.175,1.000);
+  
+}
+
+@media screen and (max-width: 768px) {
+    #registration .right-side-container .right-btm .step01,.step02,.step03,.step04,.step05{
+      left: 5%;
+      min-width: 90vw;
+    }
 }
 
 #registration .right-side-container .right-btm .content{
   position: absolute;
-  display: inline-block;
-  height: 100%;
+  height: auto;
+  
 }
+
 
 #registration .right-side-container .right-btm .content p{
   color:#fff;
   font-size: 14px;
   line-height: 1.6em;
+}
+
+@media screen and (max-width: 768px) {
+  #registration .selected {
+    display: none;
+  }
 }
 
 
