@@ -42,10 +42,7 @@ p {
   padding:0px 0px 0px 0px ;
   background-color: #2a4399;
 }
-@media only screen and (max-width: 768px) {
-  #home{
-  }
-}
+
 #home .home-background{
   top:6%;
   width:68%;
@@ -57,7 +54,12 @@ p {
 @media only screen and (max-width: 768px){
   #home .home-background{
     display: none;
+    float:none;
   }
+}
+#home .home-background-mobile{
+  display:none;
+  margin-top: 25%;
 }
 @media only screen and (max-width: 768px){
   #home .home-background-mobile{
@@ -74,17 +76,13 @@ p {
 @media only screen and (max-width: 768px){
   #home .title{
     display: none;
+    float:none;
   }
 }
 #home .title img{
   width:100%;
 }
 
-#home .subtitle{
-  color:#ec675a;
-  padding-left: 10%;
-  margin-top: -3%;
-}
 /*openhci2017*/
 
 #openhci2017{
@@ -94,10 +92,25 @@ p {
   min-height: 100vh;
   background-color: #2a4399;
 }
+@media only screen and (max-width: 768px) {
+  #openhci2017{
+    padding:0px;
+    min-height:auto;
+    margin:auto;
+  }
+}
 #openhci2017 .content-container{
   float:right;
   width:25%;
   margin-right:10%;  
+}
+@media only screen and (max-width: 768px){
+  #openhci2017 .content-container{
+    float:none;
+    padding:0;
+    width:100%;
+    margin:auto;
+  }
 }
 #openhci2017 .title{
   width:35%;
@@ -107,6 +120,7 @@ p {
 @media only screen and (max-width: 768px){
   #openhci2017 .title{
     width:100%;
+    float:none;
   }
 }
 @media only screen and (max-width: 768px){
@@ -114,20 +128,23 @@ p {
     display: none;
   }
 }
+#openhci2017 .title .openhci2017-background-mobile{
+  display: none;
+  padding:20px 6px;
+  width:320px;
+}
+
+@media only screen and (max-width: 768px){
+  #openhci2017 .title .openhci2017-background-mobile{
+    display: inline-block;
+  }
+}
 #openhci2017 .half-container{
   float:left;
   padding:0 10%;
   margin-top: 4%;
-
 }
-@media only screen and (max-width: 768px){
-  #openhci2017 .content-container{
-    float:none;
-    padding:0;
-    width:100%;
 
-  }
-}
 #openhci2017 .half-container p{
   font-size:12px;
   font-weight: 100;
@@ -148,14 +165,6 @@ p {
   line-height: 1.2em;
   text-align: justify;　/*　Firefox到此即可對齊　*/
   text-justify: auto;　/*　IE需再加上此行　*/
-}
-@media only screen and (max-width: 768px) {
-  #openhci2017{
-    padding:0px;
-    min-height:auto;
-    margin:auto;
-
-  }
 }
 @media only screen and (max-width: 768px) {
   #openhci2017 .half-container{
@@ -182,14 +191,27 @@ p {
   min-height: 100vh;
   background-color: #ec675a;
 }
+@media only screen and (max-width: 768px){
+  #intro_goals{
+    padding:0px;
+    min-height:auto;
+  }
+}
 #intro_goals .frame{
   display: inline-block;
   width:40%;
   vertical-align: top;
   margin-left: 13%;
   margin-right: 2%;
-  
 }
+
+@media only screen and (max-width: 768px) {
+  #intro_goals .frame{
+    width:100%;
+    margin:0 auto;
+  }
+}
+
 #intro_goals .title{
   display: inline-block;
   width:20%;
@@ -197,13 +219,34 @@ p {
 }
 @media only screen and (max-width: 768px){
   #intro_goals .title{
-    margin-left: 1%;
+    padding:20px 6px;
+    margin:0 auto;
+  }
+}
+@media only screen and (max-width: 768px){
+  #intro_goals .title .intro-image{
+    display: none;
+  }
+}
+#intro_goals .title .intro-image-mobile{
+  display: none;
+  width:290px;
+}
+
+@media only screen and (max-width: 768px){
+  #intro_goals .title .intro-image-mobile{
+    display: inline-block;
   }
 }
 #intro_goals .intro-background{
   display: inline-block;
   width:44%;
   margin-top: -1%;
+}
+@media only screen and (max-width: 768px) {
+  #intro_goals .intro-background{
+    display: none;
+  }
 }
 #intro_goals .content-container{
   display: inline-block;
@@ -216,17 +259,7 @@ p {
   font-size: 20px;
 
 }
-@media only screen and (max-width: 768px) {
-  #intro_goals{
-    min-height:auto;
-  }
-}
-@media only screen and (max-width: 768px) {
-  #intro_goals .frame{
-    width:100%;
-    margin:0 auto;
-  }
-}
+
 @media only screen and (max-width: 768px) {
   #intro_goals .content-container{
     float:none;
@@ -235,11 +268,7 @@ p {
     padding:0px 20px;
   }
 }
-@media only screen and (max-width: 768px) {
-  #intro_goals .intro-background{
-    display: none;
-  }
-}
+
 
 /*program*/
 
@@ -248,19 +277,40 @@ p {
   min-height: 100vh;
   position: relative;
   display:flex;
+  flex-direction: column;
   background-color: #ec675a;
   /*border: 1px solid green;*/
 }
+#program .titleImage{
+  display: none;
 
-
+}
+#program img{
+  border:1px solid red;
+}
+@media only screen and (max-width: 768px){
+  #program  .titleImage{
+    display: inline-block;
+    width:290px;
+    padding-right:0;
+    margin:20px 6px;
+    border:1px solid red;
+  }
+}
+#program .frame{
+  display: flex;
+  flex-direction:row;
+  flex:1;
+}
 #program .left-side-bar{
   flex:0.2;
   padding-top: 100px;
-
 }
-
-
-
+@media only screen and (max-width: 768px){
+  #program .left-side-bar{
+    padding-top: 10px;
+  }
+}
 #program .left-side-bar .back-btn,.next-btn{
  width: 20%;
  margin-left: 14%;
@@ -288,15 +338,23 @@ p {
 @media only screen and (max-width: 768px){
   #program .right-container{
     flex:0.8;
-    padding-left:3%; 
+    padding-left:0%;
+    margin:0 auto;
   }
 }
+
+
 #program .right-container .date{
   margin-top: 17.5%;
   margin-left: -2.5%;
 
 }
-
+@media only screen and (max-width: 768px){
+  #program .right-container .date{
+    margin-top: -9%;
+    margin-left: -2.5%;
+  }
+}
 #program .right-container .title{
   color: #2a4399;
   margin-top:-1%;
