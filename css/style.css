@@ -269,7 +269,6 @@ p {
   }
 }
 
-
 /*program*/
 
 #program{
@@ -311,9 +310,14 @@ p {
     padding-top: 10px;
   }
 }
+
 #program .left-side-bar .back-btn,.next-btn{
  width: 20%;
  margin-left: 14%;
+}
+
+#program .left-side-bar .back-btn{
+ opacity: 0;
 }
 
 @media screen and (max-width: 768px){
@@ -328,7 +332,6 @@ p {
   font-size: 12px;
   color:#2a4399;
 }
-
 
 #program .right-container{
   flex:1;
@@ -380,7 +383,7 @@ p {
 #program .right-container .day1,.day2,.day3,.day4,.day5,.day6{
   position: absolute;
   width:27.7%;
-  height: 100%;
+  height: auto;
 }
 @media only screen and (max-width: 768px){
   #program .right-container .day1,.day2,.day3,.day4,.day5,.day6{

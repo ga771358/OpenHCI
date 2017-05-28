@@ -13,22 +13,43 @@
 		$(window).resize(()=>{
 			initialize();
 			currentPage = 0 ;
-			// console.log(pages);
-			// console.log(blockNum);
-			// console.log(currentPage);
-			// console.log(groups);
+
+			updateSectionHeight();
 		})
 
-
-		// 
 		let pages = 2;
 		let blockNum = 3;
 		let currentPage = 0;
 		let groups = [];
 		let animationComplete = true;
 
-		const updateCurrentPage = function(){
+		const updateSectionHeight = function(){
+			let maxHeight = $(groups[currentPage][0]).height();
 
+			for(let i = 1 ; i < blockNum ; i ++){
+				console.log($(groups[currentPage][i]).height());
+
+				maxHeight = $(groups[currentPage][i]).height() > maxHeight? $(groups[currentPage][i]).height():maxHeight;
+			}
+
+			let heightOffset = $(`#program .right-container`).offset().top - $(`#program`).offset().top;
+			$(`#program`).css({height: `${maxHeight + heightOffset}px`});
+		}
+
+		const updateBtn = function(){
+			if(currentPage === 0){
+				TweenMax.to("#program .back-btn",1,{opacity:0});
+			}
+			else if(currentPage === 1){
+				TweenMax.to("#program .back-btn",1,{opacity:1});
+			}
+			
+			if(currentPage === pages-2){
+				TweenMax.to("#program .next-btn",1,{opacity:1});
+			}
+			else if(currentPage === pages-1){
+				TweenMax.to("#program .next-btn",1,{opacity:0});
+			}
 		}
 
 		const updateActiveClass = function(){
@@ -112,6 +133,7 @@
 			updatePageElem();
 			updateBlockDOM();
 			updateActiveClass();
+			updateBtn();
 		}
 
 		const diableBtnHandler = function(){
@@ -130,28 +152,14 @@
 		}
 
 		const backBtnHandler = function(e){
-			console.log("Back");
-			
 			currentPage --;
 
-
-			
 			if(currentPage > -1 && animationComplete) {
-				console.log(currentPage);
-
-
-				
-				// updateContainerHeight();
+				updateBtn();
+				updateSectionHeight();
 				diableBtnHandler();
 
 				// Update Content .
-				
-				/*
-				for(let i = 1 ; i <= 6 ; i ++){
-					$(`.day${i}.pre-active`).removeClass( "pre-active" );
-					$(`.day${i}.active`).addClass( "pre-active" );
-				}
-				*/
 			
 				for(let i = 1 ; i <= 6 ; i ++){
 					$(`.day${i}`).removeClass( "active pre-active" );
@@ -161,13 +169,6 @@
 					groups[currentPage][i].addClass("active");
 					groups[currentPage+1][i].addClass("pre-active");
 				}
-
-				/*
-				for(let i = 1 ; i <= 6 ; i ++){
-					$(`.day${i}`).toggleClass( "active" );
-					
-				}
-				*/
 				
 				let currentDateImgs = [];
 				let currentTitles = [];
@@ -223,25 +224,15 @@
 		}
 
 		const nextBtnHandler = function(e){
-			console.log("next");
+			
 			
 			currentPage ++;
 			
 			if(currentPage < pages && animationComplete){
-				console.log(currentPage);
-
-				
-				// updateContainerHeight();
+				updateBtn();
+				updateSectionHeight();
 				diableBtnHandler();
-
-				/*
-				for(let i = 1 ; i <= 6 ; i ++){
-					$(`.day${i}.pre-active`).removeClass( "pre-active" );
-					$(`.day${i}.active`).addClass( "pre-active" );
-				}
-				*/
 			
-
 				for(let i = 1 ; i <= 6 ; i ++){
 					$(`.day${i}`).removeClass( "active pre-active" );
 				}
@@ -250,14 +241,6 @@
 					groups[currentPage][i].addClass("active");
 					groups[currentPage-1][i].addClass("pre-active");
 				}
-
-
-				
-				/*
-				for(let i = 1 ; i <= 6 ; i ++){
-					$(`.day${i}`).toggleClass( "active" );
-				}
-				*/
 
 				// Update Content .
 				
@@ -318,6 +301,8 @@
 		nextBtn.addEventListener("click",nextBtnHandler);
 
 		initialize();
+
+
 
 	});
 })();

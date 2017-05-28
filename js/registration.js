@@ -9,7 +9,7 @@
 	const sectionOriginHeight = $(`#registration`).height();
 	// 錄取名單 Step !
 	const finalStep = document.querySelector("#registration .cart5");
-	console.log(finalStep);
+	
 
 	
 	let currentCartIndex = 0;
