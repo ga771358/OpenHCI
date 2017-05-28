@@ -11,7 +11,6 @@
     物件或工具的新互動模式，進行為期六天的工作坊，期盼參與者能以此概念體察其日常經驗裡的互動缺口或議題，實際動手解決問題或創造出新的意義的能力，
     進而尋思更和諧互惠的人機互動遠景。">
     
-
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="animation/hover-min.css">
@@ -21,24 +20,21 @@
     <link href="animation/magic.min.css" rel="stylesheet">
     <!-- ScrollMagic.js -->
 
-      <script type="text/javascript" src="scrollMagicJS/TweenMax.min.js"></script>
-      <script type="text/javascript" src="scrollMagicJS/ScrollMagic.min.js"></script>
-      <script type="text/javascript" src="scrollMagicJS/animation.gsap.min.js"></script>
-      <script type="text/javascript" src="scrollMagicJS/debug.addIndicators.min.js"></script>
+    <script type="text/javascript" src="scrollMagicJS/TweenMax.min.js"></script>
+    <script type="text/javascript" src="scrollMagicJS/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="scrollMagicJS/animation.gsap.min.js"></script>
+    <script type="text/javascript" src="scrollMagicJS/debug.addIndicators.min.js"></script>
 
+    <!--wow.js-->
+    <script type="text/javascript" src="animation/wow.min.js"></script>
+    <script>
+       new WOW().init();
+    </script>
 
-      <script type="text/javascript" src="animation/wow.min.js"></script>
-      
-      <script>
-         new WOW().init();
-      </script>
     <!-- favicon -->
     <link rel="icon" href="image/icon.png" type="image/x-icon"/>
   </head>
   <body>
-
-    
-    
     <nav class="side-nav">
         <ul>
                   <li class="nav-home">
@@ -137,7 +133,8 @@
     <!-- section home begin-->
     
     <section id="home">
-        <img src="image/homeImage.svg" class="home-background"> 
+        <img src="image/homeImage.svg" class="home-background">
+        <img src="image/homeImageMobile.svg" class="home-background-mobile">
         <div class ="title">
           <img src="image/homeTitle.png" class="home-title">
         </div>
@@ -150,7 +147,7 @@
     <section id="openhci2017">
 	    <div class="content-container">
 	      <div class="title">
-	        <img src="image/openHCI2017Image.svg">
+	        <img src="image/openHCI2017Image.svg" class ="openhci2017-background">
 	      </div>
 	  
 	      <div class="half-container">
@@ -344,16 +341,13 @@
             </div> 
           </div>
         </div>
-      
-        
-
+  
     </section>
     <!-- section program over -->
 
     <!-- section registration begin -->
     <section id="registration">
-  <div class="left-side-container">
-      </div>
+      <div class="left-side-container"></div>
       
       <div class="right-side-container">
       
@@ -365,46 +359,36 @@
           -->
         </div>
 
-        
         <div class="right-btm">
           <div class="cart-container">
 
             <div class="cart cart1" data-index="1">
-              <div class="img-text">
-                 
-                 <img src="image/regInfo.svg"/>
-                  
-                 <div class="text">
-                   活動與報名資訊<br><br>STEP 01
-                 </div>
-
-                 
-                 
-               </div>
-               <div class="hover-sign"></div>
+              <div class="img-text">            
+                <img src="image/regInfo.svg"/>
+                <div class="text">
+                  活動與報名資訊<br><br>STEP 01
+                </div>
+              </div>
+              <div class="hover-sign"></div>
             </div>
+
             <div class="cart cart2" data-index="2">
               <div class="img-text">
-                 
-                 <img src="image/regQuery.svg" />
-                  <div class="text">
-                    線上問卷<br><br>STEP 02
-                 </div>
-                 
+                <img src="image/regQuery.svg" />
+                <div class="text">
+                  線上問卷<br><br>STEP 02
                </div>
-               <div class="hover-sign"></div>
+              </div>
+              <div class="hover-sign"></div>
             </div>
             <div class="cart cart3" data-index="3">
               <div class="img-text">
-                
                  <img src="image/regIDCard.png" width="100%" />
-                  
                  <div class="text">
                     ID-Card 內容說明<br><br>STEP 03
-                 </div>
-                 
-               </div>
-               <div class="hover-sign"></div>
+                 </div> 
+              </div>
+              <div class="hover-sign"></div>
             </div>
             <div class="cart cart4" data-index="4">
               <div class="img-text">
