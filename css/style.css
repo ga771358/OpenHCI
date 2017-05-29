@@ -6,11 +6,11 @@
 
 body{
   font-size:12px;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 1.2em;
   letter-spacing: 1px;
   color:white;
-   -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 
@@ -18,7 +18,7 @@ p {
     font-size: 12px;
     line-height: 1.70em;
     color:white;
-     -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-font-smoothing: subpixel-antialiased;
 
 }
 @media only screen and (max-width:768px){
@@ -492,9 +492,10 @@ p {
 
 #registration .right-side-container .right-btm .cart-container .cart .img-text .text{
   color: #fff;
-  font-weight: lighter;
+  font-weight: 300;
   font-size: 14px;
   text-align: center;
+
   
 }
 
@@ -765,7 +766,6 @@ p {
   width:84%;
   position: relative;
   margin-left:-2.3%;
-
 }
 @media  screen and (min-width: 481px)and (max-width: 768px){
   #crew .crew-member {
@@ -785,7 +785,22 @@ p {
     padding:0px 20px;
   }
 }
-#crew .crew-member .member-container h4{
+@media only screen and (max-width: 768px){
+  #crew .crew-member .member-col3{
+    display: inline-block;
+    width:100%;
+    padding:0px;
+  }
+}
+@media only screen and (max-width: 768px){
+  #crew .crew-member .member-col3 .col3{
+    display: inline-block;
+    width:48%;
+    vertical-align: top;
+    padding:0px 20px;
+  }
+}
+#crew .crew-member  h4{
   border:1px solid white;
   text-align: center;
   width:70%;
@@ -802,7 +817,7 @@ p {
 }
 #crew .crew-member .member-container .member .name{
   color: #ec675a;
-  font-weight:200;
+  font-weight:300;
   margin: 18px 0 3px 0;
 }
 #crew .crew-member .member-container .member .description{

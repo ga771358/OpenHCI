@@ -15,15 +15,15 @@ const crewDivChanger = function(){
         else sliderHeight = $(window).height()*0.9;
 
         if($(window).width()<769){
-          sliderHeight = 1080;
+          sliderHeight = 880;
         }
         if($(window).width()<480){
           sliderWidth = $(window).width();
-          sliderHeight = 1280;
+          sliderHeight = 980;
         }
         if($(window).width()<321){
           sliderWidth = $(window).width();
-          sliderHeight = 1480;
+          sliderHeight = 1180;
         }
 
         $(" #crew .slider").diyslider({
