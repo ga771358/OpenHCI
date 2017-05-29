@@ -13,6 +13,7 @@ body{
    -webkit-font-smoothing: subpixel-antialiased;
 }
 
+
 p {
     font-size: 12px;
     line-height: 1.70em;
@@ -25,6 +26,8 @@ p {
     font-size: 16px !important;
   }
 }
+
+
 
 .navbar {
   display: none;
@@ -605,9 +608,12 @@ p {
 #registration .right-side-container .right-btm .content{
   position: absolute;
   height: auto;
-  
 }
 
+#registration .right-side-container .right-btm .content a{
+  color: #2a4399;
+  text-decoration: none;
+}
 
 #registration .right-side-container .right-btm .content p{
   color:#fff;

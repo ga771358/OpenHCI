@@ -17,6 +17,12 @@
 	let isHomePage = true;
 	let currentCart = null;
 
+	const toggleCartAnimation = function(){
+		// 名單出來改 `#registration .cart`
+		for(let i = 1 ; i <= 4 ; i ++){
+			$(`#registration .cart${i}`).toggleClass("hvr-wobble-vertical");
+		}
+	}
 	const resetSectionHeight = function(){
 		$(`#registration`).css({height: `${sectionOriginHeight}px`});
 	}
@@ -29,13 +35,13 @@
 	}
 
 	const noneTheStep = function(){
-		console.log("hide" + currentCartIndex);
 		$(`#registration .step0${currentCartIndex}`).css({display: "none"});
 	}
 
 	const homeClickHandler = function(){
-		console.log("Yo");
 		if(!isHomePage){
+			toggleCartAnimation();
+
 			isHomePage = !isHomePage;
 			$(currentCart).removeClass("selected");
 
@@ -88,20 +94,17 @@
 
 		if(isHomePage){
 
+			toggleCartAnimation();
+
 			currentCart = this;
 			$(this).addClass("selected");
 
 			isHomePage = !isHomePage;
 			
-			console.log(this.dataset.index);
 			currentCartIndex = this.dataset.index;
 			setUnChoosedCarts();
-			console.log(unChoosedCarts);
 			
-
 			let timeLine = new TimelineMax({onComplete:toggleStepClass});
-
-			console.log(cartDes[currentCartIndex-1]);
 
 			timeLine
 				.to(unChoosedCarts,0.5,{opacity:0},0)
@@ -122,5 +125,6 @@
 
 	homeBtn.addEventListener("click",homeClickHandler);
 
+	toggleCartAnimation();
 
 })();

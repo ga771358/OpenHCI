@@ -9,3 +9,4 @@ $('.hvr-pulse-shrink').css("display","block");
 $('.hvr-pulse-shrink').css("cursor","pointer");
 
 
+$("#registration .content a").addClass("hvr-rotate");

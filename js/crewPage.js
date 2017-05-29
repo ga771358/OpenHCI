@@ -26,7 +26,6 @@ const crewDivChanger = function(){
           sliderHeight = 1480;
         }
 
-        console.log(sliderHeight)
         $(" #crew .slider").diyslider({
           width: sliderWidth+'px', // width of the slider
           height: sliderHeight+'px', // height of the slider

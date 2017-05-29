@@ -27,8 +27,6 @@
 			let maxHeight = $(groups[currentPage][0]).height();
 
 			for(let i = 1 ; i < blockNum ; i ++){
-				console.log($(groups[currentPage][i]).height());
-
 				maxHeight = $(groups[currentPage][i]).height() > maxHeight? $(groups[currentPage][i]).height():maxHeight;
 			}
 
@@ -95,7 +93,6 @@
 
 		const updateBlockAndPageNum = function(){
 			let windowWidth = $(window).width();
-			console.log(windowWidth);
 
 			if(windowWidth > 1024){
 				pages = 2;
