@@ -18,10 +18,7 @@
 	let currentCart = null;
 
 	const toggleCartAnimation = function(){
-		// 名單出來改 `#registration .cart`
-		for(let i = 1 ; i <= 4 ; i ++){
-			$(`#registration .cart${i}`).toggleClass("hvr-wobble-vertical");
-		}
+		$(`#registration .cart`).toggleClass("hvr-wobble-vertical");
 	}
 	const resetSectionHeight = function(){
 		$(`#registration`).css({height: `${sectionOriginHeight}px`});
@@ -49,7 +46,7 @@
 			
 			TweenMax.to(currentCart,0.8,{height: "40vh",y: "0%", x:"0%"});
 			TweenMax.to(unChoosedCarts,0.8,{opacity:1,onComplete:resetSectionHeight});
-			TweenMax.to(finalStep,0.8,{opacity:0.3}); 	// Special !
+			// TweenMax.to(finalStep,0.8,{opacity:0.3}); 	// Special !
 			TweenMax.to(buttonContainer,0.5,{opacity:0,onComplete:noneTheStep});
 			
 			$(currentCart.querySelector(".hover-sign")).css({opacity:0});
@@ -72,8 +69,7 @@
 		unChoosedCarts = [];
 
 		cart.forEach((elem)=>{
-			// disable 錄取名單, 之後才enable !
-			if(elem.dataset.index !== currentCartIndex && elem.dataset.index !== "5")
+			if(elem.dataset.index !== currentCartIndex)
 				unChoosedCarts.push(elem);
 		});
 	}
@@ -108,14 +104,14 @@
 
 			timeLine
 				.to(unChoosedCarts,0.5,{opacity:0},0)
-				.to(finalStep,0.5,{opacity:0},0)	// Special .
+				// .to(finalStep,0.5,{opacity:0},0)	// Special .
 				.to(buttonContainer,0.5,{opacity:1},0)
 				.to(currentCart,0.5,cartDes[currentCartIndex-1]);
 		}
 	}
 
 	cart.forEach((elem)=>{
-		// disable 錄取名單, 之後才enable !
+		// disable ,  變成錄取名單, 之後才enable !
 		if(elem.dataset.index !== "5"){
 			elem.addEventListener("click",cartClickHandler);
 			elem.addEventListener("mouseenter",cartHoverHandler);
