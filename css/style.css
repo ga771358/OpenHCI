@@ -8,7 +8,7 @@ body{
   font-size:12px;
   font-weight: 300;
   line-height: 1.2em;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   color:white;
   -webkit-font-smoothing: subpixel-antialiased;
 }
@@ -67,6 +67,13 @@ p {
 @media only screen and (max-width: 768px){
   #home .home-background-mobile{
     display: inline-block;
+    width:100%;
+  }
+}
+@media only screen and (max-width: 480px){
+  #home .home-background-mobile{
+    display: inline-block;
+    margin-top: 45%;
   }
 }
 #home .title{
@@ -134,7 +141,7 @@ p {
 #openhci2017 .title .openhci2017-background-mobile{
   display: none;
   padding:20px 6px;
-  width:320px;
+  width:310px;
 }
 
 @media only screen and (max-width: 768px){
@@ -144,14 +151,14 @@ p {
 }
 #openhci2017 .half-container{
   float:left;
-  padding:0 10%;
+  padding:0 9%;
   margin-top: 4%;
   min-width: 270px;
 }
 
 #openhci2017 .half-container p{
   font-size:1.2em;
-  font-weight: 800;
+  font-weight: 200;
   line-height: 1.5em;
   letter-spacing: 1px;
   color:#ec675a;
@@ -168,9 +175,8 @@ p {
   font-size:1.2em;
   font-weight: 100;
   line-height: 1.2em;
-  /*text-align: justify;　/*　Firefox到此即可對齊　*/
-  /*text-justify: auto;　/*　IE需再加上此行　*/
-  letter-spacing: 2px;
+  text-align: justify;　/*　Firefox到此即可對齊　*/
+  text-justify: auto;　/*　IE需再加上此行　*/
 }
 @media only screen and (max-width: 768px) {
   #openhci2017 .half-container{
@@ -226,7 +232,7 @@ p {
 }
 @media only screen and (max-width: 768px){
   #intro_goals .title{
-    padding:20px 6px;
+    padding:30px 20px;
     margin:0 auto;
   }
 }
@@ -237,7 +243,7 @@ p {
 }
 #intro_goals .title .intro-image-mobile{
   display: none;
-  width:290px;
+  width:260px;
 }
 
 @media only screen and (max-width: 768px){
@@ -765,6 +771,10 @@ p {
   vertical-align: top;
   margin-top: 1.5%;
   visibility: hidden;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2ba2f09fd82407664ba5f8bfd976f98155dbc60e
 }
 @media only screen and (max-width:768px) {
   #crew .crew-slide-bar{
@@ -774,7 +784,7 @@ p {
     transform: rotate(-90deg);
     margin-left: -21%;
     margin-top: -15%;
-    margin-bottom: 12%;
+    margin-bottom: 15%;
     visibility: visible;
   }
 }
@@ -809,8 +819,8 @@ p {
   width:74%;
   position: relative;
   margin-left:-2.3%;
-  
 }
+
 @media  screen and (min-width: 481px)and (max-width: 768px){
   #crew .crew-member {
     margin-left:2.3%;
