@@ -206,6 +206,7 @@ p {
   vertical-align: top;
   margin-left: 13%;
   margin-right: 2%;
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -299,67 +300,50 @@ p {
   display: flex;
   flex-direction:row;
   flex:1;
+  /*border: 1px solid red;*/
 }
 #program .left-side-bar{
   flex:0.2;
   padding-top: 100px;
 }
 
-
-
-#program .left-side-bar .back-btn,.next-btn{
- width: 20%;
- margin-left: 14%;
-}
-
-#program .left-side-bar .back-btn{
- opacity: 0;
-}
-
-@media screen and (max-width: 768px){
-  #program .left-side-bar .back-btn,.next-btn {
-      width: 40%;
-      margin:0 auto;
+@media screen and (max-width: 480px) {
+  #program .left-side-bar{
+  display: none;
   }
 }
 
-#program .left-side-bar .next-btn,.back-btn .text{
-  text-align: center;
-  font-size: 12px;
-  color:#2a4399;
-}
-
-#program .right-container{
+#program .middle-container{
   flex:1;
   display:flex;
-  margin-left:-4.4%;
+  margin-left:-1.4%;
 }
 @media only screen and (max-width: 768px){
-  #program .right-container{
-    flex:0.8;
-    padding-left:0%;
+  #program .middle-container{
+    flex:1;
+    padding-left:5%;
     margin:0 auto;
   }
 }
 
 
-#program .right-container .date{
+#program .middle-container .date{
   margin-top: 17.5%;
   margin-left: -2.5%;
 
 }
 
-#program .right-container .title{
+#program .middle-container .title{
   color: #2a4399;
   margin-top:5%;
 }
 
-#program .right-container .title span{
+#program .middle-container .title span{
   font-size: 14px;
   color: #ffffff;
 }
 
-#program .right-container p{ 
+#program .middle-container p{ 
   color: #ffffff;
   font-size: 13px;
   font-weight: lighter;
@@ -367,52 +351,95 @@ p {
 } 
 
 
-#program .right-container .day-block1,.day-block2,.day-block3{
+#program .middle-container .day-block1{
   flex:1;
+  /*border: 1px solid red;*/
 }
 
-#program .right-container .day1,.day2,.day3,.day4,.day5,.day6{
+#program .middle-container .day-block2{
+  flex:1;
+  /*border: 1px solid red;*/
+}
+
+#program .middle-container .day-block3{
+  flex:0.5;
+  /*border: 1px solid red;*/
+}
+
+#program .middle-container .day1,.day2,.day3,.day4,.day5,.day6{
   position: absolute;
   width:27.7%;
   height: auto;
 }
 @media only screen and (max-width: 768px){
-  #program .right-container .day1,.day2,.day3,.day4,.day5,.day6{
+  #program .middle-container .day1,.day2,.day3,.day4,.day5,.day6{
     width: 80%;
   }
 }
-#program .right-container  p{
+#program .middle-container  p{
   opacity: 0;
 }
 
-#program .right-container  .date{
+#program .middle-container  .date{
   opacity: 0;
 }
 
-#program .right-container  .title{
+#program .middle-container  .title{
   opacity: 0;
 }
 
-#program .right-container  .icon{
+#program .middle-container  .icon{
   opacity: 0;
   margin-left:-2%; 
   margin-bottom:2%;
 }
 
-#program .right-container .active p{
+#program .middle-container .active p{
   opacity: 1;
 }
 
-#program .right-container .active .date{
+#program .middle-container .active .date{
   opacity: 1;
 }
 
-#program .right-container .active .title{
+#program .middle-container .active .title{
   opacity: 1;
 }
 
-#program .right-container .active .icon{
+#program .middle-container .active .icon{
   opacity: 1;
+}
+
+#program .right-side-bar{
+  flex:0.2;
+  padding-top: 35vh;
+  /*border: 1px solid red;*/
+}
+
+#program .right-side-bar .back-btn,.next-btn{
+ width: 50%;
+ margin:0 auto;
+ margin-left: 30%;
+ /*border: 1px solid red;*/
+}
+
+#program .right-side-bar .back-btn{
+ opacity: 0;
+
+}
+
+@media screen and (max-width: 768px){
+  #program .right-side-bar .back-btn,.next-btn {
+      width: 70%;
+      margin:0 auto;
+  }
+}
+
+#program .right-side-bar .next-btn,.back-btn .text{
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  color:#2a4399;
 }
 
 
@@ -531,6 +558,7 @@ p {
   background-color: #2a4399;
   border:0px;
 }
+
 
 #registration .right-side-container .right-btm .btn-container{
   position: absolute;

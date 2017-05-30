@@ -1,8 +1,8 @@
 (()=>{
 	$(document).ready( () => {
 
-		const backBtn = document.querySelector("#program .left-side-bar .back-btn");
-		const nextBtn = document.querySelector("#program .left-side-bar .next-btn");
+		const backBtn = document.querySelector("#program .right-side-bar .back-btn");
+		const nextBtn = document.querySelector("#program .right-side-bar .next-btn");
 
 		const textTimeLine = new TimelineMax();
 		const dateTimeLine = new TimelineMax();
@@ -30,7 +30,7 @@
 				maxHeight = $(groups[currentPage][i]).height() > maxHeight? $(groups[currentPage][i]).height():maxHeight;
 			}
 
-			let heightOffset = $(`#program .right-container`).offset().top - $(`#program`).offset().top;
+			let heightOffset = $(`#program .middle-container`).offset().top - $(`#program`).offset().top;
 			$(`#program`).css({height: `${maxHeight + heightOffset}px`});
 		}
 
