@@ -113,6 +113,7 @@ p {
   float:right;
   width:25%;
   margin-right:10%;
+  margin-top: -3%;
 }
 @media only screen and (max-width: 768px){
   #openhci2017 .content-container{
@@ -151,8 +152,8 @@ p {
 }
 #openhci2017 .half-container{
   float:left;
-  padding:0 9%;
-  margin-top: 4%;
+  padding-left: 9.5%;
+  margin-top: 2%;
   min-width: 270px;
 }
 
@@ -168,8 +169,9 @@ p {
 #openhci2017 .half-container-eng{
   float:left;
   color:white;
-  padding:0 10%;
+  padding-left: 9.5%;
   min-width: 270px;
+  margin-top: 2%;
 }
 #openhci2017 .half-container-eng p{
   font-size:1.2em;
