@@ -1,5 +1,5 @@
 
-var sliderWidth = ($(window).width()) *0.84;
+var sliderWidth = ($(window).width()) *0.73;
 //var sliderHeight =($(window).height()) *0.9;
 
 const crewDivChanger = function(){
