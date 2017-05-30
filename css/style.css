@@ -215,6 +215,7 @@ p {
   vertical-align: top;
   margin-left: 13%;
   margin-right: 2%;
+  
 
 }
 
@@ -254,7 +255,7 @@ p {
 #intro_goals .intro-background{
   display: inline-block;
   width:44%;
-  margin-top: -1%;
+  margin-top: 2%;
 }
 @media only screen and (max-width: 768px) {
   #intro_goals .intro-background{
@@ -698,8 +699,8 @@ p {
 #taichi .content-container{
   float:right;
   width:43%;
-  padding-top: 16%;
-  padding-right:6.9%;
+  padding-top: 13%;
+  padding-right:3%;
   text-align: justify;　/*　Firefox到此即可對齊　*/
   text-justify: auto;　/*　IE需再加上此行　*/
 }
@@ -771,10 +772,6 @@ p {
   vertical-align: top;
   margin-top: 1.5%;
   visibility: hidden;
-<<<<<<< HEAD
-=======
-
->>>>>>> 2ba2f09fd82407664ba5f8bfd976f98155dbc60e
 }
 @media only screen and (max-width:768px) {
   #crew .crew-slide-bar{
@@ -884,7 +881,7 @@ p {
   width:10%;
   display: inline-block;
   vertical-align:top; 
-  padding-top:22vh;
+  padding-top:20vh;
   text-align: center;
   margin-left: 2%;
 
