@@ -198,7 +198,7 @@ p {
 /*  intro_goals */
 
 #intro_goals{
-  padding:3% 0px 0px 0px ;
+  padding:0.5% 0px 0px 0px ;
   height:auto ;
   min-height: 100vh;
   background-color: #ec675a;
@@ -421,7 +421,7 @@ p {
 
 #program .right-side-bar{
   flex:0.2;
-  padding-top: 35vh;
+  padding-top: 40vh;
   /*border: 1px solid red;*/
 }
 
@@ -817,6 +817,7 @@ p {
   position: relative;
   margin-left:-2.3%;
 }
+
 @media  screen and (min-width: 481px)and (max-width: 768px){
   #crew .crew-member {
     margin-left:2.3%;
