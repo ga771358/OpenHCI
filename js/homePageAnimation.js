@@ -1,4 +1,4 @@
-(()={
+(()=>{
 	let svgDoc = null;
 	let redPoly = null;
 	let whitePoly = null;
