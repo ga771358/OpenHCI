@@ -651,7 +651,7 @@ p {
   float:right;
   width:43%;
   padding-top: 16%;
-  padding-right:2%;
+  padding-right:6.9%;
   text-align: justify;　/*　Firefox到此即可對齊　*/
   text-justify: auto;　/*　IE需再加上此行　*/
 }
@@ -807,7 +807,7 @@ p {
   padding:8px;
   color:#ec675a;
   font-weight: 400;
-  margin: 20px 0px 20px 1px;
+  margin: 20px 0px 10px 1px;
 }
 @media only screen and (max-width: 768px){
   #crew .crew-member .member-container h4{
