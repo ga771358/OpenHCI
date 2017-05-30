@@ -192,7 +192,7 @@ p {
 /*  intro_goals */
 
 #intro_goals{
-  padding:3% 0px 0px 0px ;
+  padding:0.5% 0px 0px 0px ;
   height:auto ;
   min-height: 100vh;
   background-color: #ec675a;
@@ -415,7 +415,7 @@ p {
 
 #program .right-side-bar{
   flex:0.2;
-  padding-top: 35vh;
+  padding-top: 40vh;
   /*border: 1px solid red;*/
 }
 
@@ -764,11 +764,7 @@ p {
   width:15%;
   vertical-align: top;
   margin-top: 1.5%;
-<<<<<<< HEAD
   visibility: hidden;
-=======
-
->>>>>>> abdeabe60d2434b608428319a91dd1e3f7aa23ea
 }
 @media only screen and (max-width:768px) {
   #crew .crew-slide-bar{
@@ -813,7 +809,7 @@ p {
   width:74%;
   position: relative;
   margin-left:-2.3%;
-  border:1px solid red;
+  
 }
 @media  screen and (min-width: 481px)and (max-width: 768px){
   #crew .crew-member {
