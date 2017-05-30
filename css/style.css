@@ -15,7 +15,7 @@ body{
 
 
 p {
-    font-size: 12px;
+    font-size: 1.2em;
     line-height: 1.70em;
     color:white;
     -webkit-font-smoothing: subpixel-antialiased;
@@ -50,7 +50,7 @@ p {
   top:5%;
   width:69%;
   height: 181%;
-  right:33%; 
+  right:33%;
   position: absolute;
   float:left;
 }
@@ -105,7 +105,7 @@ p {
 #openhci2017 .content-container{
   float:right;
   width:25%;
-  margin-right:10%;  
+  margin-right:10%;
 }
 @media only screen and (max-width: 768px){
   #openhci2017 .content-container{
@@ -146,11 +146,12 @@ p {
   float:left;
   padding:0 10%;
   margin-top: 4%;
+  min-width: 270px;
 }
 
 #openhci2017 .half-container p{
-  font-size:12px;
-  font-weight: 100;
+  font-size:1.2em;
+  font-weight: 800;
   line-height: 1.5em;
   letter-spacing: 1px;
   color:#ec675a;
@@ -161,13 +162,15 @@ p {
   float:left;
   color:white;
   padding:0 10%;
+  min-width: 270px;
 }
 #openhci2017 .half-container-eng p{
-  font-size:12px;
+  font-size:1.2em;
   font-weight: 100;
   line-height: 1.2em;
-  text-align: justify;　/*　Firefox到此即可對齊　*/
-  text-justify: auto;　/*　IE需再加上此行　*/
+  /*text-align: justify;　/*　Firefox到此即可對齊　*/
+  /*text-justify: auto;　/*　IE需再加上此行　*/
+  letter-spacing: 2px;
 }
 @media only screen and (max-width: 768px) {
   #openhci2017 .half-container{
@@ -286,7 +289,7 @@ p {
 }
 #program .titleImage{
   display: none;
-  
+
 }
 @media only screen and (max-width: 768px){
   #program  .titleImage{
@@ -343,12 +346,12 @@ p {
   color: #ffffff;
 }
 
-#program .middle-container p{ 
+#program .middle-container p{
   color: #ffffff;
-  font-size: 13px;
+  font-size: 1.2em;
   font-weight: lighter;
   line-height:140%;
-} 
+}
 
 
 #program .middle-container .day-block1{
@@ -390,7 +393,7 @@ p {
 
 #program .middle-container  .icon{
   opacity: 0;
-  margin-left:-2%; 
+  margin-left:-2%;
   margin-bottom:2%;
 }
 
@@ -473,7 +476,7 @@ p {
 #registration .right-side-container .right-top{
   position:relative;
   min-height:20vh;
-  
+
 }
 
 #registration .right-side-container .right-top .current-step{
@@ -482,7 +485,7 @@ p {
   bottom:0;
   left:40%;
   min-height:10vh;
-  
+
 }
 
 #registration .right-side-container .right-btm{
@@ -495,6 +498,7 @@ p {
   width:70vw;
   min-height:40vh;
   margin-top:8%;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 480px) {
@@ -514,7 +518,7 @@ p {
 
 #registration .right-side-container .right-btm .cart-container .cart .img-text img{
   text-align: center;
-  
+
 }
 
 #registration .right-side-container .right-btm .cart-container .cart .img-text .text{
@@ -523,7 +527,7 @@ p {
   font-size: 14px;
   text-align: center;
 
-  
+
 }
 
 #registration .right-side-container .right-btm .cart-container .cart .hover-sign{
@@ -534,7 +538,16 @@ p {
   width: 80%;
   height: 1%;
   opacity: 0;
-  
+
+}
+
+#registration .right-side-container .right-btm .cart-container .cart5 .hover-sign{
+  background-color: #ffffff;
+  opacity: 0;
+}
+#registration .right-side-container .right-btm .cart-container .cart5:hover .hover-sign{
+  background-color: #ffffff;
+  opacity: 1;
 }
 
 #registration .right-side-container .right-btm .cart-container .cart1{
@@ -551,6 +564,7 @@ p {
 }
 #registration .right-side-container .right-btm .cart-container .cart5{
   left:92%;
+  cursor:pointer;
 }
 
 
@@ -583,7 +597,7 @@ p {
   text-align: center;
   font-size: 14px;
   font-weight:bold;
-  
+
 }
 #registration .title{
   position: absolute;
@@ -601,7 +615,7 @@ p {
   position: absolute;
   top:500px;
   right: 2%;
-  
+
 }
 
 @media screen and (max-width: 768px) {
@@ -613,7 +627,7 @@ p {
 #registration .animate-right {
   transition: all .4s cubic-bezier(0.650,0.000,0.175,1.000);
   transform: translateX(200%);
-  
+
 }
 
 #registration .right-side-container .right-btm .step01,.step02,.step03,.step04,.step05{
@@ -624,7 +638,7 @@ p {
   min-height:80vh;
   height: auto;
   transition: all .4s cubic-bezier(0.650,0.000,0.175,1.000);
-  
+
 }
 
 @media screen and (max-width: 768px) {
@@ -685,9 +699,9 @@ p {
 }
 #taichi .content-container h3{
   color: #2a4399;
-  border: 1px solid white;
+  border: 2px solid white;
   text-align: center;
-  padding:8px 4px;
+  padding:14px 4px;
   width:56%;
   font-size: 20px;
   margin-left: 1px;
@@ -750,7 +764,7 @@ p {
   width:15%;
   vertical-align: top;
   margin-top: 1.5%;
-  
+
 }
 @media only screen and (max-width:768px) {
   #crew .crew-slide-bar{
@@ -785,7 +799,7 @@ p {
 }
 @media only screen and (max-width: 768px){
   #crew .crew-slider-bar .next-btn .text {
-   
+
   }
 }
 
@@ -870,11 +884,11 @@ p {
 #sponsor .title {
   font-weight: 500;
   font-size: 14px;
-  margin-top: 50px; 
+  margin-top: 50px;
 }
 #sponsor .organizer img, #sponsor .co-organizer img, #sponsor .sponsor img{
   margin-top: 20px;
-  margin-right:12px; 
+  margin-right:12px;
 }
 @media only screen and (max-width: 768px){
   #sponsor .sponsor-frame{
@@ -908,7 +922,7 @@ p {
   position: absolute;
   padding-left:44%;
   margin-top: -8%;
-  letter-spacing:0.5px; 
+  letter-spacing:0.5px;
   line-height: 1.6em;
   font-size: 12px;
 }
@@ -958,7 +972,7 @@ nav.side-nav {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   text-align: left;
-  z-index: 5; 
+  z-index: 5;
 }
 
 @media screen and (max-width: 480px){
@@ -974,7 +988,7 @@ nav.side-nav a, nav.side-nav a a:hover, nav.side-nav a a:active, nav.side-nav a 
   padding-right: 20px;
   color: #ffffff;
   text-decoration: none;
-  font-weight: 500; 
+  font-weight: 500;
 }
 nav.side-nav .nav-pic {
   display: block;
@@ -986,7 +1000,7 @@ nav.side-nav .nav-pic {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear; 
+  transition: all 0.3s linear;
 }
 nav.side-nav .nav-label {
   display: block;
@@ -996,7 +1010,7 @@ nav.side-nav .nav-label {
   -ms-transform: translateX(50%);
   transform: translateX(50%);
   -webkit-transition: all 0.2s cubic-bezier(.17, .67, .83, .67);
-  transition: all 0.2s cubic-bezier(.17, .67, .83, .67); 
+  transition: all 0.2s cubic-bezier(.17, .67, .83, .67);
 }
 
 /* 當符合 nav中的li with .active中的nav-label */
@@ -1009,11 +1023,11 @@ nav.side-nav li.active a .nav-label {
 }
 nav.side-nav ul {
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 nav.side-nav li {
   width: auto;
-  list-style: none; 
+  list-style: none;
 }
 
 nav.side-nav li .nav-pic.blue-pic{
@@ -1026,7 +1040,7 @@ nav.side-nav li .nav-pic.red-pic{
 
 nav.side-nav li .nav-label{
   color:#ec675a;
-  line-height: 2.4em; 
+  line-height: 2.4em;
 }
 
 nav.side-nav li.active-blue .nav-pic.blue-pic{
@@ -1039,7 +1053,7 @@ nav.side-nav li.active-blue .nav-pic.red-pic{
 
 nav.side-nav li.active-blue .nav-label{
   color:#2a4399;
-  line-height: 2.4em; 
+  line-height: 2.4em;
 }
 
 nav.side-nav a:hover .nav-label {
@@ -1089,6 +1103,3 @@ nav.side-nav a:hover .nav-label {
 @keyframes stroke-offset{
   100% {stroke-dashoffset: -45%;}
 }
-
-
-
