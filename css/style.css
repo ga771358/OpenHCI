@@ -771,7 +771,10 @@ p {
   vertical-align: top;
   margin-top: 1.5%;
   visibility: hidden;
+<<<<<<< HEAD
+=======
 
+>>>>>>> 2ba2f09fd82407664ba5f8bfd976f98155dbc60e
 }
 @media only screen and (max-width:768px) {
   #crew .crew-slide-bar{
