@@ -463,6 +463,11 @@ p {
   display: flex;
 }
 
+@media screen and (max-width: 768px) {
+  #registration {
+    min-height: auto;
+  }
+}
 
 #registration .left-side-container{
   flex:0.15;
@@ -496,6 +501,12 @@ p {
 
 #registration .right-side-container .right-btm{
   min-height:80vh;
+}
+
+@media screen and (max-height: 768px){
+  #registration .right-side-container .right-btm{
+    min-height:55vh;
+  }
 }
 
 #registration .right-side-container .right-btm .cart-container{
