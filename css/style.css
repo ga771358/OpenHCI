@@ -141,8 +141,8 @@ p {
 }
 #openhci2017 .title .openhci2017-background-mobile{
   display: none;
-  padding:20px 6px;
-  width:310px;
+  padding:30px 20px;
+  width:230px;
 }
 
 @media only screen and (max-width: 768px){
