@@ -11,7 +11,6 @@ body{
   letter-spacing: 0.5px;
   color:white;
   -webkit-font-smoothing: subpixel-antialiased;
-  text-rendering: geometricPrecision;
 }
 
 
@@ -530,11 +529,9 @@ p {
 
 #registration .right-side-container .right-btm .cart-container .cart .img-text .text{
   color: #fff;
-  font-weight: 300;
-  font-size: 14px;
+  font-weight: 300 !important;
+  font-size: 14px ;
   text-align: center;
-
-
 }
 
 #registration .right-side-container .right-btm .cart-container .cart .hover-sign{
