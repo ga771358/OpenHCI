@@ -160,7 +160,6 @@ p {
 
 #openhci2017 .half-container p{
   font-size:1.2em;
-  font-weight: 200;
   line-height: 1.5em;
   letter-spacing: 1px;
   color:#ec675a;
@@ -176,7 +175,6 @@ p {
 }
 #openhci2017 .half-container-eng p{
   font-size:1.2em;
-  font-weight: 100;
   line-height: 1.2em;
   text-align: justify;　/*　Firefox到此即可對齊　*/
   text-justify: auto;　/*　IE需再加上此行　*/
@@ -359,7 +357,6 @@ p {
 #program .middle-container p{
   color: #ffffff;
   font-size: 1.2em;
-  font-weight: lighter;
   line-height:140%;
 }
 
@@ -871,20 +868,20 @@ p {
 }
 #crew .crew-member .member-container .member .name{
   color: #ec675a;
-  font-weight:300;
+  font-weight:400 !important;
   margin: 13px 0 3px 0;
 }
 #crew .crew-member .member-container .member .description{
     color: white;
     line-height: 1.5em;
-    font-weight: 100;
+    font-weight: 200;
     font-size: 12px;
 }
 #crew .right-side-bar{
   width:10%;
   display: inline-block;
   vertical-align:top; 
-  padding-top:20vh;
+  padding-top:18vh;
   text-align: center;
   margin-left: 2%;
 
