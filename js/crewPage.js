@@ -19,11 +19,11 @@ const crewDivChanger = function(){
         }
         if($(window).width()<480){
           sliderWidth = $(window).width();
-          sliderHeight = 980;
+          sliderHeight = 900;
         }
         if($(window).width()<321){
           sliderWidth = $(window).width();
-          sliderHeight = 1180;
+          sliderHeight = 980;
         }
 
         $(" #crew .slider").diyslider({
