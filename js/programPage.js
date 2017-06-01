@@ -12,8 +12,9 @@
 
 		$(window).resize(()=>{
 
+			console.log($(window).height());
 			if($(window).width() > 760){	// prevent mobile resize .
-				console.log($(window).width());
+				// console.log($(window).width());
 				initialize();
 				currentPage = 0 ;
 				updateSectionHeight();
