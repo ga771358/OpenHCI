@@ -46,6 +46,7 @@ p {
   background-color: #2a4399;
 }
 
+
 #home .home-background{
   top:5%;
   width:69%;
@@ -1073,7 +1074,9 @@ nav.side-nav li .nav-pic.blue-pic{
 nav.side-nav li .nav-pic.red-pic{
   opacity: 1;
 }
-
+nav.side-nav li .off-audio-pic{
+  opacity: 0;
+}
 nav.side-nav li .nav-label{
   color:#ec675a;
   line-height: 2.4em;
@@ -1100,6 +1103,17 @@ nav.side-nav a:hover .nav-label {
   color: #ffffff;
   visibility: visible;
 }
+nav.side-nav .nav-label-volume {
+  display: block;
+  -webkit-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  transform: translateX(50%);
+  margin-left:-38%;
+  opacity:0.5 ;
+}
+nav.side-nav #mute :hover{
+  opacity:1;
+}
 
 
 .text-copy {
@@ -1122,7 +1136,7 @@ nav.side-nav a:hover .nav-label {
 }
 
 .text-copy:nth-child(3){
-  stroke: #BD0034;3
+  stroke: #BD0034;
   animation-delay: -11s;
 }
 
