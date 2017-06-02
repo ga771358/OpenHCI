@@ -750,7 +750,7 @@ p {
   min-height:100vh;
   background-color: #2a4399;
   position: relative;
-  padding-top: 100px;
+  padding-top: 8%;
 }
 @media only screen and (max-width: 768px) {
   #crew{
