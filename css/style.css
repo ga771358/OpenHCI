@@ -151,7 +151,7 @@ p {
 
 #openhci2017 .half-container p{
   font-size:1.2em;
-  font-weight: 800;
+  font-weight: 200;
   line-height: 1.5em;
   letter-spacing: 1px;
   color:#ec675a;
@@ -285,8 +285,36 @@ p {
   display:flex;
   flex-direction: column;
   background-color: #ec675a;
+  border-bottom: solid 3px #2a4399
   /*border: 1px solid green;*/
 }
+
+#program::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-style: solid;
+  border-width: 0 0 50px 1000px;
+  border-color: transparent transparent #2a4399 transparent;
+}
+
+#program::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 0 0 1000px;
+  border-color: transparent transparent transparent #2a4399;
+}
+
 #program .titleImage{
   display: none;
 
