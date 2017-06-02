@@ -535,10 +535,12 @@ p {
   width:18%;
   border: 2px solid #fff;
 }
-
+#registration .right-side-container .right-btm .cart-container .cart .img-text{
+  text-align: center;
+}
 #registration .right-side-container .right-btm .cart-container .cart .img-text img{
   text-align: center;
-
+  
 }
 
 #registration .right-side-container .right-btm .cart-container .cart .img-text .text{
