@@ -10,6 +10,15 @@
     本活動希望能夠以推廣HCI學門為主要宗旨，招收資訊工程與設計背景的學生，共同學習並進行跨領域的溝通與合作，且探索人類生活空間中與周遭環境、
     物件或工具的新互動模式，進行為期六天的工作坊，期盼參與者能以此概念體察其日常經驗裡的互動缺口或議題，實際動手解決問題或創造出新的意義的能力，
     進而尋思更和諧互惠的人機互動遠景。">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- SEO -->
+    <meta property="og:image" content="http://www.openhci.com/image/ogimg.png">
+    <meta property="og:title" content="OpenHCI 2017 | Re:__ 重構">
+    <meta property="og:description" content="OpenHCI 2017是第八屆由學生自治籌備的人機互動工作坊，旨在推廣人機互動學門與跨領域合作。 在六天的營期間，來自不同領域的學員會經歷一系列講座與課後實作演練，深入完整 HCI 設計流程，透過合作溝通以實踐構想，將無盡的創意展現給世界！
+    本活動希望能夠以推廣HCI學門為主要宗旨，招收資訊工程與設計背景的學生，共同學習並進行跨領域的溝通與合作，且探索人類生活空間中與周遭環境、
+    物件或工具的新互動模式，進行為期六天的工作坊，期盼參與者能以此概念體察其日常經驗裡的互動缺口或議題，實際動手解決問題或創造出新的意義的能力，進而尋思更和諧互惠的人機互動遠景。">
+
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -41,6 +50,7 @@
     <link rel="icon" href="image/icon.png" type="image/x-icon"/>
   </head>
   <body>
+    <audio src="audio/openHCIaudio.mp3" autoplay="autoplay" loop="-1" id="background-audio"></audio>
     <nav class="side-nav">
         <ul>
                   <li class="nav-home">
@@ -105,6 +115,15 @@
                       <span class="nav-label">Contact</span>
                     </a>
                   </li>
+
+                   <li id='mute'>
+                    <a href="#noscroll" >
+                      <img src="image/audioOn.png" class="nav-pic blue-pic">
+                      <img src="image/audioOn.png" class="nav-pic red-pic">
+                    
+                      <span class="nav-label-volume">Volume</span>
+                    </a>
+                  </li>
         </ul>
     </nav>
 
@@ -139,7 +158,7 @@
     <!-- section home begin-->
 
     <section id="home">
-
+        
         <!--<img src="image/homeImage01.svg" class="home-background">-->
         <object id="home-bg" class="home-background" type="image/svg+xml" data="image/homeImage01.svg"></object>
 
@@ -157,7 +176,7 @@
       <div class="content-container">
         <div class="title">
           <img src="image/openHCI2017Image.svg" class ="openhci2017-background">
-          <img src="image/openHCI2017Image-mobile.svg" class ="openhci2017-background-mobile wow rotateInDownLeft">
+          <img src="image/openHCI2017Image-mobile.png" class ="openhci2017-background-mobile wow rotateInDownLeft">
         </div>
         <div class="half-container">
           <div class="content">
@@ -168,8 +187,7 @@
         </div>
         <div class="half-container-eng">
           <p>
-            The topic for 2017 Open HCI Workshop is “Re:__”.
-            “Re-” stands for an process of rethinking, reconstruction and revolution, we aim to challenge your imagination by subverting accustomed cognitions. Through the process of self-reconstruction, we discover a deeper interaction between human and objects.
+            “Re-” stands for a process of rethinking, reconstruction and revolution. We invite you to set free your imagination and subvert your mind through multi-disciplinary collaboration. Together, we aim to discover a deeper level of interaction within human, objects, and everything in between.
           </p>
         </div>
         </div>
@@ -413,7 +431,7 @@
               </div>
             </div>
 
-             <a class="typeform-share button" href="https://openhci2016.typeform.com/to/SttI6X" data-mode="popup">
+             <a class="typeform-share button" href="https://openhci2017.typeform.com/to/SttI6X" data-mode="popup">
              <div class="cart cart5" data-index="5">
                <div class="img-text">
                  
@@ -549,25 +567,25 @@
               </div>
 
               <div class="content-bottom">
-                <div style="display: inline-block; margin-left:2%;">
+                <div style="display: inline-block;margin-right: 2%;">
                   <img src="image/openHCI_web-10.svg" width="30px" style="margin:0% 0% 3% -5% ">
                   <p>
                     IDCard範例一：<br>
-                    <a href="https://goo.gl/fZhX0w">https://goo.gl/fZhX0w</a>
+                    <a href="https://goo.gl/fZhX0w" target="_blank">https://goo.gl/fZhX0w</a>
                   </p>
                 </div>
-                <div style="display: inline-block;margin-left: 2%;">
+                <div style="display: inline-block;margin-right: 2%;">
                   <img src="image/openHCI_web-10.svg" width="30px" style="margin:0% 0% 3% -5%">
                   <p>
                     IDCard範例二：<br>
-                    <a href="https://goo.gl/CfbNxp">https://goo.gl/CfbNxp</a>
+                    <a href="https://goo.gl/YurqqP" target="_blank">https://goo.gl/YurqqP</a>
                   </p>
                 </div>
-                <div style="display: inline-block;margin-left: 2%;">
+                <div style="display: inline-block;">
                   <img src="image/openHCI_web-10.svg" width="30px" style="margin:0% 0% 3% -5%">
                   <p>
                     IDCard範例三：<br>
-                    <a href="https://goo.gl/0DOI9m">https://goo.gl/0DOI9m</a>
+                    <a href="https://goo.gl/0DOI9m" target="_blank">https://goo.gl/GnkGK6</a>
                   </p>
                 </div>
               </div>
@@ -601,24 +619,24 @@
               </div>
 
               <div class="content-bottom" >
-                <div style="display: inline-block; margin-left: 2%;">
+                <div style="display: inline-block;margin-right: 2%;">
                   <p style="font-size:12px ">
                     關於報名有任何問題，歡迎寄信給主辦單位：<br>
                      <a href="mailto:human@openhci.com">human@openhci.com(人事組)</a>
                   </p>
                 </div>
 
-              <div style="display: inline-block;margin-left: 2%;">
+              <div style="display: inline-block;margin-right: 2%;">
                 <p style="font-size:12px">
                   官方網站：<br>
-                  <a href="http://www.openhci.com">http://www.openhci.com</a>
+                  <a href="http://www.openhci.com" target="_blank">http://www.openhci.com</a>
                 </p>
               </div>
 
-              <div style="display: inline-block;margin-left: 2%; ">
+              <div style="display: inline-block;">
                 <p style="font-size:12px">
                   粉絲頁：<br>
-                  <a href="https://www.facebook.com/openhci">https://www.facebook.com/openhci</a>
+                  <a href="https://www.facebook.com/openhci" target="_blank">https://www.facebook.com/openhci</a>
                 </p>
               </div>
             </div>
@@ -647,7 +665,7 @@
       <p>
         </br>
         你想要讓自己的作品在台灣人機互動年度盛會TAICHI被看見嗎？</br>
-        TAICHI 是台灣人機互動研究領域中最具代表性的研討會，由台灣人機互動協會所舉辦的年度會議，為國內跨領域人機互動學者與社群，提供一個意見交換以及成果交流的年度盛會。
+        TAICHI 是台灣人機互動研究領域中最具代表性的研討會，由台灣人機互動學會所舉辦的年度會議，為國內跨領域人機互動學者與社群，提供一個意見交換以及成果交流的年度盛會。
 
       </p>
       <p>
@@ -673,7 +691,7 @@
           </div>
 
           <div class="next-btn">
-            <img class="pic" src="image/crewsliderdown.svg">
+            <img class="pic" src="image/nextBtn.svg">
             <div class="text">
               <span>Next</span>
             </div>
@@ -706,7 +724,7 @@
                       指導教授 陳炳宇老師
                     </div>
                   </div>
-                  <h4>GENERAL AFFAIR</h4>
+                  <h4>TREASURER</h4>
                   <div class="member">
                     <div class="name">張智雅</div>
                     <div class="description">
@@ -922,6 +940,20 @@
             </div>
             </div>
         </div>
+        <div class="right-side-bar">
+          <div class="next-btn">
+            <img class="pic" src="image/nextBtn.svg">
+            <div class="text">
+              <span>Next</span>
+            </div>
+          </div>
+          <div class="back-btn">
+            <img class="pic" src="image/crewsliderup.svg">
+            <div class="text">
+              <span>Back</span>
+            </div>
+          </div>
+        </div>
     </section>
 
     <!-- section crew over -->
@@ -942,14 +974,14 @@
           <img src="image/s5.png" width="210px">
           <img src="image/s6.png" width="220px">
           <img src="image/s10.png" width="220px">
+          <img src="image/s12.png" width="200px">
+          <img src="image/s11.png" width="120px">
         </div>
         <div class="sponsor">
           <div class="title">SPONSOR</div>
           <img src="image/s7.png" width="160px">
           <img src="image/s8.png" width="160px">
-          <img src="image/s9.svg" width="120px">
-          <img src="image/s11.png" width="110px">
-          <img src="image/s12.png" width="160px">
+          <img src="image/s9.svg" width="110px">
         </div>
       </div>
     </section>

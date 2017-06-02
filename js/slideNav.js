@@ -112,7 +112,7 @@
 
 
 		let navClickHandler = function(e){
-			if (this.hash !== "") {
+			if (this.hash !== "" && this.hash !== "#noscroll") {
 				e.preventDefault();
 				let hash = this.hash;
 				

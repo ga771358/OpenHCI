@@ -11,11 +11,16 @@
 		const dayCount = 6;
 
 		$(window).resize(()=>{
-			initialize();
-			currentPage = 0 ;
 
-			updateSectionHeight();
-		})
+			console.log($(window).height());
+			if($(window).width() > 760){	// prevent mobile resize .
+				// console.log($(window).width());
+				initialize();
+				currentPage = 0 ;
+				updateSectionHeight();
+			}
+		});
+
 
 		let pages = 2;
 		let blockNum = 3;

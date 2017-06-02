@@ -1,10 +1,10 @@
 
-var sliderWidth = ($(window).width()) *0.84;
+var sliderWidth = ($(window).width()) *0.73;
 //var sliderHeight =($(window).height()) *0.9;
 
 const crewDivChanger = function(){
         sliderWidth = ($(window).width());
-        sliderWidth = sliderWidth * 0.83;
+        sliderWidth = sliderWidth * 0.73;
         sliderHeight = $(window).height();
         sliderHeight = sliderHeight;
 
@@ -19,11 +19,11 @@ const crewDivChanger = function(){
         }
         if($(window).width()<480){
           sliderWidth = $(window).width();
-          sliderHeight = 980;
+          sliderHeight = 900;
         }
         if($(window).width()<321){
           sliderWidth = $(window).width();
-          sliderHeight = 1180;
+          sliderHeight = 980;
         }
 
         $(" #crew .slider").diyslider({

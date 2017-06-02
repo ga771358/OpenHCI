@@ -1,4 +1,4 @@
-$('.name').addClass('hvr-bounce-in');
+$('.name').addClass('hvr-buzz');
 
 
 $('.back-btn').addClass('hvr-pulse-shrink');
