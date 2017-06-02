@@ -160,6 +160,10 @@ p {
 
 #openhci2017 .half-container p{
   font-size:1.2em;
+<<<<<<< HEAD
+  font-weight: 200;
+=======
+>>>>>>> 7973895b2f932c780dc585e824d4fd300141233b
   line-height: 1.5em;
   letter-spacing: 1px;
   color:#ec675a;
@@ -293,8 +297,10 @@ p {
   display:flex;
   flex-direction: column;
   background-color: #ec675a;
+  border-bottom: solid 3px #2a4399
   /*border: 1px solid green;*/
 }
+
 #program .titleImage{
   display: none;
 
