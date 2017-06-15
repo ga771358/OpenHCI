@@ -112,8 +112,9 @@
 
 	cart.forEach((elem)=>{
 		// disable ,  變成錄取名單, 之後才enable !
-		if(elem.dataset.index !== "5"){
+		// if(elem.dataset.index !== "5"){
 			elem.addEventListener("click",cartClickHandler);
+		if(elem.dataset.index !== "5"){
 			elem.addEventListener("mouseenter",cartHoverHandler);
 			elem.addEventListener("mouseleave",cartEndHoverHandler);
 		}

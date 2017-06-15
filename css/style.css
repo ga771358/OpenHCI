@@ -1,3 +1,15 @@
+@keyframes flashing {
+  0% {
+    box-shadow: 0 0 25px #fff;
+  }
+  50% {
+    box-shadow: 0 0 10px #fff; 
+  }
+  100% {
+    box-shadow: 0 0 25px #fff; 
+  } 
+}
+
 * {
     box-sizing: border-box;
 }
@@ -591,8 +603,10 @@ p {
 #registration .right-side-container .right-btm .cart-container .cart5{
   background-color: #2a4399;
   border:0px;
+  animation-name: flashing;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
 }
-
 
 #registration .right-side-container .right-btm .btn-container{
   position: absolute;
