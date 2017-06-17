@@ -950,6 +950,11 @@ p {
     margin:20px;
   }
 }
+@media only screen and (max-width: 481px){
+  #sponsor .sponsor-frame .sponsor img{
+    width:130px;
+  }
+}
 
 
 /* contact */
